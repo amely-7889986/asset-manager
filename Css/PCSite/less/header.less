@@ -63,6 +63,7 @@
 		.text-ac;
 		height: 70px;
 		line-height: 70px;
+		box-sizing: border-box;
 	}
 	li.active,li:active,li:hover{
 		border-bottom: 2px solid #21394b;
@@ -74,7 +75,7 @@
 .hzw-city-picker{
 	position: absolute;
 	border: 1px solid #c9cbce;
-	width: 402px;
+	width: 362px;
 	background: #ffffff;
 	z-index: 999999;
 	font-size: 0;
@@ -106,7 +107,7 @@
 	padding: 0;
 	color: #666666;
 	font-family: "Microsoft YaHei";
-	font-size: 14px;
+	font-size: 12px;
 }
 .hzw-city-picker ul{
 	list-style: none;
@@ -124,10 +125,10 @@
 	margin-bottom: 10px;
 }
 .hzw-city-picker .line{
-	width: 372px;
+	width: 342px;
 	margin: 0 auto;
-	margin-top: 8px;
-	margin-bottom: 4px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 	border-bottom: 1px solid #d8d8d8;
 }
 
@@ -138,15 +139,15 @@
 	padding: 9px;
 }
 .hzw-city-picker .hzw-hot-wrap ul li{
-	width: 68px;
-	height: 40px;
+	width: 58px;
+	height: 28px;
 	text-align: center;
-	line-height: 40px;
+	line-height: 28px;
 	color: #666666;
 	background-color: #f5f5f5;
 }
 .hzw-city-picker .hzw-hot-wrap ul li:hover{
-	color: #ff00ff;
+	color: #ed6d00;
 }
 
 /*选择省份*/
@@ -158,15 +159,15 @@
 }
 .hzw-city-picker .hzw-province-name{
 	display: inline-block;
-	width: 68px;
-	height: 40px;
+	width: 58px;
+	height: 28px;
 	text-align: center;
-	line-height: 40px;
+	line-height: 28px;
 	position: relative;
 	background-color: #f5f5f5;
 }
 .hzw-city-picker .hzw-province-name:hover{
-	color: #ff00ff;
+	color: #ed6d00;
 }
 
 .hzw-city-picker .hzw-province.active{
@@ -175,7 +176,7 @@
 .hzw-city-picker .hzw-province-name.active{
 	border: 1px solid #D8D8D8;
 	border-bottom-color: #ffffff;
-	color: #ff00ff;
+	color: #ed6d00;
 	background-color: #ffffff;
 }
 .hzw-city-picker .hzw-city-wrap{
@@ -183,15 +184,15 @@
 	border: 1px solid #D8D8D8;
 	background: #ffffff;
 	position: absolute;
-	top: 39px;
+	top: 27px;
 	width: 328px;
 	padding: 10px;
 }
 .hzw-city-picker .hzw-city{
-	width: 68px;
-	height: 40px;
+	width: 58px;
+	height: 28px;
 	text-align: center;
-	line-height: 40px;
+	line-height: 28px;
 	color: #999999;
 	background-color: #f5f5f5;
 	overflow: hidden;
@@ -199,5 +200,5 @@
 	text-overflow: ellipsis;
 }
 .hzw-city-picker .hzw-city:hover{
-	color: #ff00ff;
+	color: #ed6d00;
 }
