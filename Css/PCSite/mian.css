@@ -62,6 +62,12 @@
 .bg-fooder {
   background-color: #b5ab9f;
 }
+.bg-bai {
+  background-color: #fff;
+}
+.bg-dblue {
+  background-color: #0d2c54;
+}
 .banner-box {
   display: block;
   width: 100%;
@@ -190,6 +196,29 @@
   z-index: 99;
   margin: 0 auto;
   background-color: #f5f2f2;
+}
+.locatebox {
+  display: block;
+  overflow: hidden;
+  background: #b4b5b7;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  color: #fff;
+}
+.locatebox span.arrow {
+  margin: 0 18px;
+}
+.locatebox i.icon {
+  display: block;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+  margin-top: 7px;
+  margin-right: 8px;
+}
+.locatebox i.icon img {
+  width: 100%;
 }
 /*! normalize-opentype v0.1.2 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
 /**
@@ -1164,6 +1193,18 @@ input:-ms-input-placeholder {
 .signform .confirmbox > a:hover.btn-code {
   background-color: #ed6d00;
 }
+.signform .confirmbox .code-pic {
+  display: block;
+  width: 140px;
+  height: 44px;
+  margin-left: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.signform .confirmbox .code-pic img {
+  width: 100%;
+  vertical-align: top;
+}
 .signform .agreement {
   display: block;
   overflow: hidden;
@@ -1208,6 +1249,121 @@ input:-ms-input-placeholder {
 .code-box .code-pic img {
   width: 100%;
   vertical-align: top;
+}
+.usercenter {
+  display: block;
+  overflow: hidden;
+}
+.user-left {
+  display: block;
+  width: 240px;
+  overflow: hidden;
+  padding: 0 20px;
+  background-color: #fff;
+}
+.user-left .manhead {
+  display: block;
+  overflow: hidden;
+  width: 126px;
+  height: 126px;
+  border-radius: 50%;
+  margin: 24px auto 18px auto;
+  border: 2px solid #0d2c54;
+  box-sizing: border-box;
+}
+.user-left .manhead img {
+  vertical-align: top;
+  width: 100%;
+}
+.user-left hr {
+  background-color: #0d2c54;
+  margin: 12px auto;
+}
+.user-left .user-sidebar {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 24px;
+}
+.user-left .user-sidebar li {
+  display: block;
+  overflow: hidden;
+  height: 48px;
+  line-height: 48px;
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 1px dashed #ddd;
+}
+.user-left .user-sidebar li.active,
+.user-left .user-sidebar li:active,
+.user-left .user-sidebar li:hover {
+  background-color: #0d2c54;
+  color: #fff;
+}
+.user-right {
+  display: block;
+  overflow: hidden;
+  width: 700px;
+  background-color: #fff;
+}
+.user-right .user-title {
+  display: block;
+  padding: 16px 20px;
+  overflow: hidden;
+  border-bottom: 1px dashed #ddd;
+}
+.user-right .messagelist {
+  display: block;
+  overflow: hidden;
+}
+.user-right .messagelist h3 {
+  display: block;
+  overflow: hidden;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #0d2c54;
+  border-bottom: 1px solid #0d2c54;
+  padding: 0 10px;
+}
+.user-right .messagelist h3 i.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  float: left;
+  margin: 8px 10px 8px 0;
+}
+.user-right .messagelist h3 i.icon img {
+  width: 100%;
+  vertical-align: top;
+}
+.user-right .messagelist li {
+  display: block;
+  overflow: hidden;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 18px 0 12px;
+  border-bottom: 1px dashed #ddd;
+}
+.user-right .messagelist li i.point {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 15px 20px 15px 0;
+  border-radius: 50%;
+  background-color: #ff0023;
+}
+.user-right .messagelist li a {
+  display: inline-block;
+  width: 500px;
+  color: #0d2c54;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.user-right .messagelist li a:hover {
+  text-decoration: underline;
+  color: #1291f1;
 }
 .w220 {
   width: 220px;

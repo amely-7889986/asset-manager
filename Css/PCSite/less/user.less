@@ -1,0 +1,113 @@
+.usercenter{
+	display: block;
+	overflow: hidden;
+}
+.user-left{
+	display: block;
+	width: 240px;
+	overflow: hidden;
+	padding: 0 20px;
+	.bg-bai;
+	.manhead{
+		display: block;
+		overflow: hidden;
+		width: 126px;
+		height: 126px;
+		border-radius: 50%;
+		margin: 24px auto 18px auto;
+		border: 2px solid #0d2c54;
+		box-sizing: border-box;
+		img{
+			vertical-align: top;
+			width: 100%;
+		}
+	}
+	hr{
+		background-color: #0d2c54;
+		margin: 12px auto;
+	}
+	.user-sidebar{
+		display: block;
+		overflow: hidden;
+		padding-bottom: 24px;
+		li{
+			display: block;
+			overflow: hidden;
+			height: 48px;
+			line-height: 48px;
+			font-size: 18px;
+			text-align: center;
+			border-bottom: 1px dashed #ddd;
+		}
+		li.active,li:active,li:hover{
+			.bg-dblue;
+			.col-bai;
+		}
+	}
+}
+.user-right{
+	display: block;
+	overflow: hidden;
+	width: 700px;
+	.bg-bai;
+	.user-title{
+		display: block;
+		padding: 16px 20px;
+		overflow: hidden;
+		border-bottom: 1px dashed #ddd;
+	}
+	.messagelist{
+		display: block;
+		overflow: hidden;
+		h3{
+			display: block;
+			overflow: hidden;
+			height: 40px;
+			line-height: 40px;
+			.font18;
+			.col-dblue;
+			border-bottom: 1px solid #0d2c54;
+			padding: 0 10px;
+			i.icon{
+				display: block;
+				width: 24px;
+				height: 24px;
+				overflow: hidden;
+				.l-left;
+				margin: 8px 10px 8px 0;
+				img{
+					width: 100%;
+					vertical-align: top;
+				}
+			}
+		}
+		li{
+			display: block;
+			overflow: hidden;
+			height: 40px;
+			line-height: 40px;
+			padding: 0 18px 0 12px;
+			border-bottom: 1px dashed #ddd;
+			i.point{
+				display: block;
+				width: 10px;
+				height: 10px;
+				margin: 15px 20px 15px 0;
+				border-radius: 50%;
+				background-color: #ff0023;
+			}
+			a{
+				display: inline-block;
+				width: 500px;
+				.col-dblue;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			a:hover{
+				text-decoration: underline;
+				.col-lblue;
+			}
+		}
+	}
+}
