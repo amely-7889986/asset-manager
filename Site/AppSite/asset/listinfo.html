@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>鹰联资产管家</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" href="../../../Css/Appsite/mui.css">
+        <link rel="stylesheet" type="text/css" href="../../../Css/Appsite/app.css"/>
+        <link rel="stylesheet" type="text/css" href="../../../Css/Appsite/feedback.css" />
+    </head>
+        <style>
+            .mui-table-view {
+                margin-top: 10px;
+            }
+            .sideslip-page .mui-row, .sideslip-page .mui-scroll {
+                height: 100%;
+            }
+
+            .sideslip-page .mui-col-xs-4,
+            .sideslip-page .mui-col-xs-8 {
+                overflow-y: auto;
+                height: 100%;
+            }
+
+            .sideslip-page  .mui-segmented-control .mui-control-item {
+                line-height: 50px;
+                width: 100%;
+            }
+
+            .sideslip-page .mui-control-content {
+                display: block;
+            }
+
+            .sideslip-page .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+                background-color: #fff;
+            }
+        </style>
+    <body class="mui-fullscreen">
+        <div class="mui-content">
+            <div class="mui-navbar" style="position: relative;">
+                <div class="mui-navbar-inner mui-bar mui-bar-nav bg-lan" >
+                    <a href="../index.html" class="col-dblue pagelocate"><i class="mui-icon iconfont font12e col-jblue padding-right8">&#xe638;</i>首页</a>><a href="list.html" class="col-dblue pagelocate">我要接单</a>
+                </div>
+            </div>
+            <div class="mui-column-tit"><span class="mui-coltit-text">债务详情</span></div>
+            <div class="mui-column-list">
+                <div class="mui-column-box">
+                    <a href="asset/listinfo.html" class="col-dblue font10e mui-colbox-tit"><span class="tit">GZ20161122个人资产包</span><span class="col-cheng font06e l-right">12人申请</span></a>
+                    <div class="mui-colbox-sec">
+                        <div><i class="mui-icon iconfont col-cheng font14e">&#xe612;</i><span class="col-dblue font08e">地区：广州</span></div>
+                        <div><i class="mui-icon iconfont col-cheng font12e">&#xe627;</i><span class="col-dblue font08e">债务类型：个人债务</span></div>
+                    </div>
+                    <div class="mui-colbox-sec">
+                        <div class="text-clear"><span class="col-dblue font08e">资产总额：</span><span class="col-dblue font10e">￥50000</span></div>
+                        <div><span class="col-dblue font08e">佣金比例：</span><span class="col-red font10e">20%</span></div>
+                    </div>
+                    <div class="mui-colbox-list">
+                        <ul>
+                            <li><label for="title" class="col-cheng">约定还款时间</label><span class="col-dblue">2016-12-06</span></li>
+                            <li><label for="title" class="col-cheng">期望处置方式</label><span class="col-dblue">诉讼催收</span></li>
+                            <li><label for="title" class="col-cheng">处置周期</label><span class="col-dblue">6个月</span></li>
+                        </ul>
+                    </div>
+                    <div class="mui-coltag">
+                        <span class="mui-coltag-primary"></span>
+                        <span class="mui-coltag-text">招标中</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mui-column-tit"><span class="mui-coltit-text">债务方信息</span></div>
+            <div class="mui-column-infobox">
+                <ul class="mui-colinfo-list">
+                    <li>
+                        <label for="title" class="title">债务方名称</label><span class="col-dblue">邓**</span>
+                    </li>
+                    <li>
+                        <label for="title" class="title">债务方证件号码</label><span class="col-dblue">4415021993****0289</span>
+                    </li>
+                    <li>
+                        <label for="title" class="title">债务方地址</label><span class="col-dblue">广州市  白云区  三元里  岗贝路    岗贝花园14栋5楼502室</span>
+                    </li>
+                    <li>
+                        <label for="title" class="title">债务方能否联系</label><span class="col-dblue">能</span>
+                    </li>
+                    <li>
+                        <label for="title" class="title">债务方联系方式</label><span class="col-dblue">18086830021</span>
+                    </li>
+                    <li>
+                        <label for="title" class="title">债权发生简述</label><span class="col-lhui font08e">去年三月借取400万，至今只归还100万，仍有300万余款未归还，年底了需要紧急处理这单债务</span>
+                    </li>
+                    <li style="border-bottom: 0;">
+                        <label for="title" class="title">资产相关图片</label>
+                        <span class="col-dblue assetpic">
+                            <div class="pic l-left"><img src="../../../UploadFile/Appsite/assetpic01.png" alt=""></div>
+                            <div class="pic l-left"><img src="../../../UploadFile/Appsite/assetpic02.png" alt=""></div>
+                            <div class="pic l-left"><img src="../../../UploadFile/Appsite/assetpic03.png" alt=""></div>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mui-column-tit"><span class="mui-coltit-text">委托方信息</span><div class="font06e col-red padding-top4">(确定合作后可查看)</div></div>
+            <div class="mui-column-infobox margin-top20">
+                <ul class="mui-colinfo-list">
+                    <li>
+                        <label for="title" class="title">委托方名称</label><span class="col-dblue">张**</span>
+                    </li>
+                    <li>
+                        <label for="title" class="title">委托方联系方式</label><span class="col-dblue">183085508**</span>
+                    </li>
+                    <li>
+                        <label for="title" class="title">委托方证件号码</label><span class="col-dblue">4415021993****0289</span>
+                    </li>
+                    <li style="border-bottom: 0;">
+                        <label for="title" class="title">资产相关图片</label>
+                        <span class="col-dblue assetpic">
+                            <div class="pic l-left"><img src="../../../UploadFile/Appsite/assetpic01.png" alt=""><div class="mask">合作后<br>可查看</div></div>
+                            <div class="pic l-left"><img src="../../../UploadFile/Appsite/assetpic02.png" alt=""><div class="mask">合作后<br>可查看</div></div>
+                            <div class="pic l-left"><span><img src="../../../UploadFile/Appsite/assetpic03.png" alt=""></span><div class="mask">合作后<br>可查看</div></div>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <a href="listform.html" class="mui-colinfo-btn bg-cheng">申请处理债务</a>
+        </div>
+    </body>
+    <script src="../../../Js/Appsite/mui.min.js "></script>
+    <script src="../../../Js/Appsite/mui.view.js "></script>
+    <script src='../../../Js/Appsite/feedback.js'></script>
+</html>
