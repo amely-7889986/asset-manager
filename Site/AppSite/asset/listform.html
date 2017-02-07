@@ -12,6 +12,35 @@
         <link rel="stylesheet" type="text/css" href="../../../Css/Appsite/mui.picker.min.css" />
     </head>
     <body class="mui-fullscreen">
+        <div id="picture" class="mui-popover mui-popover-action mui-popover-bottom" style="z-index: 999999;">
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a href="#">拍照或录像</a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a href="#">选取现有的</a>
+                </li>
+            </ul>
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a href="#picture"><b>取消</b></a>
+                </li>
+            </ul>
+        </div>
+        <nav class="mui-bar mui-bar-tab" id="mui-menu-box">
+            <a class="mui-menu-item" href="../index.html">
+                <i class="mui-icon iconfont">&#xe629;</i>
+                <span class="mui-tab-label">首页</span>
+            </a>
+            <a class="mui-menu-item" href="../message/index.html">
+                <i class="mui-icon iconfont">&#xe63a;<span class="mui-badge">9</span></i>
+                <span class="mui-tab-label">消息</span>
+            </a>
+            <a class="mui-menu-item" href="../user/index.html">
+                <i class="mui-icon iconfont">&#xe617;</i>
+                <span class="mui-tab-label">个人中心</span>
+            </a>
+        </nav>
         <div class="mui-content">
             <div class="mui-navbar" style="position: relative;">
                 <div class="mui-navbar-inner mui-bar mui-bar-nav bg-lan" >
@@ -25,7 +54,6 @@
                         <label for="title" class="title text-alignr">地      区：</label>
                         <span class="mui-colform-input w60">
                             <button id='showCityPicker3' class=" mui-text-left" type='button'>请选择所在地区</button>
-                            <i class="mui-icon iconfont col-cheng">&#xe61d;</i>
                         </span>
                         <div id='cityResult3' class="ui-alert"></div>
                     </li>
@@ -36,7 +64,6 @@
                         <label for="title" class="title text-alignr">逾期时间：</label>
                         <span class="mui-colform-input w60">
                             <button id='showdatePicker' data-options='{"type":"date"}' class=" mui-text-left" type='button'>请输入逾期时间</button>
-                            <i class="mui-icon iconfont col-cheng">&#xe61d;</i>
                         </span>
                         <div id='result' class="ui-alert"></div>
                     </li>
@@ -44,7 +71,6 @@
                         <label for="title" class="title text-alignr">担保方式：</label>
                         <span class="mui-colform-input w60">
                             <button id='showInfoPicker1' class=" mui-text-left" type='button'>请选择担保方式</button>
-                            <i class="mui-icon iconfont col-cheng">&#xe61d;</i>
                         </span>
                         <div id='userResult' class="ui-alert"></div>
                     </li>
@@ -52,7 +78,6 @@
                         <label for="title" class="title text-alignr">诉讼情况：</label>
                         <span class="mui-colform-input w60">
                             <button id='showInfoPicker2' class=" mui-text-left" type='button'>请输入诉讼情况</button>
-                            <i class="mui-icon iconfont col-cheng">&#xe61d;</i>
                         </span>
                         <div id='userResult' class="ui-alert"></div>
                     </li>
@@ -60,54 +85,93 @@
                         <label for="title" class="title text-alignr">期望处置方式：</label>
                         <span class="mui-colform-input w60">
                             <button id='showInfoPicker3' class=" mui-text-left" type='button'>请选择期望处置方式</button>
-                            <i class="mui-icon iconfont col-cheng">&#xe61d;</i>
                         </span>
                         <div id='userResult' class="ui-alert"></div>
                     </li>
                     <li>
                         <label for="title" class="title text-alignr">佣金比例：</label>
                         <span class="mui-colform-input w38">
-                            <button id='showInfoPicker4' class=" mui-text-left" type='button'>100%</button>
-                            <i class="mui-icon iconfont col-cheng">&#xe61d;</i>
+                            <button id='showInfoPicker4' class=" mui-text-left" type='button'>1%</button>
                         </span>
                         <div id='userResult' class="ui-alert"></div>
+                    </li>
+                    <li>
+                        <label for="title" class="title text-alignr">处置周期：</label>
+                        <span class="w60">
+                            <div class="cycle1 mui-checkbox">
+                                <label class="col-dblue checkcycle">3个月</label>
+                                <input name="checkbox" value="Item 2" type="checkbox" checked>
+                            </div>
+                            <div class="cycle1 mui-checkbox">
+                                <label class="col-dblue checkcycle">6个月</label>
+                                <input name="checkbox" value="Item 2" type="checkbox" checked>
+                            </div>
+                            <div class="cycle1 mui-checkbox">
+                                <label class="col-dblue checkcycle">1年</label>
+                                <input name="checkbox" value="Item 2" type="checkbox" checked>
+                            </div>
+                        </span>
                     </li>
                 </ul>
             </div>
             <div class="mui-column-tit"><span class="mui-coltit-text">债务方信息</span></div>
             <div class="mui-column-infobox">
-                <ul class="mui-colinfo-list">
+                <ul class="mui-colinfo-form">
                     <li>
-                        <label for="title" class="title">债务方名称</label><span class="col-dblue">邓**</span>
+                        <label for="title" class="title text-alignl">债务方名称：</label>
+                        <span class="mui-colform-input w60"><input type="text" placeholder="请输入债务方名称"></span>
                     </li>
                     <li>
-                        <label for="title" class="title">债务方证件号码</label><span class="col-dblue">4415021993****0289</span>
+                        <label for="title" class="titleblock text-alignl">债务方证件号码：</label><span class="mui-colform-inputblock w100"><input type="text" placeholder="请输入债务方证件号码"></span>
                     </li>
                     <li>
-                        <label for="title" class="title">债务方地址</label><span class="col-dblue">广州市  白云区  三元里  岗贝路    岗贝花园14栋5楼502室</span>
-                    </li>
-                    <li>
-                        <label for="title" class="title">债务方能否联系</label><span class="col-dblue">能</span>
-                    </li>
-                    <li>
-                        <label for="title" class="title">债务方联系方式</label><span class="col-dblue">18086830021</span>
-                    </li>
-                    <li>
-                        <label for="title" class="title">债权发生简述</label><span class="col-lhui font08e">去年三月借取400万，至今只归还100万，仍有300万余款未归还，年底了需要紧急处理这单债务</span>
-                    </li>
-                    <li style="border-bottom: 0;">
-                        <label for="title" class="title">资产相关图片</label>
-                        <span class="col-dblue assetpic">
-                            <div class="pic l-left"><img src="../../../UploadFile/Appsite/assetpic01.png" alt=""></div>
-                            <div class="pic l-left"><img src="../../../UploadFile/Appsite/assetpic02.png" alt=""></div>
-                            <div class="pic l-left"><img src="../../../UploadFile/Appsite/assetpic03.png" alt=""></div>
+                        <label for="title" class="titleblock text-alignl">债务方地址：</label>
+                        <span class="mui-colform-input w100">
+                            <button id='showCityPicker4' class=" mui-text-left" type='button'>请选择所在地区</button>
                         </span>
+                        <div id='cityResult3' class="ui-alert"></div>
+                        <span class="mui-colform-inputblock w100"><input type="text" placeholder="请输入债务方地址"></span>
+                    </li>
+                    <li>
+                        <label for="title" class="titleblock text-alignl">债务方联系方式：</label><span class="mui-colform-inputblock w100"><input type="text" placeholder="请输入债务方联系方式"></span>
+                    </li>
+                    <li style="height: 2.2em;">
+                        <label for="title" class="titleblock w40 text-alignl l-left">债务方能否联系：</label>
+                        <span class="w60 mui-radio l-left">
+                            <input name="radio1" type="radio" value="Item 2" class="checkbox1" checked="">
+                            <span class="col-cheng checkyes">能</span>
+                            <input name="radio1" type="radio" value="Item 2"  class="checkbox2">
+                            <span class="col-cheng checkno">否</span>
+                        </span>
+                    </li>
+                    <li>
+                        <label for="title" class="titleblock text-alignl">债权发生简述：</label>
+                        <span class="mui-colform-textarea w100">
+                            <textarea name="" id="" placeholder="请输入简单描述，限定200字以内…"></textarea>
+                        </span>
+                    </li>
+                    <li>
+                        <label for="title" class="titleblock text-alignl">凭证图片上传：</label>
+                        <span class="mui-colform-picfile w100">
+                            <a href="#picture" class="mui-btn-picfile"><i class="mui-icon iconfont font12e col-lhui">&#xe639;</i></a>
+                            <span class="mui-colform-pictext">
+                                <img src="../../../UploadFile/Appsite/assetpic01.png" alt="">
+                            </span>
+                        </span>
+                    </li>
+                    <li>
+                        <label for="title" class="title text-alignl">附件上传：</label>
+                        <a class="mui-btn-blue mui-colform-upbtn">请在电脑端上传文件</a>
                     </li>
                 </ul>
             </div>
-            <a href="listform.html" class="mui-colinfo-btn bg-cheng">申请处理债务</a>
-            <div id="info"></div>
+            <div class="mui-btn-formarea">
+                <a href="formsave.html" class="mui-colinfo-formbtn bg-dblue">保存资料</a>
+                <!-- <a href="user/myrelease.html" class="mui-colinfo-formbtn bg-cheng">提交资料</a> -->
+            </div>
         </div>
+
+        
     </body>
         <script src="../../../Js/Appsite/mui.min.js "></script>
         <script src="../../../Js/Appsite/mui.picker.js"></script>
@@ -116,11 +180,29 @@
         <script src="../../../Js/Appsite/city.data-3.js" type="text/javascript" charset="utf-8"></script>
         <script>
             mui.init({
-                swipeBack: false,
+                swipeBack: true,
             });
-             //主界面和侧滑菜单界面均支持区域滚动；
-            mui('#offCanvasSideScroll').scroll();
-            mui('#offCanvasContentScroll').scroll();
+
+            mui('body').on('shown', '.mui-popover', function(e) {
+            //console.log('shown', e.detail.id);//detail为当前popover元素
+            });
+            mui('body').on('hidden', '.mui-popover', function(e) {
+                //console.log('hidden', e.detail.id);//detail为当前popover元素
+            });
+            var info = document.getElementById("info");
+            mui('body').on('tap', '.mui-popover-action li>a', function() {
+                var a = this,
+                    parent;
+                //根据点击按钮，反推当前是哪个actionsheet
+                for (parent = a.parentNode; parent != document.body; parent = parent.parentNode) {
+                    if (parent.classList.contains('mui-popover-action')) {
+                        break;
+                    }
+                }
+                //关闭actionsheet
+                mui('#' + parent.id).popover('toggle');
+                info.innerHTML = "你刚点击了\"" + a.innerHTML + "\"按钮";
+            })
 
             // 地区选择
             (function($, doc) {
@@ -145,15 +227,15 @@
                     var userResult = doc.getElementById('showInfoPicker1');
                     showUserPickerButton.addEventListener('tap', function(event) {
                         userPicker.show(function(items) {
-                            userResult.innerText = JSON.stringify(items[0]).text + " ";
+                            userResult.innerText = JSON.stringify(items[0].text);
                             //返回 false 可以阻止选择框的关闭
                             //return false;
                         });
                     }, false);
 
                     // 诉讼情况选择
-                    var userPicker = new $.PopPicker();
-                    userPicker.setData([{
+                    var userPicker2 = new $.PopPicker();
+                    userPicker2.setData([{
                         value: '未诉讼',
                         text: '未诉讼'
                     }, {
@@ -164,10 +246,54 @@
                         text: '执行中'
                     }]);
                     var showUserPickerButton = doc.getElementById('showInfoPicker2');
-                    var userResult = doc.getElementById('showInfoPicker2');
+                    var userResult2 = doc.getElementById('showInfoPicker2');
                     showUserPickerButton.addEventListener('tap', function(event) {
-                        userPicker.show(function(items) {
-                            userResult.innerText = JSON.stringify(items[0].text + " ");
+                        userPicker2.show(function(items) {
+                            userResult2.innerText = JSON.stringify(items[0].text);
+                            //返回 false 可以阻止选择框的关闭
+                            //return false;
+                        });
+                    }, false);
+
+                    // 处置方式选择
+                    var userPicker3 = new $.PopPicker();
+                    userPicker3.setData([{
+                        value: '未诉讼',
+                        text: '未诉讼'
+                    }, {
+                        value: '已判决',
+                        text: '已判决'
+                    }, {
+                        value: '执行中',
+                        text: '执行中'
+                    }]);
+                    var showUserPickerButton = doc.getElementById('showInfoPicker3');
+                    var userResult3 = doc.getElementById('showInfoPicker3');
+                    showUserPickerButton.addEventListener('tap', function(event) {
+                        userPicker3.show(function(items) {
+                            userResult3.innerText = JSON.stringify(items[0].text);
+                            //返回 false 可以阻止选择框的关闭
+                            //return false;
+                        });
+                    }, false);
+
+                    // 佣金比例选择
+                    var userPicker4 = new $.PopPicker();
+                    userPicker4.setData([{
+                        value: '10%',
+                        text: '10%'
+                    }, {
+                        value: '30%',
+                        text: '30%'
+                    }, {
+                        value: '50%',
+                        text: '50%'
+                    }]);
+                    var showUserPickerButton = doc.getElementById('showInfoPicker4');
+                    var userResult4 = doc.getElementById('showInfoPicker4');
+                    showUserPickerButton.addEventListener('tap', function(event) {
+                        userPicker4.show(function(items) {
+                            userResult4.innerText = JSON.stringify(items[0].text);
                             //返回 false 可以阻止选择框的关闭
                             //return false;
                         });
@@ -183,6 +309,21 @@
                     showCityPickerButton.addEventListener('tap', function(event) {
                         cityPicker3.show(function(items) {
                             cityResult3.innerText = (items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
+                            //返回 false 可以阻止选择框的关闭
+                            //return false;
+                        });
+                    }, false);
+
+                    // 债务人地址地区选择
+                    var cityPicker4 = new $.PopPicker({
+                        layer: 3
+                    });
+                    cityPicker4.setData(cityData3);
+                    var showCityPickerButton = doc.getElementById('showCityPicker4');
+                    var cityResult4 = doc.getElementById('showCityPicker4');
+                    showCityPickerButton.addEventListener('tap', function(event) {
+                        cityPicker4.show(function(items) {
+                            cityResult4.innerText = (items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
                             //返回 false 可以阻止选择框的关闭
                             //return false;
                         });

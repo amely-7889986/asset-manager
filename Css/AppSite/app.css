@@ -223,7 +223,7 @@ hr.border{
     background-color: transparent;
 }
 .mui-checkbox input[type=checkbox]:checked:before, .mui-radio input[type=radio]:checked:before{
-color: #063062;
+color: #ed6d00;
 }
 /*重置翻页样式*/
 .mui-pagination>li.mui-active>a, .mui-pagination>li.mui-active>a:active, .mui-pagination>li.mui-active>span, .mui-pagination>li.mui-active>span:active, .mui-pagination>li:active>a, .mui-pagination>li:active>a:active, .mui-pagination>li:active>span, .mui-pagination>li:active>span:active{
@@ -687,9 +687,8 @@ a.mui-colinfo-btn{
 }
 .mui-colinfo-form li{
     display: block;
-    overflow: hidden;
-    height: 3em;
     line-height: 3em;
+    overflow: hidden;
 }
 .mui-colinfo-form li label.title{
     display: inline-block;
@@ -698,8 +697,21 @@ a.mui-colinfo-btn{
     color: #0d2c54;
     float: left;
 }
+.mui-colinfo-form li label.titleblock{
+    display: block;
+    font-size: .8em;
+    color: #0d2c54;
+    height: 2.6em;
+    overflow: hidden;
+}
+.mui-colinfo-form li .w100{
+    width: 100%;
+}
 .mui-colinfo-form li .w60{
     width: 60%;
+}
+.mui-colinfo-form li .w40{
+    width: 40%;
 }
 .mui-colinfo-form li .w38{
     width: 38%;
@@ -715,9 +727,11 @@ a.mui-colinfo-btn{
 }
 .mui-colinfo-form li .mui-colform-input button{
     height: 100%;
-    width: 80%;
+    width: 100%;
     border: 0;
     padding: 0 4px;
+    background: url(../../Image/AppSite/picker-arrowdown.png) 94% center no-repeat;
+    background-size: .6em;
 }
 .mui-colinfo-form li .mui-colform-input input{
     display: inline-block;
@@ -730,11 +744,131 @@ a.mui-colinfo-btn{
     margin-bottom: 0;
     color: #333;
 }
+.mui-colinfo-form li .mui-colform-inputblock{
+    display: block;
+    height: 2em;
+    border: 1px solid #0d2c54;
+    border-radius: .3em;
+    overflow: hidden;
+    float: left;
+    margin-top: .4em;
+}
+.mui-colinfo-form li .mui-colform-inputblock input{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    vertical-align: top;
+    font-size: .8em;
+    padding: 0 4px;
+    margin-bottom: 0;
+    color: #333;
+}
+.mui-colinfo-form li .mui-colform-textarea{
+    display: block;
+    height: 6em;
+    border: 1px solid #0d2c54;
+    border-radius: .3em;
+    overflow: hidden;
+    float: left;
+    margin-top: .4em;
+}
+.mui-colinfo-form li .mui-colform-textarea textarea{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    vertical-align: top;
+    font-size: .8em;
+    padding: 4px;
+    margin-bottom: 0;
+    color: #333;
+}
 .mui-colinfo-form li .mui-colform-input i{
     float: right;
     line-height: 2em;
     margin-right: .4em;
 }
+.mui-colinfo-form li .mui-colform-upbtn{
+    display: inline-block;
+    padding: 0 12px;
+    border-radius: 5px;
+    border: 0;
+    font-size: .8em;
+    line-height: 3em;
+}
+.mui-colinfo-form li .mui-radio{
+    display: block;
+    position: relative;
+    height: 3em;
+}
+.mui-colinfo-form li .mui-radio .checkbox1{
+    top: .8em;
+    left: 0;
+    width: 20px;
+    height: 20px;
+}
+.mui-colinfo-form li .mui-radio input[type='radio']:before{
+    font-size: 22px;
+}
+.mui-colinfo-form li .mui-radio .checkbox2{
+    top: .8em;
+    left: 4em;
+}
+.mui-colinfo-form li .mui-radio .checkyes{
+    position: absolute;
+    left: 2em;
+}
+.mui-colinfo-form li .mui-radio .checkno{
+    position: absolute;
+    left: 6em;
+}
+.mui-colinfo-form li .mui-colform-picfile{
+    display: block;
+    overflow: hidden;
+}
+.mui-colinfo-form li .mui-colform-picfile a.mui-btn-picfile{
+    display: inline-block;
+    overflow: hidden;
+    width: 4em;
+    height: 4em;
+    line-height: 3.6em;
+    margin: .4em 1em;
+    text-align: center;
+    border: 2px dashed #aaa;
+    float: left;
+}
+.mui-colinfo-form li .mui-colform-picfile .mui-colform-pictext{
+    display: inline-block;
+    overflow: hidden;
+    width: 4em;
+    height: 4em;
+    margin: .4em 1em;
+    float: left;
+}
+.mui-colinfo-form li .mui-colform-picfile .mui-colform-pictext img{
+    width: 100%;
+}
+.mui-btn-formarea{
+    display: block;
+    overflow: hidden;
+    background-color: #fff;
+    width: 100%;
+}
+.mui-btn-formarea .mui-colinfo-formbtn {
+    display: block;
+    width: 8em;
+    color: #fff;
+    line-height: 2.4em;
+    text-align: center;
+    font-size: 1em;
+    border-radius: .4em;
+    margin: .8em auto;
+}
+
+
+
+
 
 
 .shade {
