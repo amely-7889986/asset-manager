@@ -145,15 +145,15 @@
                     var userResult = doc.getElementById('showInfoPicker1');
                     showUserPickerButton.addEventListener('tap', function(event) {
                         userPicker.show(function(items) {
-                            userResult.innerText = JSON.stringify(items[0].text + " ");
+                            userResult.innerText = JSON.stringify(items[0]).text + " ";
                             //返回 false 可以阻止选择框的关闭
                             //return false;
                         });
                     }, false);
 
                     // 诉讼情况选择
-                    var userPicker2 = new $.PopPicker();
-                    userPicker2.setData([{
+                    var userPicker = new $.PopPicker();
+                    userPicker.setData([{
                         value: '未诉讼',
                         text: '未诉讼'
                     }, {
@@ -164,32 +164,10 @@
                         text: '执行中'
                     }]);
                     var showUserPickerButton = doc.getElementById('showInfoPicker2');
-                    var userResult2 = doc.getElementById('showInfoPicker2');
+                    var userResult = doc.getElementById('showInfoPicker2');
                     showUserPickerButton.addEventListener('tap', function(event) {
-                        userPicker2.show(function(items) {
-                            userResult2.innerText = JSON.stringify(items[0].text + " ");
-                            //返回 false 可以阻止选择框的关闭
-                            //return false;
-                        });
-                    }, false);
-
-                    // 期望处置方式选择
-                    var userPicker3 = new $.PopPicker();
-                    userPicker3.setData([{
-                        value: '未诉讼',
-                        text: '未诉讼'
-                    }, {
-                        value: '已判决',
-                        text: '已判决'
-                    }, {
-                        value: '执行中',
-                        text: '执行中'
-                    }]);
-                    var showUserPickerButton = doc.getElementById('showInfoPicker3');
-                    var userResult3 = doc.getElementById('showInfoPicker3');
-                    showUserPickerButton.addEventListener('tap', function(event) {
-                        userPicker3.show(function(items) {
-                            userResult3.innerText = JSON.stringify(items[0].text);
+                        userPicker.show(function(items) {
+                            userResult.innerText = JSON.stringify(items[0].text + " ");
                             //返回 false 可以阻止选择框的关闭
                             //return false;
                         });
