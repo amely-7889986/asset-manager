@@ -27,7 +27,7 @@
                 </li>
             </ul>
         </div>
-        <nav class="mui-bar mui-bar-tab" id="mui-menu-box">
+        <!-- <nav class="mui-bar mui-bar-tab" id="mui-menu-box" style="z-index: 999;">
             <a class="mui-menu-item" href="../index.html">
                 <i class="mui-icon iconfont">&#xe629;</i>
                 <span class="mui-tab-label">首页</span>
@@ -40,11 +40,11 @@
                 <i class="mui-icon iconfont">&#xe617;</i>
                 <span class="mui-tab-label">个人中心</span>
             </a>
-        </nav>
+        </nav> -->
         <div class="mui-content">
             <div class="mui-navbar" style="position: relative;">
                 <div class="mui-navbar-inner mui-bar mui-bar-nav bg-lan" >
-                    <a href="../index.html" class="col-dblue pagelocate"><i class="mui-icon iconfont font12e col-jblue padding-right8">&#xe638;</i>首页</a>><a href="listform.html" class="col-dblue pagelocate">资产发布</a>
+                    <a href="../index.html" class="col-dblue pagelocate"><i class="mui-icon iconfont font12e col-jblue padding-right8">&#xe638;</i>首页</a>><a href="listbtn.html" class="col-dblue pagelocate">资产发布</a>
                 </div>
             </div>
             <div class="mui-column-tit"><span class="mui-coltit-text">资产发布</span></div>
@@ -97,18 +97,18 @@
                     </li>
                     <li>
                         <label for="title" class="title text-alignr">处置周期：</label>
-                        <span class="w60">
+                        <span class="w60 l-left">
                             <div class="cycle1 mui-checkbox">
+                                <input name="checkbox" value="Item 2" type="checkbox" checked>
                                 <label class="col-dblue checkcycle">3个月</label>
-                                <input name="checkbox" value="Item 2" type="checkbox" checked>
                             </div>
                             <div class="cycle1 mui-checkbox">
+                                <input name="checkbox" value="Item 2" type="checkbox" >
                                 <label class="col-dblue checkcycle">6个月</label>
-                                <input name="checkbox" value="Item 2" type="checkbox" checked>
                             </div>
                             <div class="cycle1 mui-checkbox">
+                                <input name="checkbox" value="Item 2" type="checkbox" >
                                 <label class="col-dblue checkcycle">1年</label>
-                                <input name="checkbox" value="Item 2" type="checkbox" checked>
                             </div>
                         </span>
                     </li>
@@ -202,9 +202,8 @@
                 //关闭actionsheet
                 mui('#' + parent.id).popover('toggle');
                 info.innerHTML = "你刚点击了\"" + a.innerHTML + "\"按钮";
-            })
+            });
 
-            // 地区选择
             (function($, doc) {
                 $.init();
                 $.ready(function() {
@@ -258,14 +257,14 @@
                     // 处置方式选择
                     var userPicker3 = new $.PopPicker();
                     userPicker3.setData([{
-                        value: '未诉讼',
-                        text: '未诉讼'
+                        value: '非诉催收',
+                        text: '非诉催收'
                     }, {
-                        value: '已判决',
-                        text: '已判决'
+                        value: '律师诉讼',
+                        text: '律师诉讼'
                     }, {
-                        value: '执行中',
-                        text: '执行中'
+                        value: '债权转让',
+                        text: '债权转让'
                     }]);
                     var showUserPickerButton = doc.getElementById('showInfoPicker3');
                     var userResult3 = doc.getElementById('showInfoPicker3');

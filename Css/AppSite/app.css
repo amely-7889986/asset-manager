@@ -166,6 +166,9 @@ ul,li{
 .margin-bottom{
     margin-bottom: 10px;
 }
+.margin-top2e{
+    margin-top: .2em;
+}
 .margin-right4{
     margin-right: 4px;
 }
@@ -797,6 +800,32 @@ a.mui-colinfo-btn{
     font-size: .8em;
     line-height: 3em;
 }
+.mui-colinfo-form li .mui-checkbox{
+    display: block;
+    position: relative;
+    line-height: 3em;
+    float: left;
+    margin-right: .4em;
+}
+.mui-colinfo-form li .mui-checkbox input[type='checkbox']{
+    position: relative;
+    right: 0;
+    float: left;
+    display: inline-block;
+    top: .8em;
+    width: 22px;
+}
+.mui-colinfo-form li .mui-checkbox input[type='checkbox']:before{
+    font-size: 22px;
+}
+.mui-colinfo-form li .mui-checkbox .checkcycle{
+    display: inline-block;
+    position: relative;
+    padding-right: 0;
+    float: left;
+    width: auto;
+    font-size: .8em;
+}
 .mui-colinfo-form li .mui-radio{
     display: block;
     position: relative;
@@ -865,11 +894,129 @@ a.mui-colinfo-btn{
     border-radius: .4em;
     margin: .8em auto;
 }
+.mui-formbtn{
+    display: block;
+    overflow: hidden;
+    padding: 2em 1em;
+}
+.mui-formbtn li{
+    display: block;
+    width: 50%;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 1em;
+}
+.mui-formbtn li >a{
+    display: block;
+    width: 7em;
+    height: 7em;
+    background: url(../../Image/AppSite/formbtnbg.png) center no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+.mui-formbtn li >a i{
+    display: block;
+    overflow: hidden;
+    width: 4em;
+    height: 4em;
+    margin: 0 auto;
+}
+.mui-formbtn li i.mui-formbtn-debt{
+    background: url(../../Image/AppSite/formbtn01.png) center no-repeat;
+    background-size: 80%;
+}
+.mui-formbtn li i.mui-formbtn-account{
+    background: url(../../Image/AppSite/formbtn02.png) center no-repeat;
+    background-size: 80%;
+}
+.mui-formbtn li i.mui-formbtn-package{
+    background: url(../../Image/AppSite/formbtn03.png) center no-repeat;
+    background-size: 80%;
+}
+.mui-formbtn li i.mui-formbtn-replace{
+    background: url(../../Image/AppSite/formbtn04.png) center no-repeat;
+    background-size: 80%;
+}
+.mui-formbtn li i.mui-formbtn-transfer{
+    background: url(../../Image/AppSite/formbtn05.png) center no-repeat;
+    background-size: 80%;
+}
+.mui-formbtn li i.mui-formbtn-more{
+    background: url(../../Image/AppSite/formbtn06.png) center no-repeat;
+    background-size: 80%;
+}
+.mui-formbtn li >a span{
+    display: block;
+    line-height: 1.2em;
+}
 
 
-
-
-
+/*个人中心*/
+.mui-user-sec{
+    display: block;
+    overflow: hidden;
+    padding: .4em 1em;
+}
+.mui-user-sec .mui-userhead{
+    display: block;
+    width: 6em;
+    height: 6em;
+    margin: .4em auto;
+    border: 2px solid #0d2c54;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.mui-user-sec .mui-userhead img{
+    width: 100%;
+}
+.mui-user-sec .mui-username{
+    text-align: center;
+    font-size: 1em;
+    color: #0d2c54;
+}
+.mui-user-sec .mui-usertag{
+    display: block;
+    width: 8em;
+    margin: 0 auto;
+    background-color: #fff;
+    line-height: 2em;
+    font-size: .8em;
+    color: #ed6d00;
+    text-align: center;
+    border-radius: 1em;
+}
+.mui-user-list{
+    display: block;
+    overflow: hidden;
+    border-top: 1px solid #ed6d00;
+}
+.mui-user-list .mui-user-listbox{
+    display: block;
+    margin: .8em 0;
+    background: none;
+}
+.mui-user-list .mui-user-listbox li{
+    margin-bottom: .3em;
+    border-top: 0;
+    border-bottom: 0;
+    background-color: #fff;
+    color: #0d2c54;
+}
+.mui-user-list .mui-table-view:before{
+    background: none;
+}
+.mui-user-list .mui-user-listbox .mui-table-view-cell:after{
+    background: none;
+}
+.mui-user-list .mui-user-listbox .mui-table-view-cell .mui-badge{
+    background: none;
+    color: #ed6d00;
+}
+.mui-user-list .mui-navigate-right:after,.mui-user-list .mui-push-left:after,.mui-user-list .mui-push-right:after{
+    color: #ed6d00;
+}
 
 .shade {
   position: fixed;
