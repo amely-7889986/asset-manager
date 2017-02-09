@@ -369,7 +369,7 @@
                     extensions: acceptExtensions,
                     mimeTypes: 'image/*'
                 },
-                swf: '../../third-party/webuploader/Uploader.swf',
+                swf: '../third-party/webuploader/Uploader.swf',
                 server: actionUrl,
                 fileVal: editor.getOpt('imageFieldName'),
                 duplicate: true,

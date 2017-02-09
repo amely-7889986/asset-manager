@@ -138,31 +138,31 @@
 }
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  background-image: url(../../images/arrow-prev.png);
+  background-image: url(../images/arrow-prev.png);
   left: 60px;
   right: auto;
 }
 .swiper-button-prev.swiper-button-black,
 .swiper-container-rtl .swiper-button-next.swiper-button-black {
-  background-image: url(../../images/arrow-prev.png);
+  background-image: url(../images/arrow-prev.png);
 }
 .swiper-button-prev.swiper-button-white,
 .swiper-container-rtl .swiper-button-next.swiper-button-white {
-  background-image: url(../../images/arrow-prev.png);
+  background-image: url(../images/arrow-prev.png);
 }
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  background-image: url(../../images/arrow-next.png);
+  background-image: url(../images/arrow-next.png);
   right: 60px;
   left: auto;
 }
 .swiper-button-next.swiper-button-black,
 .swiper-container-rtl .swiper-button-prev.swiper-button-black {
-  background-image: url(../../images/arrow-next.png);
+  background-image: url(../images/arrow-next.png);
 }
 .swiper-button-next.swiper-button-white,
 .swiper-container-rtl .swiper-button-prev.swiper-button-white {
-  background-image: url(../../images/arrow-next.png);
+  background-image: url(../images/arrow-next.png);
 }
 /* Pagination Styles */
 .swiper-pagination {

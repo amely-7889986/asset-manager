@@ -109,7 +109,7 @@
   border: 0;
   text-align: center;
   font-size: 14px;
-  background: url(../../Image/PCSite/ic-search.png) 260px center no-repeat;
+  background: url(../../Images/PCSite/ic-search.png) 260px center no-repeat;
   outline: none;
 }
 .border {
@@ -747,7 +747,7 @@ input:-ms-input-placeholder {
   outline: none;
   cursor: pointer;
   border: 0;
-  background: url(../../Image/PCSite/locate-arrow.png) right center no-repeat;
+  background: url(../../Images/PCSite/locate-arrow.png) right center no-repeat;
   margin: 8px 0;
 }
 .l-head-nav .locate-box img {
@@ -1708,10 +1708,10 @@ input:-ms-input-placeholder {
   margin-right: 24px;
 }
 .userinfobox .userinfo-detail .checkfile .ic-success {
-  background: url(../../Image/PCSite/ic-success-sm.png) center center no-repeat;
+  background: url(../../Images/PCSite/ic-success-sm.png) center center no-repeat;
 }
 .userinfobox .userinfo-detail .checkfile .ic-fail {
-  background: url(../../Image/PCSite/ic-fail-sm.png) center center no-repeat;
+  background: url(../../Images/PCSite/ic-fail-sm.png) center center no-repeat;
 }
 .userinfobox .userinfo-detail .checkfile > span {
   width: 200px;
