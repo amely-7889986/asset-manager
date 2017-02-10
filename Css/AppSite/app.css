@@ -638,7 +638,7 @@ a:hover.mui-checkmore,a:active.mui-checkmore{
     color: #0d67bd;
     line-height: 2em;
 }
-.mui-colinfo-list li span{
+.mui-colinfo-list li >span{
     display: inline-block;
     overflow: hidden;
     width: 66%;
@@ -659,7 +659,7 @@ a:hover.mui-checkmore,a:active.mui-checkmore{
     border: 1px solid #ddd;
     box-sizing: border-box;
 }
-.mui-colinfo-list li .assetpic .pic span img{
+.mui-colinfo-list li .assetpic .pic img{
     width: 100%;
     vertical-align: top;
 }
@@ -1017,6 +1017,111 @@ a.mui-colinfo-btn{
 .mui-user-list .mui-navigate-right:after,.mui-user-list .mui-push-left:after,.mui-user-list .mui-push-right:after{
     color: #ed6d00;
 }
+.mui-userasset-list{
+    display: block;
+    overflow: hidden;
+    padding: .2em .4em;
+}
+.mui-userasset-listbox{
+    display: block;
+    background-color: #fff;
+    height: 4em;
+    padding: .4em 0;
+    position: relative;
+    margin-bottom: .8em;
+}
+.mui-userasset-listbox i.point{
+    display: inline-block;
+    width: .4em;
+    height: .4em;
+    background: #ff0023;
+    border-radius: 50%;
+    margin: 1.4em .4em;
+}
+.mui-userasset-listbox .boxinfo{
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    line-height: 1.6em;
+    width: 74%;
+}
+.mui-userasset-listbox .boxinfo >p{
+    margin-bottom: 0;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mui-usertag{
+    display: block;
+    overflow: hidden;
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    z-index: 99;
+    right: 0;
+    top: 0;
+}
+.mui-usertag span{
+    display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 109;
+}
+.mui-usertag-text{
+    transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=0.7071067690849304, M12=-0.7071067690849304, M21=0.7071067690849304, M22=0.7071067690849304);
+    color: #fff;
+    font-size: .8em;
+    right: 2px!important;
+    top: 11px !important;
+}
+.mui-usertag-primary{
+    border-top: 4em solid #1291f1;
+    border-left: 4em solid transparent;
+}
+.mui-usertag-warning{
+    border-top: 4em solid #ed6d00;
+    border-left: 4em solid transparent;
+}
+.mui-usertag-danger{
+    border-top: 4em solid #ff0023;
+    border-left: 4em solid transparent;
+}
+
+
+/*登录注册*/
+.login-form{
+    margin-top: 2em;
+    padding: 0 .8em;
+}
+.login-form.mui-input-group:before{
+    background-color: #fff;
+}
+.login-form.mui-input-group:after{
+    background-color: #fff;
+}
+.login-form.mui-input-group .mui-input-row:after{
+    left: 0;
+}
+.login-form.mui-input-group .mui-input-row{
+    height: 50px;
+}
+.login-form.mui-input-group .mui-input-row label{
+    width: 20%;
+    padding: 14px 15px;
+}
+.login-form.mui-input-group .mui-input-row label ~ input{
+    width: 80%;
+    height: 50px;
+}
+
 
 .shade {
   position: fixed;
