@@ -102,6 +102,9 @@ ul,li{
 .col-red{
     color: #ff0023;
 }
+.col-lv{
+    color: #33c500;
+}
 /*字体大小*/
 .font06e{
     font-size: 0.6em !important;
@@ -683,6 +686,19 @@ a.mui-colinfo-btn{
     color: #fff;
     margin-top: .4em;
 }
+a.mui-colinfo-edit{
+    display: block;
+    overflow: hidden;
+    width: 8em;
+    height: 2.4em;
+    line-height: 2.4em;
+    color: #fff;
+    text-align: center;
+    margin: .8em auto;
+    background-color: #ed6d00;
+    border-radius: 1.2em;
+    font-size: .8em;
+}
 .mui-colinfo-form{
     display: block;
     overflow: hidden;
@@ -1053,7 +1069,7 @@ a.mui-colinfo-btn{
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.mui-usertag{
+.mui-userasset-listbox .mui-usertag{
     display: block;
     overflow: hidden;
     width: 4em;
@@ -1063,7 +1079,7 @@ a.mui-colinfo-btn{
     right: 0;
     top: 0;
 }
-.mui-usertag span{
+.mui-userasset-listbox .mui-usertag span{
     display: inline-block;
     overflow: hidden;
     position: absolute;
@@ -1071,7 +1087,7 @@ a.mui-colinfo-btn{
     right: 0;
     z-index: 109;
 }
-.mui-usertag-text{
+.mui-userasset-listbox .mui-usertag-text{
     transform: rotate(45deg);
     -o-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -1082,19 +1098,75 @@ a.mui-colinfo-btn{
     right: 2px!important;
     top: 11px !important;
 }
-.mui-usertag-primary{
+.mui-userasset-listbox .mui-usertag-primary{
     border-top: 4em solid #1291f1;
     border-left: 4em solid transparent;
 }
-.mui-usertag-warning{
+.mui-userasset-listbox .mui-usertag-warning{
     border-top: 4em solid #ed6d00;
     border-left: 4em solid transparent;
 }
-.mui-usertag-danger{
+.mui-userasset-listbox .mui-usertag-danger{
     border-top: 4em solid #ff0023;
     border-left: 4em solid transparent;
 }
-
+.mui-user-examinebox{
+    display: table;
+    overflow: hidden;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    margin: .4em auto;
+}
+.mui-user-examinebox >i{
+    display: table-cell;
+}
+.mui-user-examinebox >i img{
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+}
+.mui-user-examinebox >span{
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 8px;
+    line-height: 24px;
+}
+.head{
+    height: 40px;
+}
+#head-img1 {
+    position: absolute;
+    bottom: 10px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+}
+#update-box{
+    position: relative;
+}
+#update-box .update-img {
+    position: absolute;
+    line-height: 21px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    z-index: 999;
+    opacity: 0;
+}
+#update-end {
+    text-align: left;
+}
+#update-end img {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+}
 
 /*登录注册*/
 .login-form{
@@ -1117,10 +1189,46 @@ a.mui-colinfo-btn{
     width: 20%;
     padding: 14px 15px;
 }
-.login-form.mui-input-group .mui-input-row label ~ input{
+.login-form.mui-input-group .mui-input-row input{
     width: 80%;
     height: 50px;
 }
+.login-form.mui-input-group .mui-input-row .login-code{
+    display: inline-block;
+    border: 1px solid #f7ab00;
+    color: #f7ab00;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    font-size: .8em;
+    border-radius: .4em;
+    float: right;
+    margin-right: 4px;
+}
+.login-form.mui-input-group .mui-btn-block{
+    padding: 8px 0;
+}
+.login-form.mui-input-group .login-linkbox{
+    display: block;
+    width: 100%;
+}
+.login-form.mui-input-group .login-linkbox >a{
+    display: inline-block;
+    width: 50%;
+    color: #ed6d00;
+    margin: .8em 0;
+    font-size: 1em;
+}
+.login-form.mui-input-group .mui-checkbox .reg-agree{
+    font-size: 12px;
+    float: left;
+    width: 86% !important;
+    display: block;
+    color: #333;
+    margin-left: 30px;
+    font-size: .8em;
+}
+
 
 
 .shade {
