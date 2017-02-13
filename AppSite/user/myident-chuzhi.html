@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>鹰联资产管家</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" href="../../Css/Appsite/mui.css">
+        <link rel="stylesheet" type="text/css" href="../../Css/Appsite/app.css"/>
+        <link rel="stylesheet" type="text/css" href="../../Css/Appsite/mui.picker.min.css" />
+    </head>
+    <body>
+        <div id="picture" class="mui-popover mui-popover-action mui-popover-bottom" style="z-index: 999999;">
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a href="#">拍照或录像</a>
+                </li>
+                <li class="mui-table-view-cell">
+                    <a href="#">选取现有的</a>
+                </li>
+            </ul>
+            <ul class="mui-table-view">
+                <li class="mui-table-view-cell">
+                    <a href="#picture"><b>取消</b></a>
+                </li>
+            </ul>
+        </div>
+        <div class="mui-content" style="background-color: #fff;">
+            <div class="mui-navbar" style="position: relative;">
+                <div class="mui-navbar-inner mui-bar mui-bar-nav bg-lan" >
+                    <a href="../index.html" class="col-dblue pagelocate"><i class="mui-icon iconfont font12e col-jblue padding-right8">&#xe638;</i>首页</a>><a href="index.html" class="col-dblue pagelocate">个人中心</a>
+                </div>
+            </div>
+            <div class="mui-column-tit"><span class="mui-coltit-text" style="background-color: #fff;">处置方认证</span></div>
+            <!-- <div class="mui-user-examinebox">
+                <i class="ic-fail"><img src="../../Images/AppSite/ic-fail.png" alt=""></i><span class="col-red">资料审核未通过</span>
+            </div> -->
+            <div class="mui-user-examinebox">
+                <i class="ic-success"><img src="../../Images/AppSite/ic-success.png" alt=""></i><span class="col-lv">资产审核已通过</span>
+            </div>
+            <div class="mui-column-infobox">
+                <ul class="mui-colinfo-form">
+                    <li>
+                        <label for="title" class="title text-alignr">用户身份：</label>
+                        <span class="mui-colform-input w60">
+                            <button id='showInfoPicker1' class=" mui-text-left" type='button'>请选择用户身份</button>
+                        </span>
+                        <div id='userResult' class="ui-alert"></div>
+                    </li>
+                    <li>
+                        <label for="title" class="title text-alignr">手机号码：</label><span class="mui-colform-input w60"><input type="text" placeholder="请输入手机号码"></span>
+                    </li>
+                    <li>
+                        <label for="title" class="title text-alignr">申请人姓名：</label><span class="mui-colform-input w60"><input type="text" placeholder="请输申请人入姓名" value="张三丰"></span>
+                    </li>
+                    <li>
+                        <label for="title" class="titleblock text-alignl">申请人身份证号码：</label><span class="mui-colform-input w100"><input type="text" placeholder="请输入申请人身份证号码"></span>
+                    </li>
+                    <li>
+                        <label for="title" class="titleblock text-alignl">其他联系方式：</label><span class="mui-colform-input w100"><input type="text" placeholder="请输入其它联系方式,可填写微信号、QQ号、邮箱"></span>
+                    </li>
+                    <li>
+                        <label for="title" class="titleblock text-alignl">所在地区：</label>
+                        <span class="mui-colform-input w100">
+                            <button id='showCityPicker4' class=" mui-text-left" type='button'>请选择所在地区</button>
+                        </span>
+                        <div id='cityResult3' class="ui-alert"></div>
+                        <span class="mui-colform-inputblock w100"><input type="text" placeholder="请输入详细地址"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mui-column-tit" style="margin: 0;"><span class="mui-coltit-text" style="background-color: #fff;">企业信息</span></div>
+            <div class="mui-column-infobox">
+                <ul class="mui-colinfo-form">
+                    <li>
+                        <label for="title" class="titleblock text-alignl">企业名称：</label><span class="mui-colform-input w100"><input type="text" placeholder="请输入企业名称"></span>
+                    </li>
+                    <li>
+                        <label for="title" class="titleblock text-alignl">企业社会统一信任代码：</label><span class="mui-colform-input w100"><input type="text" placeholder="请输入企业社会统一信任代码"></span>
+                    </li>
+                    <li>
+                        <label for="title" class="titleblock text-alignl">企业地址：</label><span class="mui-colform-input w100"><input type="text" placeholder="请输入企业地址"></span>
+                    </li>
+                    <li>
+                        <label for="title" class="titleblock text-alignl">官网网址：</label><span class="mui-colform-input w100"><input type="text" placeholder="请输入官网网址"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mui-column-tit" style="margin: 0;"><span class="mui-coltit-text" style="background-color: #fff;">法人信息</span></div>
+            <div class="mui-column-infobox">
+                <ul class="mui-colinfo-form">
+                    <li>
+                        <label for="title" class="titleblock text-alignl">法人姓名：</label><span class="mui-colform-input w100"><input type="text" placeholder="请输入法人姓名"></span>
+                    </li>
+                    <li>
+                        <label for="title" class="titleblock text-alignl">法人身份证号码：</label><span class="mui-colform-input w100"><input type="text" placeholder="请输入法人身份证号码"></span>
+                    </li>
+                    <li>
+                        <label for="title" class="titleblock text-alignl">法人身份证正反面照片：</label>
+                        <span class="mui-colform-picfile w100">
+                            <a href="#picture" class="mui-btn-picfile"><i class="mui-icon iconfont font12e col-lhui">&#xe639;</i></a>
+                            <span class="mui-colform-pictext">
+                                <img src="../../UploadFile/Appsite/assetpic01.png" alt="">
+                            </span>
+                        </span>
+                    </li>
+                    <li>
+                        <label for="title" class="titleblock text-alignl">法人手持身份证：</label>
+                        <span class="mui-colform-picfile w100">
+                            <a href="#picture" class="mui-btn-picfile"><i class="mui-icon iconfont font12e col-lhui">&#xe639;</i></a>
+                            <span class="mui-colform-pictext">
+                                <img src="../../UploadFile/Appsite/assetpic01.png" alt="">
+                            </span>
+                        </span>
+                    </li>
+                    <li>
+                        <label for="title" class="titleblock text-alignl">营业执照照片：</label>
+                        <span class="mui-colform-picfile w100">
+                            <a href="#picture" class="mui-btn-picfile"><i class="mui-icon iconfont font12e col-lhui">&#xe639;</i></a>
+                            <span class="mui-colform-pictext">
+                                <img src="../../UploadFile/Appsite/assetpic01.png" alt="">
+                            </span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mui-btn-formarea">
+                <a href="formsave.html" class="mui-colinfo-formbtn bg-dblue">提交审核</a>
+                <!-- <a href="user/myrelease.html" class="mui-colinfo-formbtn bg-cheng">点击修改资料</a> -->
+            </div>
+        </div>
+    </body>
+    <script src="../../Js/Appsite/mui.min.js "></script>
+        <script src="../../Js/Appsite/mui.picker.js"></script>
+        <script src="../../Js/Appsite/mui.poppicker.js"></script>
+        <script src="../../Js/Appsite/city.data.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../Js/Appsite/city.data-3.js" type="text/javascript" charset="utf-8"></script>
+        <script>
+            mui.init({
+                swipeBack: true,
+            });
+
+            mui('body').on('shown', '.mui-popover', function(e) {
+            //console.log('shown', e.detail.id);//detail为当前popover元素
+            });
+            mui('body').on('hidden', '.mui-popover', function(e) {
+                //console.log('hidden', e.detail.id);//detail为当前popover元素
+            });
+            var info = document.getElementById("info");
+            mui('body').on('.mui-popover-action li>a', function() {
+                var a = this,
+                    parent;
+                //根据点击按钮，反推当前是哪个actionsheet
+                for (parent = a.parentNode; parent != document.body; parent = parent.parentNode) {
+                    if (parent.classList.contains('mui-popover-action')) {
+                        break;
+                    }
+                }
+                //关闭actionsheet
+                mui('#' + parent.id).popover('toggle');
+                info.innerHTML = "你刚点击了\"" + a.innerHTML + "\"按钮";
+            });
+
+            (function($, doc) {
+                $.init();
+                $.ready(function() {
+                    // 用户身份选择
+                    var userPicker = new $.PopPicker();
+                    userPicker.setData([{
+                        value: '催收公司',
+                        text: '催收公司'
+                    }, {
+                        value: '律师事务所',
+                        text: '律师事务所'
+                    }, {
+                        value: '资产管理公司',
+                        text: '资产管理公司'
+                    }]);
+                    var showUserPickerButton = doc.getElementById('showInfoPicker1');
+                    var userResult = doc.getElementById('showInfoPicker1');
+                    showUserPickerButton.addEventListener('tap', function(event) {
+                        userPicker.show(function(items) {
+                            userResult.innerText = JSON.stringify(items[0].text);
+                            //返回 false 可以阻止选择框的关闭
+                            //return false;
+                        });
+                    }, false);
+
+                    // 地址地区选择
+                    var cityPicker4 = new $.PopPicker({
+                        layer: 3
+                    });
+                    cityPicker4.setData(cityData3);
+                    var showCityPickerButton = doc.getElementById('showCityPicker4');
+                    var cityResult4 = doc.getElementById('showCityPicker4');
+                    showCityPickerButton.addEventListener('tap', function(event) {
+                        cityPicker4.show(function(items) {
+                            cityResult4.innerText = (items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
+                            //返回 false 可以阻止选择框的关闭
+                            //return false;
+                        });
+                    }, false);
+                });
+            })(mui, document);
+        </script>
+</html>

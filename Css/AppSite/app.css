@@ -44,6 +44,12 @@ ul,li{
 .bg-cheng{
     background-color: #ed6d00 !important;
 }
+.bg-huang{
+    background-color: #f7ab00 !important;
+}
+.bg-lv{
+    background-color: #5cb85c !important;
+}
 /*字体图标*/
 @font-face {font-family: 'iconfont';
     src: url('../../Fonts/AppSite/iconfont.eot'); /* IE9*/
@@ -749,7 +755,7 @@ a.mui-colinfo-edit{
     width: 100%;
     border: 0;
     padding: 0 4px;
-    background: url(../../Image/AppSite/picker-arrowdown.png) 94% center no-repeat;
+    background: url(../../Images/AppSite/picker-arrowdown.png) 94% center no-repeat;
     background-size: .6em;
 }
 .mui-colinfo-form li .mui-colform-input input{
@@ -1167,6 +1173,33 @@ a.mui-colinfo-edit{
     width: 60px;
     height: 60px;
 }
+.mui-formsave{
+    display: block;
+    overflow: hidden;
+    margin-top: 3em;
+    padding: 0 2em;
+}
+.mui-formsave .mui-formsave-pic{
+    display: block;
+    float: left;
+    width: 40%;
+    overflow: hidden;
+    text-align: right;
+    margin-right: 2%;
+    height: 3em;
+}
+.mui-formsave .mui-formsave-pic img{
+    width: auto;
+    vertical-align: top;
+}
+.mui-formsave h2{
+    display: block;
+    overflow: hidden;
+    float: left;
+    width: 58%;
+    height: 3em;
+    line-height: 1.8em;
+}
 
 /*登录注册*/
 .login-form{
@@ -1229,6 +1262,73 @@ a.mui-colinfo-edit{
     font-size: .8em;
 }
 
+/* 消息中心 */
+.mui-message-list{
+    display: block;
+    overflow: hidden;
+    padding: .2em .4em;
+}
+.mui-message-listbox{
+    display: block;
+    background-color: #fff;
+    height: 4em;
+    padding: .4em 0;
+    position: relative;
+    border-bottom: 1px dashed #ddd;
+}
+.mui-message-listbox i.point{
+    display: inline-block;
+    width: .4em;
+    height: .4em;
+    background: #ff0023;
+    border-radius: 50%;
+    margin: 1.4em .4em;
+}
+.mui-message-listbox .boxinfo{
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    line-height: 1.6em;
+    width: 92%;
+}
+.mui-message-listbox .boxinfo >p{
+    margin-bottom: 0;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mui-message-info{
+    display: block;
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.mui-message-info .messagetit{
+    font-weight: normal;
+    text-align: center;
+    margin: .8em 0;
+    color: #0d2c54;
+}
+.mui-message-info .messageinfo{
+    display: block;
+    overflow: hidden;
+    padding: 0 .4em;
+}
+.mui-message-info .message-btn{
+    display: block;
+    margin: .8em 0;
+    overflow: hidden;
+}
+.mui-message-info .message-btn >a{
+    display: inline-block;
+    margin: 0 .4em;
+    color: #fff;
+    padding: .4em 1.2em;
+    font-size: .8em;
+    border-radius: .4em;
+}
 
 
 .shade {

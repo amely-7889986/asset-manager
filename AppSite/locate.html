@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>鹰联资产管家</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <!--标准mui.css-->
+        <link rel="stylesheet" href="../Css/Appsite/mui.css">
+        <!--App自定义的css-->
+        <link rel="stylesheet" type="text/css" href="../Css/Appsite/app.css"/>
+    </head>
+        <style>
+            .mui-table-view {
+                margin-top: 10px;
+            }
+            .sideslip-page .mui-row, .sideslip-page .mui-scroll {
+                height: 100%;
+            }
+
+            .sideslip-page .mui-col-xs-4,
+            .sideslip-page .mui-col-xs-8 {
+                overflow-y: auto;
+                height: 100%;
+            }
+
+            .sideslip-page  .mui-segmented-control .mui-control-item {
+                line-height: 50px;
+                width: 100%;
+            }
+
+            .sideslip-page .mui-control-content {
+                display: block;
+            }
+
+            .sideslip-page .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+                background-color: #fff;
+            }
+        </style>
+
+    <body class="mui-fullscreen">
+        <!--页面主结构开始-->
+        <div id="app" class="mui-views">
+            <div class="mui-view">
+                <div class="mui-navbar">
+                </div>
+                <div class="mui-pages">
+                </div>
+            </div>
+        </div>
+        <!-- 地区选择页面开始 -->
+        <div id="region" class="mui-page sideslip-page">
+            <div class="mui-navbar-inner mui-bar mui-bar-nav">
+                <a href="../index.html" class="col-dblue pagelocate"><i class="mui-icon iconfont font12e col-jblue padding-right8">&#xe638;</i>首页</a>><a href="#" class="col-dblue pagelocate">坐标城市</a>
+            </div>
+            <div class="mui-page-content">
+                <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <div class="mui-content mui-row mui-fullscreen">
+                            <div class="mui-assetlist-tab bg-bai border-t border-b">
+                                <ul class=" mui-clearfix">
+                                    <li><span class="col-lblue padding-left10">坐标：</span></li>
+                                    <li><a href="#setting" class="mui-active">广州市<span class="mui-icon iconfont font10e">&#xe61d;</span></a></li>
+                                    <!-- 评价被点击是a标签写入class="mui-active"，如：
+                                    <li><a class="mui-active" href="">评价<span class="mui-icon mui-icon-pulldown font10e"></span></a></li> -->
+                                </ul>
+                            </div>
+                            <div class="mui-col-xs-4  mui-scroll-region">
+                            <div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+                                <a class="mui-control-item mui-active"href="#content1">广东1</a>
+                                <a class="mui-control-item" href="#content2">广东2</a>
+                                <a class="mui-control-item" href="#content3">广东3</a>
+                                <a class="mui-control-item" href="#content4">广东4</a>
+                                <a class="mui-control-item" href="#content2">广东2</a>
+                                <a class="mui-control-item" href="#content3">广东3</a>
+                                <a class="mui-control-item" href="#content4">广东4</a>
+                                <a class="mui-control-item" href="#content2">广东2</a>
+                                <a class="mui-control-item" href="#content3">广东3</a>
+                                <a class="mui-control-item" href="#content4">广东4</a>
+                                <a class="mui-control-item" href="#content2">广东2</a>
+                                <a class="mui-control-item" href="#content3">广东3</a>
+                                <a class="mui-control-item" href="#content4">广东4</a>
+                                <a class="mui-control-item" href="#content2">广东2</a>
+                                <a class="mui-control-item" href="#content3">广东3</a>
+                                <a class="mui-control-item" href="#content4">广东4</a>
+                                <a class="mui-control-item" href="#content2">广东2</a>
+                                <a class="mui-control-item" href="#content3">广东3</a>
+                                <a class="mui-control-item" href="#content4">广东4</a>
+                            </div>
+                        </div>
+                        <div id="segmentedControlContents" class="mui-col-xs-8  mui-scroll-region" style="border-left: 1px solid #c8c7cc;">
+                            <div id="content1" class="mui-control-content mui-active">
+                                <ul class="mui-table-view" style="margin:0">
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州1</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州2</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州1</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州2</a>
+                                    </li><li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州1</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州2</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州1</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州2</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州1</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州2</a>
+                                    </li><li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州1</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州2</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州1</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州2</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州1</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州2</a>
+                                    </li><li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州1</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州2</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州1</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州2</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州1</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州2</a>
+                                    </li><li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州1</a>
+                                    </li>
+                                    <li class="mui-table-view-cell">
+                                        <a href="##" class="mui-action-back">广东1广州2</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 地区选择页面结束 -->
+    </body>
+    <script src="../Js/Appsite/mui.min.js "></script>
+    <script src="../Js/Appsite/mui.view.js "></script>
+    <script src='../Js/Appsite/feedback.js'></script>
+    <script>
+        mui.init();
+        //初始化单页view
+        var viewApi = mui('#app').view({
+            defaultPage: '#region'
+        });
+        //初始化单页的区域滚动
+        mui('.mui-scroll-wrapper').scroll();
+        mui('.mui-scroll-region').scroll();
+
+        // 处理单页面切换
+        var view = viewApi.view;
+        (function($) {
+            //处理view的后退与webview后退
+            var oldBack = $.back;
+            $.back = function() {
+                if (viewApi.canBack()) { //如果view可以后退，则执行view的后退
+                    viewApi.back();
+                } else { //执行webview后退
+                    oldBack();
+                }
+            };
+            //监听页面切换事件方案1,通过view元素监听所有页面切换事件，目前提供pageBeforeShow|pageShow|pageBeforeBack|pageBack四种事件(before事件为动画开始前触发)
+            //第一个参数为事件名称，第二个参数为事件回调，其中e.detail.page为当前页面的html对象
+            view.addEventListener('pageBeforeShow', function(e) {
+                //              console.log(e.detail.page.id + ' beforeShow');
+            });
+            view.addEventListener('pageShow', function(e) {
+                //              console.log(e.detail.page.id + ' show');
+            });
+            view.addEventListener('pageBeforeBack', function(e) {
+                //              console.log(e.detail.page.id + ' beforeBack');
+            });
+            view.addEventListener('pageBack', function(e) {
+                //              console.log(e.detail.page.id + ' back');
+            });
+        })(mui);
+    </script>
+</html>

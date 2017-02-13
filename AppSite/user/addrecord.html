@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>鹰联资产管家</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" href="../../Css/Appsite/mui.css">
+        <link rel="stylesheet" type="text/css" href="../../Css/Appsite/app.css"/>
+        <link rel="stylesheet" type="text/css" href="../../Css/Appsite/mui.picker.min.css" />
+    </head>
+    <body class="mui-fullscreen">
+        <div class="mui-content">
+            <div class="mui-navbar" style="position: relative;">
+                <div class="mui-navbar-inner mui-bar mui-bar-nav bg-lan" >
+                    <a href="../index.html" class="col-dblue pagelocate"><i class="mui-icon iconfont font12e col-jblue padding-right8">&#xe638;</i>首页</a>><a href="index.html" class="col-dblue pagelocate">个人中心</a>
+                </div>
+            </div>
+            <div class="mui-column-tit"><span class="mui-coltit-text">添加反馈记录</span></div>
+            <div class="mui-column-infobox">
+                <ul class="mui-colinfo-form">
+                    <li>
+                        <label for="title" class="title text-alignl">记录时间：</label>
+                        <span class="mui-colform-input w60">
+                            <button id='showdatePicker' data-options='{"type":"date"}' class=" mui-text-left" type='button'>请输入记录时间</button>
+                        </span>
+                        <div id='result' class="ui-alert"></div>
+                    </li>
+                    <li>
+                        <label for="title" class="titleblock text-alignl">反馈记录简述：</label>
+                        <span class="mui-colform-textarea w100">
+                            <textarea name="" id="" placeholder="请输入简单描述，限定200字以内…"></textarea>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mui-btn-formarea">
+                <a href="myrelease-info.html" class="mui-colinfo-formbtn bg-cheng">提交记录</a>
+            </div>
+        </div>
+    </body>
+        <script src="../../Js/Appsite/mui.min.js "></script>
+        <script src="../../Js/Appsite/mui.picker.js"></script>
+        <script src="../../Js/Appsite/mui.poppicker.js"></script>
+        <script src="../../Js/Appsite/mui.picker.min.js"></script>
+        <script>
+            (function($) {
+                $.init();
+                var result = $('#showdatePicker')[0];
+                var btns = $('#showdatePicker');
+                btns.each(function(i, btn) {
+                    btn.addEventListener('tap', function() {
+                        var optionsJson = this.getAttribute('data-options') || '{}';
+                        var options = JSON.parse(optionsJson);
+                        var id = this.getAttribute('id');
+                        /*
+                         * 首次显示时实例化组件
+                         * 示例为了简洁，将 options 放在了按钮的 dom 上
+                         * 也可以直接通过代码声明 optinos 用于实例化 DtPicker
+                         */
+                        var picker = new $.DtPicker(options);
+                        picker.show(function(rs) {
+                            /*
+                             * rs.value 拼合后的 value
+                             * rs.text 拼合后的 text
+                             * rs.y 年，可以通过 rs.y.vaue 和 rs.y.text 获取值和文本
+                             * rs.m 月，用法同年
+                             * rs.d 日，用法同年
+                             * rs.h 时，用法同年
+                             * rs.i 分（minutes 的第二个字母），用法同年
+                             */
+                            result.innerText = rs.text;
+                            /* 
+                             * 返回 false 可以阻止选择框的关闭
+                             * return false;
+                             */
+                            /*
+                             * 释放组件资源，释放后将将不能再操作组件
+                             * 通常情况下，不需要示放组件，new DtPicker(options) 后，可以一直使用。
+                             * 当前示例，因为内容较多，如不进行资原释放，在某些设备上会较慢。
+                             * 所以每次用完便立即调用 dispose 进行释放，下次用时再创建新实例。
+                             */
+                            picker.dispose();
+                        });
+                    }, false);
+                });
+            })(mui);
+        </script>
+</html>
