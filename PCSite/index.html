@@ -92,8 +92,39 @@
                     <input type="text" placeholder="搜 索">
                 </div>
             </div>
-            <div class="sign-box">
-                
+            <div class="main">
+                <div class="sign-box">
+                    <div class="sign-tab" id="sign-tab">
+                        <ul>
+                            <li class="activetab" style="border-right: 1px solid #ddd;">快速注册</li>
+                            <li>登录</li>
+                        </ul>
+                    </div>
+                    <div id="sign-contain">
+                        <ul class="signconbox1" style="display:block;">
+                            <div class="signform">
+                                <div class="sign-input w276 margin8-12">
+                                    <input type="text" placeholder="请输入手机号码">
+                                </div>
+                                <div class="confirmbox w276 margin8-12">
+                                    <div class="sign-input w158 l-left"><input type="text" placeholder="请输入验证码"></div>
+                                    <a href="javascript:void(0)" class="l-left btn-linecode btn">获取验证码</a>
+                                </div>
+                                <div class="sign-input w276 margin8-12">
+                                    <input type="text" placeholder="请输入新密码">
+                                </div>
+                                <div class="agreement">
+                                    <input type="checkbox" class="l-left">
+                                    <p class="l-left">我已阅读并同意 <a href="javascript:void(0)">《鹰联资产注册协议》</a></p>
+                                </div>
+                                <a href="../index.html" class="btn-primary btn sign mt20">快速注册</a>
+                            </div>
+                        </ul>
+                        <ul class="signconbox2">
+                            
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -158,6 +189,24 @@
     });
 
     cityPicker.init();
+    </script>
+    <script>
+    $(function(){
+        window.onload = function()
+        {
+            var $li = $('#sign-tab li');
+            var $ul = $('#sign-contain ul');
+                        
+            $li.click(function(){
+                var $this = $(this);
+                var $t = $this.index();
+                $li.removeClass();
+                $this.addClass('activetab');
+                $ul.css('display','none');
+                $ul.eq($t).css('display','block');
+            })
+        }
+    });
     </script>
 </body>
 </html>
