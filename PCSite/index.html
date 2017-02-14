@@ -92,8 +92,29 @@
                     <input type="text" placeholder="搜 索">
                 </div>
             </div>
-            <div class="sign-box">
-                
+            <div class="main">
+                <div class="sign-box">
+                    <div class="sign-tab" id="sign-tab">
+                        <ul>
+                            <li class="activetab" style="border-right: 1px solid #ddd;">快速注册</li>
+                            <li>登录</li>
+                        </ul>
+                    </div>
+                    <div id="sign-contain">
+                        <ul class="signconbox1" style="display:block;">
+                            <div class="formbox">
+                                <div class="formgroup">
+                                    <div class="forminput w240">
+                                        <input type="text" value="张三丰" placeholder="请输入个人用户名称" disabled="value">
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                        <ul class="signconbox2">
+                            
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -158,6 +179,24 @@
     });
 
     cityPicker.init();
+    </script>
+    <script>
+    $(function(){
+        window.onload = function()
+        {
+            var $li = $('#sign-tab li');
+            var $ul = $('#sign-contain ul');
+                        
+            $li.click(function(){
+                var $this = $(this);
+                var $t = $this.index();
+                $li.removeClass();
+                $this.addClass('activetab');
+                $ul.css('display','none');
+                $ul.eq($t).css('display','block');
+            })
+        }
+    });
     </script>
 </body>
 </html>

@@ -112,6 +112,45 @@
   background: url(../../Images/PCSite/ic-search.png) 260px center no-repeat;
   outline: none;
 }
+.sign-box {
+  position: absolute;
+  top: 100px;
+  z-index: 999;
+  width: 328px;
+  height: 332px;
+  background: rgba(255, 255, 255, 0.9);
+  margin-left: 680px;
+  border-radius: 6px;
+  padding: 0 14px;
+}
+.sign-box .sign-tab {
+  display: block;
+  overflow: hidden;
+  line-height: 34px;
+  border-bottom: 1px solid #0d2c54;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.sign-box .sign-tab li {
+  display: block;
+  overflow: hidden;
+  float: left;
+  font-size: 18px;
+  color: #0d2c54;
+  cursor: pointer;
+  width: 49%;
+  line-height: 37px;
+  text-align: center;
+}
+.sign-box .sign-tab li:active,
+.sign-box .sign-tab li:hover,
+.sign-box .sign-tab li.activetab {
+  color: #f7ab00;
+}
+.sign-box #sign-contain > ul {
+  display: none;
+}
 .border {
   border: #ddd solid 1px;
 }
