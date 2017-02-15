@@ -74,6 +74,9 @@
 .bg-lblue {
   background-color: #1291f1;
 }
+.bg-bluehui {
+  background-color: #f1f5f8;
+}
 .banner-box {
   display: block;
   width: 100%;
@@ -1322,7 +1325,7 @@ input:-ms-input-placeholder {
 .signform .confirmbox > a:hover.btn-code {
   background-color: #ed6d00;
 }
-.signform .confirmbox > a.btn-linecode {
+.signform .confirmbox .btn-linecode {
   display: inline-block;
   float: left;
   height: 44px;
@@ -1334,6 +1337,10 @@ input:-ms-input-placeholder {
   border: 1px solid #f7ab00;
   color: #f7ab00;
   background-color: #fff;
+  overflow: hidden;
+}
+.signform .confirmbox .btn-linecode img {
+  width: 100%;
 }
 .signform .confirmbox .code-pic {
   display: block;
