@@ -83,6 +83,7 @@
   overflow: hidden;
   position: relative;
   z-index: 9;
+  background-color: #f1f5f8;
 }
 .banner-box img {
   width: 100%;
@@ -267,6 +268,190 @@
 }
 .locatebox i.icon img {
   width: 100%;
+}
+.column-box {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.playformcore {
+  display: block;
+  overflow: hidden;
+  padding-top: 38px;
+  padding-bottom: 26px;
+  height: 136px;
+}
+.playformcore li {
+  display: block;
+  overflow: hidden;
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+.playformcore li > a {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+}
+.playformcore li > a i.icon {
+  display: block;
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 2px solid #0d2c54;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+}
+.playformcore li > a i.icon img {
+  vertical-align: top;
+  width: auto;
+  margin-top: 15px;
+}
+.playformcore li > a:hover i.icon,
+.playformcore li > a:active i.icon {
+  width: 100px;
+  height: 100px;
+  transition: .4s;
+}
+.playformcore li > a:hover i.icon img,
+.playformcore li > a:active i.icon img {
+  width: 66px;
+  height: 66px;
+}
+.playformcore li span {
+  display: block;
+  overflow: hidden;
+  margin-top: 26px;
+}
+.hotasset {
+  display: block;
+  overflow: hidden;
+  padding-top: 36px;
+  padding-bottom: 20px;
+}
+.col-hotasset-box {
+  display: block;
+  overflow: hidden;
+}
+.col-hotasset-box li {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  float: left;
+  width: 320px;
+  height: 248px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 8px 6px;
+}
+.col-hotasset-box li > a.tit {
+  display: block;
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  width: 240px;
+  margin: 24px 20px 24px 60px;
+  font-size: 18px;
+}
+.col-hotasset-box li .hotasset-sec {
+  display: block;
+  overflow: hidden;
+}
+.col-hotasset-box li .hotasset-sec > div {
+  width: 50%;
+  text-align: center;
+  float: left;
+}
+.col-hotasset-box li .hotasset-sec > div i {
+  display: inline-block;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+}
+.col-hotasset-box li .hotasset-sec > div .icon-locate {
+  background: url(../../Images/PCSite/icon-locate.png) center center no-repeat;
+}
+.col-hotasset-box li .hotasset-sec > div .icon-time {
+  background: url(../../Images/PCSite/icon-time.png) center center no-repeat;
+}
+.col-hotasset-box li .hotasset-sec > div span.text {
+  display: inline-block;
+  line-height: 24px;
+  margin-left: 4px;
+  vertical-align: top;
+}
+.col-hotasset-box li .hotasset-data {
+  display: block;
+  overflow: hidden;
+  margin-top: 12px;
+}
+.col-hotasset-box li .hotasset-data > div {
+  display: block;
+  float: left;
+  text-align: center;
+}
+.col-hotasset-box li .hotasset-data > div span {
+  display: block;
+  overflow: hidden;
+  margin: 8px auto;
+}
+.col-hotasset-box li .hotasset-data .w182 {
+  width: 182px;
+  border-right: 1px solid #ddd;
+}
+.col-hotasset-box li .hotasset-data .w136 {
+  width: 136px;
+}
+.col-hotasset-box li > a.btn {
+  display: block;
+  margin: 18px auto;
+  border-radius: 28px;
+  padding: 8px 0;
+  font-size: 18px;
+  text-align: center;
+  width: 140px;
+}
+.col-hotasset-box li .hotasset-tag {
+  display: block;
+  overflow: hidden;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  top: 0;
+}
+.col-hotasset-box li .hotasset-tag span {
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 109;
+}
+.col-hotasset-box li .hotasset-tag .hotasset-tag-text {
+  color: #fff;
+  font-size: 24px;
+  left: 6px!important;
+  top: 8px !important;
+}
+.col-hotasset-box li .hotasset-tag .hotasset-tag-primary {
+  border-top: 64px solid #1291f1;
+  border-right: 64px solid transparent;
+}
+.col-hotasset-box li .hotasset-tag .hotasset-tag-warning {
+  border-top: 64px solid #f7ab00;
+  border-right: 64px solid transparent;
+}
+.col-hotasset-box li:hover,
+.col-hotasset-box li:active {
+  border: 1px solid #0d2c54;
+  transition: .4s;
 }
 /*! normalize-opentype v0.1.2 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
 /**

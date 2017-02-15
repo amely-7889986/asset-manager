@@ -1230,13 +1230,20 @@ a.mui-colinfo-edit{
     display: inline-block;
     border: 1px solid #f7ab00;
     color: #f7ab00;
-    padding: 8px 12px;
+    line-height: 32px;
+    width: 8em;
     box-sizing: border-box;
     margin-top: 8px;
     font-size: .8em;
     border-radius: .4em;
     float: right;
     margin-right: 4px;
+    text-align: center;
+    overflow: hidden;
+}
+.login-form.mui-input-group .mui-input-row .login-code img{
+    width: 100%;
+    vertical-align: top;
 }
 .login-form.mui-input-group .mui-btn-block{
     padding: 8px 0;
