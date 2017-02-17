@@ -85,8 +85,12 @@
   z-index: 9;
   background-color: #f1f5f8;
 }
+.banner-box .swiper-slide {
+  text-align: center;
+}
 .banner-box img {
-  width: 100%;
+  width: auto;
+  height: 100%;
 }
 .banner-box .swiper-container-horizontal > .swiper-pagination-bullets {
   bottom: 24px;
@@ -487,6 +491,7 @@
   overflow: hidden;
   width: 50%;
   position: relative;
+  height: 400px;
 }
 .baile li {
   position: relative;
@@ -534,6 +539,127 @@
   height: 220px;
   top: 128px;
   left: 24px;
+}
+.baile .bg img {
+  width: auto;
+  vertical-align: top;
+}
+.disposal {
+  display: block;
+  overflow: hidden;
+  width: 50%;
+  position: relative;
+  height: 400px;
+}
+.disposal li {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  z-index: 999;
+  text-align: center;
+  width: 33%;
+}
+.disposal li span {
+  display: block;
+  overflow: hidden;
+}
+.disposal li span.text {
+  padding-top: 18px;
+}
+.disposal .survice-icon01 {
+  left: 12px;
+  top: 78px;
+}
+.disposal .survice-icon02 {
+  left: 184px;
+  top: -10px;
+}
+.disposal .survice-icon03 {
+  left: 346px;
+  top: -94px;
+}
+.disposal .survice-icon04 {
+  left: 24px;
+  top: -58px;
+}
+.disposal .survice-icon05 {
+  left: 190px;
+  top: -148px;
+}
+.disposal .survice-icon06 {
+  left: 342px;
+  top: -236px;
+}
+.disposal .bg {
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  height: 220px;
+  top: 128px;
+  left: 24px;
+}
+.disposal .bg img {
+  width: auto;
+  vertical-align: top;
+}
+.company {
+  display: block;
+  overflow: hidden;
+  padding: 28px 34px;
+  position: relative;
+}
+.company a.company-box {
+  display: block;
+  overflow: hidden;
+  border: 1px solid #0d2c54;
+}
+.company a.company-box .pic {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.company a.company-box .pic img {
+  width: 100%;
+  vertical-align: top;
+}
+.company a.company-box .info {
+  display: block;
+  overflow: hidden;
+  background: #f1f5f8;
+  padding: 8px 18px 14px 18px;
+}
+.company a.company-box .info .tit {
+  background: url(../../Images/PCSite/arrow-logo.png) left center no-repeat;
+  padding-left: 24px;
+  font-size: 24px;
+  line-height: 38px;
+}
+.company a.company-box .info .text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  line-height: 18px;
+  font-size: 12px;
+  color: #7c7c7d;
+}
+.company a:hover.company-box .info .tit {
+  padding-left: 32px;
+  transition: .4s;
+}
+.company .swiper-button-prev {
+  left: 0px;
+  width: 24px;
+  height: 52px;
+  background: url(../../Images/PCSite/logo-arrowl.png) center center no-repeat;
+  z-index: 999;
+}
+.company .swiper-button-next {
+  right: 0;
+  width: 24px;
+  height: 52px;
+  background: url(../../Images/PCSite/logo-arrowr.png) center center no-repeat;
 }
 /*! normalize-opentype v0.1.2 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
 /**
