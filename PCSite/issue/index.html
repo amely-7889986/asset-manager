@@ -47,7 +47,7 @@
                 <div class="nav-box">
                     <ul>
                         <li><a href="../index.html">首页</a></li>
-                        <li><a href="../issue/index.html">资产发布</a></li>
+                        <li class="active"><a href="../issue/index.html">资产发布</a></li>
                         <li><a href="../asset/index.html">我要接单</a></li>
                         <li><a href="../reward/index.html">赏金猎人</a></li>
                         <li><a href="../credit/index.html">信用查询</a></li>
@@ -60,46 +60,10 @@
             <div class="main l-float">
                 <a href="../index.html" class="index l-left"><i class="icon l-left"><img src="../../Images/PCSite/locate-home.png" alt=""></i>首页</a>
                 <span class="l-left arrow">>></span>
-                <a href="index.html" class="link">个人中心</a>
+                <a href="index.html" class="link">资产发布</a>
             </div>
         </div>
-        <div class="main usercenter mt30">
-            <div class="user-left l-left">
-                <div class="manhead">
-                        <img src="../../UploadFile/PCSite/manhead1.png" alt="">
-                </div>
-                <p class="name col-dblue text-ac">zj524400</p>
-                <hr>
-                <ul class="user-sidebar">
-                    <li class="active"><a href="index.html">用户中心首页</a></li>
-                    <li><a href="userlist.html">我发布的资产</a></li>
-                    <li><a href="userlist.html">我申请的资产</a></li>
-                    <li><a href="userlist.html">我发布的任务</a></li>
-                    <li><a href="userlist.html">我申请的任务</a></li>
-                </ul>
-            </div>
-            <div class="user-right l-right">
-                <h2 class="font14 col-dblue user-title"><a href="index.html">个人中心首页</a><span class="ml10 mr10">></span><a href="messagelist.html">消息列表</a><span class="ml10 mr10">></span><a href="#">消息详情</a></h2>
-                <div class="messagelist">
-                    <h3><i class="icon"><img src="../../Images/PCSite/ic-news.png" alt=""></i>消息列表</h3>
-                    <div class="messageinfo">
-                        <h2 class="messagetit">项目GZ201612070001审核不通过</h2>
-                        <p class="col-dhui col-12 text-ac">接收时间：<span>2017-01-22 12:24</span></p>
-                        <div class="infobox">
-                            <p class="col-dblue font14 text-in24">项目GZ201612070001审核不通过，请查看项目GZ201612070001详情信息并作出修改，再次提交审核。</p>
-                            <p class="col-dblue font14">审核不通过原因：</p>
-                            <p class="col-dblue font14 text-in24">法人提交审核身份证照片模糊，无法辨清法人真实身份资料，需要重新修改信息提交新的照片，重新进行申请审核。</p>
-                            <p class="col-dblue font14">项目修改链接：<a href="user-listinfo.html">项目GZ201612070001</a></p>
-                        </div>
-                        <div class="infoboxbtn">
-                            <a href="#" class="btn btn-success l-left">标为已读</a>
-                            <a href="#" class="btn btn-warning l-left">已读</a>
-                            <a href="" class="btn btn-danger l-left">删除</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
         <div class="footer">
             <div class="footer-box main">
@@ -138,7 +102,6 @@
     <script type="text/javascript" src="../../Js/PCSite/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="../../Js/PCSite/city-data.js"></script>
     <script type="text/javascript" src="../../Js/PCSite/hzw-city-picker.min.js"></script>
-    <script type="text/javascript" src="../../Js/PCSite/swiper.js"></script>
     <script>
     var cityPicker = new HzwCityPicker({
         data: data,
@@ -155,24 +118,6 @@
     });
 
     cityPicker.init();
-    </script>
-    <script>
-    $(function(){
-        window.onload = function()
-        {
-            var $li = $('#datatab li');
-            var $ul = $('#datacontain ul');
-                        
-            $li.click(function(){
-                var $this = $(this);
-                var $t = $this.index();
-                $li.removeClass();
-                $this.addClass('activetab');
-                $ul.css('display','none');
-                $ul.eq($t).css('display','block');
-            })
-        }
-    });
     </script>
 </body>
 </html>
