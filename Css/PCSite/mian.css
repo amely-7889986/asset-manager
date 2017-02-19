@@ -661,6 +661,196 @@
   height: 52px;
   background: url(../../Images/PCSite/logo-arrowr.png) center center no-repeat;
 }
+/* 资产模块 */
+.issueform {
+  display: block;
+  overflow: hidden;
+  padding: 0 24px 24px 24px;
+}
+.issueform .formbox {
+  width: 600px;
+  margin: 0 auto;
+}
+.issueform #date1 {
+  width: 200px;
+  height: 100%;
+  padding-left: 14px;
+  border: 0;
+}
+.issueform .issuebtn {
+  margin: 12px 200px !important;
+  border-radius: 4px;
+  padding: 12px 60px !important;
+}
+.assetselect {
+  display: block;
+  width: 972px;
+  overflow: hidden;
+  background-color: #fff;
+  margin: 14px auto;
+  padding: 14px;
+}
+.assetselect .selectbox {
+  display: block;
+  overflow: hidden;
+}
+.assetselect .selectbox .tit {
+  display: block;
+  float: left;
+  color: #0d2c54;
+  font-size: 18px;
+  overflow: hidden;
+  padding: 12px 0;
+}
+.assetselect .selectbox ul {
+  display: block;
+  overflow: hidden;
+}
+.assetselect .selectbox li {
+  float: left;
+  padding: 8px 10px;
+  margin: 8px;
+  cursor: pointer;
+}
+.assetselect .selectbox li:hover,
+.assetselect .selectbox li:active,
+.assetselect .selectbox li.active {
+  background-color: #1291f1;
+  border-radius: 4px;
+  color: #fff;
+}
+.assetselect .selectbox .otherarea {
+  padding-right: 24px;
+  background: url(../../Images/PCSite/locate-arrow.png) 72px center no-repeat;
+}
+.list-tit {
+  line-height: 34px;
+  border-bottom: 1px solid #0d2c54;
+  padding-left: 42px;
+  font-size: 18px;
+}
+.assetlist {
+  display: block;
+  overflow: hidden;
+}
+.assetlist .list-tit {
+  background: url(../../Images/PCSite/icon-assetlist.png) 10px center no-repeat;
+}
+.assetlist-box {
+  display: block;
+  overflow: hidden;
+  background-color: #fff;
+  margin: 12px 4px;
+  box-shadow: 0 0 5px #ddd;
+  padding: 16px 12px;
+}
+.assetlist-box .titlebox {
+  display: block;
+  overflow: hidden;
+  line-height: 28px;
+}
+.assetlist-box .titlebox h2 {
+  font-size: 18px;
+  color: #0d2c54;
+  margin-right: 8px;
+}
+.assetlist-box .titlebox .recommend {
+  display: inline-block;
+  float: left;
+  margin: 0 12px;
+  width: 160px;
+}
+.assetlist-box .titlebox .recommend i.icon-star {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-top: 5px;
+  background: url(../../Images/PCSite/star.png) center center no-repeat;
+}
+.assetlist-box .titlebox .date {
+  float: left;
+  display: inline-block;
+  margin: 0 12px;
+}
+.assetlist-box .titlebox .status {
+  display: inline-block;
+  float: left;
+  margin: 0 12px;
+  padding-left: 20px;
+  background: url(../../Images/PCSite/icon-status.png) left center no-repeat;
+}
+.assetlist-box .list-info {
+  display: block;
+  overflow: hidden;
+}
+.assetlist-box .list-info li {
+  display: block;
+  overflow: hidden;
+  width: 20%;
+  float: left;
+  border-right: 1px dashed #ddd;
+  box-sizing: border-box;
+  line-height: 34px;
+  margin-top: 12px;
+}
+.assetlist-box .list-info i.icon-total {
+  display: inline-block;
+  width: 24px;
+  height: 34px;
+  vertical-align: top;
+  margin-right: 4px;
+  background: url(../../Images/PCSite/icon-total.png) left center no-repeat;
+}
+.assetlist-box .list-info i.icon-scale {
+  display: inline-block;
+  width: 24px;
+  height: 34px;
+  vertical-align: top;
+  margin-right: 4px;
+  background: url(../../Images/PCSite/icon-scale.png) left center no-repeat;
+}
+.assetlist-box .asset-subtn {
+  display: inline-block;
+  margin: 0 auto;
+  width: 120px;
+  border-radius: 17px;
+  background-color: #1291f1;
+  color: #fff;
+}
+.column-num {
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 30px;
+}
+.column-num span {
+  display: inline-block;
+  line-height: 24px;
+  background-color: #fff;
+  border: 1px solid #0d2c54;
+  border-radius: 4px;
+  padding: 0 8px;
+  cursor: pointer;
+}
+.column-num span:hover,
+.column-num span.active,
+.column-num span:active {
+  background-color: #0d2c54;
+  color: #fff;
+}
+.assetinfo {
+  display: block;
+  overflow: hidden;
+  padding-top: 14px;
+}
+.assetinfo .icon-assetsec {
+  background: url(../../Images/PCSite/icon-assetsec.png) 10px center no-repeat;
+}
+.assetinfo .icon-assetinfo {
+  background: url(../../Images/PCSite/icon-assetinfo.png) 10px center no-repeat;
+}
 /*! normalize-opentype v0.1.2 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
 /**
      * 1. Turn on kerning, standard ligatures, and proportional, oldstyle numerals
@@ -933,6 +1123,7 @@ a {
   color: #ed6d00;
   text-decoration: underline !important;
 }
+select,
 input {
   font-family: inherit;
 }
@@ -1520,6 +1711,58 @@ input:-ms-input-placeholder {
   background-color: #0d2c54;
   color: #fff;
 }
+.formbox .formsec {
+  display: block;
+  overflow: hidden;
+  height: auto;
+  line-height: 34px;
+  margin-bottom: 20px;
+}
+.formbox .formsec input[type="radio"].formradio {
+  display: none;
+}
+.formbox .formsec label#radiotext,
+.formbox .formsec label#radiodate,
+.formbox .formsec label#radiocontact {
+  display: inline-block;
+  height: 20px;
+  background-image: url(../../Images/PCSite/formradio.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-left: 24px;
+  float: left;
+  padding-right: 8px;
+  margin-top: 7px;
+  line-height: 20px;
+}
+.formbox .formsec label#radiotext.checked,
+.formbox .formsec label#radiodate.checked,
+.formbox .formsec label#radiocontact.checked {
+  background-position: left bottom;
+}
+.formbox .formsec label.moneytit {
+  margin-left: 20px;
+  margin-right: 12px;
+}
+.formbox .formtextarea {
+  display: inline-block;
+  float: left;
+  border: 1px solid #2d87d9;
+  height: 180px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.formbox .formtextarea textarea {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 8px;
+  outline: none;
+}
 .form-horizontal .checkbox,
 .form-horizontal .radio {
   min-height: 32px;
@@ -1576,6 +1819,9 @@ input:-ms-input-placeholder {
 }
 .pdl20 {
   padding-left: 20px;
+}
+.pdl30 {
+  padding-left: 30px;
 }
 .pdl52 {
   padding-left: 52px;
@@ -2303,4 +2549,7 @@ input:-ms-input-placeholder {
 }
 .h580 {
   height: 580px;
+}
+.h378 {
+  height: 378px;
 }
