@@ -817,6 +817,11 @@
   background-color: #1291f1;
   color: #fff;
 }
+.assetlist-box:hover {
+  box-shadow: 0px 0px 8px #aaa;
+  transition: .3s;
+  border: 1px solid #aaa \9;
+}
 .column-num {
   display: block;
   overflow: hidden;
@@ -850,6 +855,11 @@
 }
 .assetinfo .icon-assetinfo {
   background: url(../../Images/PCSite/icon-assetinfo.png) 10px center no-repeat;
+}
+.assetinfo .assetdetail {
+  display: block;
+  overflow: hidden;
+  background-color: #fff;
 }
 /*! normalize-opentype v0.1.2 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
 /**
