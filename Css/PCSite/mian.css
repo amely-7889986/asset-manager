@@ -112,13 +112,21 @@
 .search-box input[type="text"] {
   display: block;
   overflow: hidden;
-  width: 100%;
+  width: 580px;
+  float: left;
   height: 36px;
   border: 0;
   text-align: center;
   font-size: 14px;
-  background: url(../../Images/PCSite/ic-search.png) 260px center no-repeat;
   outline: none;
+}
+.search-box a.search-btn {
+  display: inline-block;
+  float: right;
+  width: 22px;
+  height: 22px;
+  padding: 7px 18px;
+  background: url(../../Images/PCSite/ic-search.png) center center no-repeat;
 }
 .sign-box {
   position: absolute;
@@ -817,6 +825,20 @@
   background-color: #1291f1;
   color: #fff;
 }
+.assetlist-box .picbox {
+  width: 216px;
+  height: 120px;
+  border: 1px solid #ddd;
+  float: left;
+  margin: 8px 14px 8px 0;
+}
+.assetlist-box .picbox img {
+  width: 100%;
+  vertical-align: top;
+}
+.assetlist-box .rewardbox .list-info li {
+  width: 33%;
+}
 .assetlist-box:hover {
   box-shadow: 0px 0px 8px #aaa;
   transition: .3s;
@@ -900,6 +922,250 @@
   margin: 0 auto;
   line-height: 34px;
   border-radius: 8px;
+  text-align: center;
+}
+.reward {
+  display: block;
+  overflow: hidden;
+}
+.reward .list-tit {
+  background: url(../../Images/PCSite/icon-reward.png) 10px center no-repeat;
+}
+.rewardinfo {
+  display: block;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.rewardinfo .reward-detail {
+  display: block;
+  overflow: hidden;
+  width: 780px;
+  margin-right: 14px;
+}
+.rewardinfo .reward-detail .infobox {
+  margin: 20px 0;
+  display: block;
+  overflow: hidden;
+}
+.rewardinfo .reward-detail .infobox .text {
+  background-color: #fff;
+  padding: 12px;
+  margin-top: 20px;
+}
+.rewardinfo .reward-detail .infobox .text > p {
+  line-height: 24px;
+  font-size: 14px;
+}
+.rewardinfo .reward-detail .infobox .text > img {
+  width: 100%;
+  vertical-align: top;
+}
+.rewardinfo .rewardhead {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  padding: 12px;
+}
+.rewardinfo .rewardhead .pc-slide {
+  width: 385px;
+}
+.rewardinfo .rewardhead .view .swiper-container1 {
+  width: 385px;
+  height: 214px;
+  position: relative;
+  border: 1px solid #ddd;
+  display: block;
+  overflow: hidden;
+}
+.rewardinfo .rewardhead .view .swiper-container1 .swiper-slide {
+  float: left;
+}
+.rewardinfo .rewardhead .view .swiper-container1 img {
+  width: 100%;
+  vertical-align: top;
+}
+.rewardinfo .rewardhead .view .arrow-left {
+  background: url(../../Images/PCSite/index_tab_l.png) no-repeat left top;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -25px;
+  width: 28px;
+  height: 51px;
+  z-index: 10;
+}
+.rewardinfo .rewardhead .view .arrow-right {
+  background: url(../../Images/PCSite/index_tab_r.png) no-repeat left bottom;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -25px;
+  width: 28px;
+  height: 51px;
+  z-index: 10;
+}
+.rewardinfo .rewardhead .preview {
+  width: 385px;
+  margin-top: 10px;
+  position: relative;
+}
+.rewardinfo .rewardhead .preview .swiper-container2 {
+  width: 338px;
+  height: 60px;
+  margin-left: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.rewardinfo .rewardhead .preview .swiper-slide {
+  width: 108px;
+  height: 60px;
+  float: left;
+  margin-right: 12px;
+}
+.rewardinfo .rewardhead .preview .swiper-slide img {
+  width: 106px;
+  vertical-align: top;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+.rewardinfo .rewardhead .preview .slide6 {
+  width: 108px;
+}
+.rewardinfo .rewardhead .preview .arrow-left {
+  background: url(../../Images/PCSite/feel3.png) no-repeat left top;
+  position: absolute;
+  left: 0;
+  width: 16px;
+  height: 60px;
+  z-index: 10;
+}
+.rewardinfo .rewardhead .preview .arrow-right {
+  background: url(../../Images/PCSite/feel4.png) no-repeat left bottom;
+  position: absolute;
+  right: 0;
+  width: 16px;
+  height: 60px;
+  z-index: 10;
+}
+.rewardinfo .rewardhead .preview .active-nav img {
+  box-sizing: border-box;
+  border-color: #aaa;
+}
+.rewardinfo .rewardsec {
+  display: block;
+  overflow: hidden;
+  float: left;
+  margin-left: 20px;
+  width: 350px;
+}
+.rewardinfo .rewardsec h2.tit {
+  font-size: 18px;
+  color: #0d2c54;
+  font-weight: 600;
+  line-height: 34px;
+}
+.rewardinfo .rewardsec .rewardata {
+  display: block;
+  overflow: hidden;
+}
+.rewardinfo .rewardsec .rewardata li {
+  display: block;
+  width: 48%;
+  float: left;
+  line-height: 28px;
+  padding-right: 2%;
+}
+.rewardinfo .rewardsec .status {
+  display: block;
+  padding: 18px 0 0px 0;
+  line-height: 18px;
+}
+.rewardinfo .rewardsec i.icon-status {
+  display: inline-block;
+  width: 20px;
+  height: 18px;
+  background: url(../../Images/PCSite/icon-status.png) center center no-repeat;
+  vertical-align: top;
+}
+.rewardinfo .rewardsec i.icon-total {
+  display: inline-block;
+  width: 24px;
+  height: 34px;
+  vertical-align: top;
+  margin-right: 4px;
+  background: url(../../Images/PCSite/icon-total.png) left center no-repeat;
+}
+.rewardinfo .rewardsec .requirebtn {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 34px;
+}
+.rewardinfo .rewardsec .requirebtn .asset-subtn {
+  display: inline-block;
+  margin: 0 auto;
+  width: 120px;
+  border-radius: 17px;
+  background-color: #1291f1;
+  color: #fff;
+}
+.rewardinfo .reward-flow {
+  display: block;
+  overflow: hidden;
+  width: 206px;
+  margin-bottom: 20px;
+}
+.rewardinfo .reward-flow .column-tit {
+  width: 206px;
+}
+.rewardinfo .reward-flow .column-tit .tit-text {
+  padding: 0 12px;
+  top: 8px;
+}
+.rewardinfo .reward-flow .infobox {
+  display: block;
+  overflow: hidden;
+  padding: 20px 0 0 44px;
+}
+.rewardinfo .reward-flow .infobox li {
+  display: block;
+  position: relative;
+  border-left: 1px solid #0d2c54;
+  height: 18px;
+  line-height: 18px;
+  padding-bottom: 34px;
+}
+.rewardinfo .reward-flow .infobox li i.point {
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #0d2c54;
+  float: left;
+  background-color: #fff;
+  position: absolute;
+  left: -8px;
+}
+.rewardinfo .reward-flow .infobox li .text {
+  float: left;
+  padding-left: 18px;
+  font-size: 18px;
+}
+.rewardinfo .reward-flow a.form-btn {
+  display: block;
+  width: 140px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 34px;
+  line-height: 34px;
+  background-color: #f7ab00;
+  border: 1px solid #ed6d00;
+  border-radius: 17px;
+  box-sizing: border-box;
+  color: #fff;
   text-align: center;
 }
 /*! normalize-opentype v0.1.2 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
@@ -1373,6 +1639,67 @@ input:-ms-input-placeholder {
   height: 36px;
   line-height: 36px;
 }
+/*gotop*/
+.cbbfixed {
+  position: fixed;
+  right: 10px;
+  transition: bottom ease .3s;
+  bottom: -85px;
+  z-index: 3;
+  cursor: pointer;
+}
+.cbbfixed .cbbtn {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+.cbbfixed .gotop {
+  transition: background-color ease 0.3s;
+  margin-top: 1px;
+}
+.cbbfixed .gotop .up-icon {
+  float: left;
+  margin: 14px 0 0 9px;
+  width: 50px;
+  height: 50px;
+  background: url(../../Images/PCSite/gotop.png);
+}
+.cbbfixed .gotop:hover {
+  opacity: .9;
+}
+.cbbfixed .cweixin div {
+  background: #ffffff url(../../Images/PCSite/code.png) center center no-repeat;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: -110px;
+  top: -100px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  opacity: 0;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  transform-origin: 100% 70%;
+  -webkit-transform-origin: 100% 70%;
+  transition: transform ease .3s,opacity ease .3s;
+  -webkit-transition: all ease .3s;
+  display: none\0;
+  *display: none;
+}
+.cbbfixed .cweixin:hover div {
+  display: block;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1;
+  *display: block;
+}
+.cbbfixed .cweixin .weixin-icon {
+  float: left;
+  margin: 12px 0 0 11px;
+  width: 50px;
+  height: 50px;
+  background: url(../../Images/PCSite/gowechat.png);
+}
 .container {
   width: 100%;
 }
@@ -1417,15 +1744,16 @@ input:-ms-input-placeholder {
   margin: 0 24px;
 }
 .l-head-nav .locate-box input {
-  width: 68px;
+  width: 54px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   outline: none;
   cursor: pointer;
   border: 0;
-  background: url(../../Images/PCSite/locate-arrow.png) right center no-repeat;
+  background: url(../../Images/PCSite/locate-arrow.png) right 2px center no-repeat;
   margin: 8px 0;
+  padding-right: 14px;
 }
 .l-head-nav .locate-box img {
   width: 100%;
@@ -1858,6 +2186,9 @@ input:-ms-input-placeholder {
 }
 .pd10 {
   padding: 10px 0;
+}
+.pd15 {
+  padding: 15px 0;
 }
 .pd20 {
   padding: 20px 0;
