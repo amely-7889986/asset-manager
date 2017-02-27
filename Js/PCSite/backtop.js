@@ -2,7 +2,6 @@
 function SuCaiJiaYuan(){
 	this.init();
 }
-/*素材家园 - www.sucaijiayuan.com*/
 SuCaiJiaYuan.prototype = {
 	constructor: SuCaiJiaYuan,
 	init: function(){		
@@ -24,7 +23,6 @@ SuCaiJiaYuan.prototype = {
 				scrollTop: 0
 			}, 120);
 		});
-		/*素材家园 - www.sucaijiayuan.com*/
 		var timmer = null;
 		$(window).bind("scroll",function() {
             var d = $(document).scrollTop(),

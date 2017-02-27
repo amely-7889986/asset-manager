@@ -116,13 +116,12 @@
   float: left;
   height: 36px;
   border: 0;
-  text-align: center;
   font-size: 14px;
   outline: none;
 }
 .search-box a.search-btn {
   display: inline-block;
-  float: right;
+  float: left;
   width: 22px;
   height: 22px;
   padding: 7px 18px;
@@ -1168,6 +1167,93 @@
   color: #fff;
   text-align: center;
 }
+/* 信用查询 */
+.credit {
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.credit .creditsearch {
+  display: block;
+  overflow: hidden;
+  height: 42px;
+  width: 540px;
+  border: 1px solid #0d2c54;
+  line-height: 42px;
+  margin: 0 auto;
+  border-radius: 21px;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-top: 20px;
+  text-align: center;
+}
+.credit .creditsearch input {
+  display: inline-block;
+  height: 100%;
+  width: 500px;
+  float: left;
+  border: 0;
+  text-align: center;
+  outline: none;
+}
+.credit .creditsearch a.search-btn {
+  display: inline-block;
+  width: 25px;
+  margin-top: 9px;
+  height: 24px;
+  float: left;
+  background: url(../../Images/PCSite/creditsearch.png) center center no-repeat;
+}
+.creditselect {
+  display: block;
+  overflow: hidden;
+  width: 800px;
+  margin: 24px auto;
+}
+.creditselect li {
+  float: left;
+  display: block;
+  overflow: hidden;
+  width: 200px;
+  margin: 12px 0;
+}
+.creditselect li label {
+  font-size: 18px;
+  color: #0d2c54;
+}
+.creditresult {
+  display: block;
+  overflow: hidden;
+  background-color: #fff;
+  width: 740px;
+  margin: 24px auto;
+}
+.creditresult .resultlist {
+  display: block;
+  overflow: hidden;
+  margin-top: 34px;
+}
+.creditresult .resultlist .resultbox {
+  border-top: 1px dashed #ddd;
+  padding: 12px;
+}
+.creditresult .resultlist .resultbox li {
+  display: block;
+  overflow: hidden;
+  line-height: 24px;
+}
+.creditresult .resultlist .resultbox li .info-detail {
+  float: left;
+  margin-right: 24px;
+}
+.creditresult .resultlist .resultbox li i.icon-creditype {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: top;
+  padding-top: 4px;
+  background: url(../../Images/PCSite/creditype.jpg) right center no-repeat;
+}
 /*! normalize-opentype v0.1.2 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
 /**
      * 1. Turn on kerning, standard ligatures, and proportional, oldstyle numerals
@@ -1729,8 +1815,9 @@ input:-ms-input-placeholder {
 .l-head-nav .logobox {
   display: block;
   overflow: hidden;
-  width: 250px;
+  width: 240px;
   height: 60px;
+  margin-left: 10px;
   float: left;
 }
 .l-head-nav .logobox img {
@@ -1770,6 +1857,7 @@ input:-ms-input-placeholder {
   color: #0d2c54;
   width: 104px;
   text-align: center;
+  font-size: 18px;
   height: 70px;
   line-height: 70px;
   box-sizing: border-box;
