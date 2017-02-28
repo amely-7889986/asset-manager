@@ -923,6 +923,7 @@
   border-radius: 8px;
   text-align: center;
 }
+/* 赏金猎人 */
 .reward {
   display: block;
   overflow: hidden;
@@ -1216,10 +1217,22 @@
   overflow: hidden;
   width: 200px;
   margin: 12px 0;
+  height: 18px;
+  line-height: 18px;
+}
+.creditselect li input[type="radio"] {
+  display: none;
 }
 .creditselect li label {
+  height: 18px;
+  line-height: 18px;
   font-size: 18px;
   color: #0d2c54;
+  padding-left: 24px;
+  background: url(../../Images/PCSite/inputradio.png) left bottom no-repeat;
+}
+.creditselect li label.checked {
+  background-position: left top;
 }
 .creditresult {
   display: block;
@@ -1231,7 +1244,7 @@
 .creditresult .resultlist {
   display: block;
   overflow: hidden;
-  margin-top: 34px;
+  margin-top: 34吧px;
 }
 .creditresult .resultlist .resultbox {
   border-top: 1px dashed #ddd;
@@ -1253,6 +1266,354 @@
   vertical-align: top;
   padding-top: 4px;
   background: url(../../Images/PCSite/creditype.jpg) right center no-repeat;
+}
+/* 资管学堂 */
+.vediogroom {
+  display: block;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.vediogroom .list-tit {
+  background: url(../../Images/PCSite/icon-groom.png) 10px center no-repeat;
+}
+.vediogroom .groombox {
+  display: block;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 10px 24px 10px 10px;
+  margin-top: 20px;
+}
+.vediogroom .groombox .groomlg {
+  display: block;
+  width: 500px;
+  overflow: hidden;
+}
+.vediogroom .groombox .groomlg .picbox {
+  display: block;
+  overflow: hidden;
+  width: 500px;
+  height: 280px;
+  position: relative;
+}
+.vediogroom .groombox .groomlg .picbox .pic {
+  display: block;
+  width: 500px;
+  height: 280px;
+}
+.vediogroom .groombox .groomlg .picbox .pic img {
+  width: 100%;
+  vertical-align: top;
+}
+.vediogroom .groombox .groomlg .picbox a.vedioplay {
+  display: block;
+  overflow: hidden;
+  width: 85px;
+  height: 85px;
+  background: url(../../Images/PCSite/vedioplay.png) center center no-repeat;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+}
+.vediogroom .groombox .groomlg .picbox a:hover.vedioplay {
+  opacity: .8;
+}
+.vediogroom .groombox .groomlg .title {
+  display: block;
+  font-size: 24px;
+  color: #0d2c54;
+  padding: 12px 8px 0 8px;
+  white-space: nowrap;
+  width: 500px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.vediogroom .groombox .groomlg a:hover.title {
+  text-decoration: underline;
+}
+.vediogroom .groombox .groomli {
+  margin-left: 14px;
+  display: block;
+  overflow: hidden;
+  width: 452px;
+}
+.vediogroom .groombox .groomli li {
+  display: block;
+  overflow: hidden;
+  float: left;
+  width: 210px;
+  margin: 0 8px 18px 8px;
+}
+.vediogroom .groombox .groomli li a.vediobox {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.vediogroom .groombox .groomli li a.vediobox .picbox {
+  display: block;
+  width: 210px;
+  height: 118px;
+  overflow: hidden;
+}
+.vediogroom .groombox .groomli li a.vediobox .picbox img {
+  width: 100%;
+  vertical-align: top;
+}
+.vediogroom .groombox .groomli li a.vediobox .titlebox {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 28px;
+  padding: 17px 7px 8px 7px;
+  background: url(../../Images/PCSite/vedioboxbg.png) left bottom repeat-x;
+  overflow: hidden;
+}
+.vediogroom .groombox .groomli li a.vediobox .titlebox > p {
+  display: -webkit-box;
+  line-height: 14px;
+  height: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.vediogroom .groombox .groomli li a:hover.vediobox .titlebox > p {
+  text-decoration: underline;
+}
+.vediogroom .groombox .groomli li .playcount {
+  display: block;
+  overflow: hidden;
+  height: 18px;
+  line-height: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 8px;
+}
+.vediogroom .groombox .groomli li .playcount i.icon-playcount {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  width: 18px;
+  height: 17px;
+  background: url(../../Images/PCSite/icon-playcount.png) left top no-repeat;
+}
+.vediohot {
+  display: block;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.vediohot .list-tit {
+  background: url(../../Images/PCSite/icon-vediohot.png) 10px center no-repeat;
+}
+.vediohot .hotbox {
+  display: block;
+  overflow: hidden;
+  padding: 18px 8px 0 8px;
+  background-color: #fff;
+  margin-top: 20px;
+}
+.vediohot .hotbox li {
+  display: block;
+  overflow: hidden;
+  float: left;
+  width: 210px;
+  margin: 0 18px 18px 18px;
+}
+.vediohot .hotbox li a.vediobox {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.vediohot .hotbox li a.vediobox .picbox {
+  display: block;
+  width: 210px;
+  height: 118px;
+  overflow: hidden;
+}
+.vediohot .hotbox li a.vediobox .picbox img {
+  width: 100%;
+  vertical-align: top;
+}
+.vediohot .hotbox li a.vediobox .titlebox {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  height: 28px;
+  padding: 17px 7px 8px 7px;
+  background: url(../../Images/PCSite/vedioboxbg.png) left bottom repeat-x;
+  overflow: hidden;
+}
+.vediohot .hotbox li a.vediobox .titlebox > p {
+  display: -webkit-box;
+  line-height: 14px;
+  height: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.vediohot .hotbox li a:hover.vediobox .titlebox > p {
+  text-decoration: underline;
+}
+.vediohot .hotbox li .playcount {
+  display: block;
+  overflow: hidden;
+  height: 18px;
+  line-height: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 8px;
+}
+.vediohot .hotbox li .playcount i.icon-playcount {
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  width: 18px;
+  height: 17px;
+  background: url(../../Images/PCSite/icon-playcount.png) left top no-repeat;
+}
+.vedioinfo {
+  display: block;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.vedioinfo .playbox {
+  display: block;
+  padding: 20px;
+  background-color: #333;
+  margin-bottom: 18px;
+}
+.vedioinfo .vediodetail {
+  display: block;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  box-sizing: border-box;
+  padding: 12px;
+}
+.vedioinfo .vediodetail .tit {
+  display: block;
+  line-height: 48px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.vedioinfo .vediodetail .info {
+  line-height: 24px;
+}
+/* 关于我们 */
+.aboutinfo {
+  display: block;
+  overflow: hidden;
+  padding: 20px 0;
+}
+.aboutinfo .column-tit {
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #0d2c54;
+  width: 440px;
+  height: 24px;
+  font-size: 24px;
+  z-index: 9;
+  text-align: center;
+  margin: 12px auto;
+}
+.aboutinfo .column-tit .tit-text {
+  display: inline-block;
+  position: relative;
+  top: 8px;
+  padding: 0 54px;
+  z-index: 99;
+  margin: 0 auto;
+  background-color: #f5f2f2 !important;
+  font-size: 30px;
+}
+.aboutinfo .columntit-sec {
+  font-size: 24px;
+  color: #2d87d9;
+  text-align: center;
+  line-height: 94px;
+}
+.aboutbox1 {
+  display: block;
+  overflow: hidden;
+}
+.aboutbox1 li {
+  display: block;
+  overflow: hidden;
+  width: 300px;
+  height: 342px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  float: left;
+  margin: 0 16px 24px 16px;
+}
+.aboutbox1 li .pic {
+  display: block;
+  overflow: hidden;
+  width: 300px;
+  height: 180px;
+}
+.aboutbox1 li .pic img {
+  width: 100%;
+  vertical-align: top;
+}
+.aboutbox1 li .info {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+.aboutbox1 li .info .tit {
+  font-size: 30px;
+  line-height: 78px;
+}
+.aboutbox1 li .info .detail {
+  font-size: 18px;
+  line-height: 34px;
+}
+.aboutbox2 {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 24px;
+}
+.aboutbox2 li {
+  display: block;
+  overflow: hidden;
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.aboutbox2 li .pic {
+  display: block;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  border: 1px solid #ddd;
+  text-align: center;
+  line-height: 140px;
+  box-sizing: border-box;
+  margin: 28px auto;
+}
+.aboutbox2 li .pic img {
+  width: auto;
+  vertical-align: middle;
+}
+.aboutbox3 img {
+  width: 100%;
+  vertical-align: top;
+}
+.aboutbox4 {
+  display: block;
+  overflow: hidden;
+  padding: 12px 24px;
+}
+.aboutbox4 .phone {
+  line-height: 68px;
+}
+.aboutbox4 .code {
+  margin-right: 24px;
 }
 /*! normalize-opentype v0.1.2 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
 /**
@@ -1576,6 +1937,12 @@ input {
 }
 .font30 {
   font-size: 30px;
+}
+.font36 {
+  font-size: 36px;
+}
+.font60 {
+  font-size: 60px;
 }
 .fontw6 {
   font-weight: 600;
@@ -2295,6 +2662,12 @@ input:-ms-input-placeholder {
 }
 .pdl52 {
   padding-left: 52px;
+}
+.pdl60 {
+  padding-left: 60px;
+}
+.pdl120 {
+  padding-left: 120px;
 }
 .pdr10 {
   padding-right: 10px;
@@ -3022,4 +3395,7 @@ input:-ms-input-placeholder {
 }
 .h378 {
   height: 378px;
+}
+.h338 {
+  height: 338px;
 }

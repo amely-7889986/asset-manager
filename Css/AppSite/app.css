@@ -199,6 +199,9 @@ ul,li{
 .padding-left10{
     padding-left: 1em;
 }
+.padding-left8{
+    padding-left: .8em !important;
+}
 .padding-right8{
     padding-right: .8em !important;
 }

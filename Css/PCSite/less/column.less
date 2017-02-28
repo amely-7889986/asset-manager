@@ -690,6 +690,8 @@
 		}
 	}
 }
+
+/* 赏金猎人 */
 .reward{
 	display: block;
 	overflow: hidden;
@@ -983,9 +985,21 @@
 		overflow: hidden;
 		width: 200px;
 		margin: 12px 0;
+		height: 18px;
+		line-height: 18px;
+		input[type="radio"]{
+			display: none;
+		}
 		label{
+			height: 18px;
+			line-height: 18px;
 			.font18;
 			.col-dblue;
+			padding-left: 24px;
+			background: url(../../Images/PCSite/inputradio.png) left bottom no-repeat;
+		}
+		label.checked{
+			background-position: left top;
 		}
 	}
 }
@@ -998,7 +1012,7 @@
 	.resultlist{
 		display: block;
 		overflow: hidden;
-		margin-top: 34px;
+		margin-top: 34吧px;
 		.resultbox{
 			border-top: 1px dashed #ddd;
 			padding: 12px;
@@ -1020,5 +1034,365 @@
 				}
 			}
 		}
+	}
+}
+
+/* 资管学堂 */
+.vediogroom{
+	display: block;
+	overflow: hidden;
+	margin-top: 20px;
+	.list-tit{
+		background: url(../../Images/PCSite/icon-groom.png) 10px center no-repeat;
+	}
+	.groombox{
+		display: block;
+		overflow: hidden;
+		.bg-bai;
+		padding: 10px 24px 10px 10px;
+		margin-top: 20px;
+		.groomlg{
+			display: block;
+			width: 500px;
+			overflow: hidden;
+			.picbox{
+				display: block;
+				overflow: hidden;
+				width: 500px;
+				height: 280px;
+				position: relative;
+				.pic{
+					display: block;
+					width: 500px;
+					height: 280px;
+					img{
+						width: 100%;
+						vertical-align: top;
+					}
+				}
+				a.vedioplay{
+					display: block;
+					overflow: hidden;
+					width: 85px;
+					height: 85px;
+					background: url(../../Images/PCSite/vedioplay.png) center center no-repeat;
+					position: absolute;
+					top: 100px;
+					left: 200px;
+				}
+				a:hover.vedioplay{
+					opacity: .8;
+				}
+			}
+			.title{
+				display: block;
+				.font24;
+				.col-dblue;
+				padding: 12px 8px 0 8px;
+				white-space: nowrap;
+				width: 500px;
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			a:hover.title{
+				text-decoration: underline;
+			}
+		}
+		.groomli{
+			margin-left: 14px;
+			display: block;
+			overflow: hidden;
+			width: 452px;
+			li{
+				display: block;
+				overflow: hidden;
+				.l-left;
+				width: 210px;
+				margin: 0 8px 18px 8px;
+				a.vediobox{
+					display: block;
+					overflow: hidden;
+					position: relative;
+					.picbox{
+						display: block;
+						width: 210px;
+						height: 118px;
+						overflow: hidden;
+						img{
+							width: 100%;
+							vertical-align: top;
+						}
+					}
+					.titlebox{
+						position: absolute;
+						bottom: 0;
+						display: block;
+						height: 28px;
+						padding: 17px 7px 8px 7px;
+						background: url(../../Images/PCSite/vedioboxbg.png) left bottom repeat-x;
+						overflow: hidden;
+						>p{
+							display: -webkit-box;
+							line-height: 14px;
+							height: 28px;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							-webkit-line-clamp: 2;
+							-webkit-box-orient: vertical;
+						}
+					}
+				}
+				a:hover.vediobox{
+					.titlebox{
+						>p{
+							text-decoration: underline;
+						}
+					}
+				}
+				.playcount{
+					display: block;
+					overflow: hidden;
+					height: 18px;
+					line-height: 18px;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					margin-top: 8px;
+					i.icon-playcount{
+						display: inline-block;
+						vertical-align: top;
+						overflow: hidden;
+						width: 18px;
+						height: 17px;
+						background: url(../../Images/PCSite/icon-playcount.png) left top no-repeat;
+					}
+				}
+			}
+		}
+	}
+}
+.vediohot{
+	display: block;
+	overflow: hidden;
+	margin: 20px 0;
+	.list-tit{
+		background: url(../../Images/PCSite/icon-vediohot.png) 10px center no-repeat;
+	}
+	.hotbox{
+		display: block;
+		overflow: hidden;
+		padding: 18px 8px 0 8px;
+		.bg-bai;
+		margin-top: 20px;
+		li{
+			display: block;
+			overflow: hidden;
+			.l-left;
+			width: 210px;
+			margin: 0 18px 18px 18px;
+			a.vediobox{
+				display: block;
+				overflow: hidden;
+				position: relative;
+				.picbox{
+					display: block;
+					width: 210px;
+					height: 118px;
+					overflow: hidden;
+					img{
+						width: 100%;
+						vertical-align: top;
+					}
+				}
+				.titlebox{
+					position: absolute;
+					bottom: 0;
+					display: block;
+					height: 28px;
+					padding: 17px 7px 8px 7px;
+					background: url(../../Images/PCSite/vedioboxbg.png) left bottom repeat-x;
+					overflow: hidden;
+					>p{
+						display: -webkit-box;
+						line-height: 14px;
+						height: 28px;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						-webkit-line-clamp: 2;
+						-webkit-box-orient: vertical;
+					}
+				}
+			}
+			a:hover.vediobox{
+				.titlebox{
+					>p{
+						text-decoration: underline;
+					}
+				}
+			}
+			.playcount{
+				display: block;
+				overflow: hidden;
+				height: 18px;
+				line-height: 18px;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				margin-top: 8px;
+				i.icon-playcount{
+					display: inline-block;
+					vertical-align: top;
+					overflow: hidden;
+					width: 18px;
+					height: 17px;
+					background: url(../../Images/PCSite/icon-playcount.png) left top no-repeat;
+				}
+			}
+		}
+	}
+}
+.vedioinfo{
+	display: block;
+	overflow: hidden;
+	margin: 20px 0;
+	.playbox{
+		display: block;
+		padding: 20px;
+		background-color: #333;
+		margin-bottom: 18px;
+	}
+	.vediodetail{
+		display: block;
+		overflow: hidden;
+		.bg-bai;
+		border-radius: 5px;
+		border: 2px solid #ddd;
+		box-sizing: border-box;
+		padding: 12px;
+		.tit{
+			display: block;
+			line-height: 48px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		.info{
+			line-height: 24px;
+		}
+	}
+}
+
+/* 关于我们 */
+.aboutinfo{
+	display: block;
+	overflow: hidden;
+	padding: 20px 0;
+	.column-tit{
+		display: block;
+		position: relative;
+		border-bottom: 1px solid #0d2c54;
+		width: 440px;
+		height: 24px;
+		.font24;
+		z-index: 9;
+		text-align: center;
+		margin: 12px auto;
+	}
+	.column-tit .tit-text{
+		display: inline-block;
+		position: relative;
+		top: 8px;
+		padding: 0 54px;
+		z-index: 99;
+		margin: 0 auto;
+		.bg-hui;
+		.font30;
+	}
+	.columntit-sec{
+		.font24;
+		.col-blue;
+		.text-ac;
+		line-height: 94px;
+	}
+}
+.aboutbox1{
+	display: block;
+	overflow: hidden;
+	li{
+		display: block;
+		overflow: hidden;
+		width: 300px;
+		height: 342px;
+		border: 1px solid #ddd;
+		box-sizing: border-box;
+		.l-left;
+		margin: 0 16px 24px 16px;
+		.pic{
+			display: block;
+			overflow: hidden;
+			width: 300px;
+			height: 180px;
+			img{
+				width: 100%;
+				vertical-align: top;
+			}
+		}
+		.info{
+			display: block;
+			overflow: hidden;
+			.text-ac;
+			.tit{
+				.font30;
+				line-height: 78px;
+			}
+			.detail{
+				.font18;
+				line-height: 34px;
+			}
+		}
+	}
+}
+.aboutbox2{
+	display: block;
+	overflow: hidden;
+	padding-bottom: 24px;
+	li{
+		display: block;
+		overflow: hidden;
+		.l-left;
+		width: 25%;
+		.text-ac;
+		.pic{
+			display: block;
+			overflow: hidden;
+			.bg-bai;
+			border-radius: 50%;
+			width: 140px;
+			height: 140px;
+			border: 1px solid #ddd;
+			.text-ac;
+			line-height: 140px;
+			box-sizing: border-box;
+			margin: 28px auto;
+			img{
+				width: auto;
+				vertical-align: middle;
+			}
+		}
+	}
+}
+.aboutbox3{
+	img{
+		width: 100%;
+		vertical-align: top;
+	}
+}
+.aboutbox4{
+	display: block;
+	overflow: hidden;
+	padding: 12px 24px;
+	.phone{
+		line-height: 68px;
+	}
+	.code{
+		margin-right: 24px;
 	}
 }

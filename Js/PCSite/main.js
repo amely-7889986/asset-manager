@@ -35,3 +35,12 @@ var JPlaceHolder = {
 jQuery(function(){
     JPlaceHolder.init();    
 });
+
+/*input[radio]样式美化*/
+$(function() {
+  $('.creditselect label').click(function(){
+    var radioId = $(this).attr('name');
+    $('.creditselect label').removeAttr('class') && $(this).attr('class', 'checked');
+    $('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+  });
+});
