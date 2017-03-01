@@ -1340,6 +1340,22 @@ a.mui-colinfo-edit{
     border-radius: .4em;
 }
 
+/* 关于我们 */
+.aboutbox{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+.aboutboxpic{
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+.aboutboxpic img{
+    width: 100%;
+    vertical-align: top;
+}
+
 
 .shade {
   position: fixed;

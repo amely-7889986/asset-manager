@@ -1405,13 +1405,15 @@
 .downdata{
 	display: block;
 	overflow: hidden;
+	margin: 10px 0 20px 0;
 }
 .databox{
 	display: block;
 	overflow: hidden;
 	.bg-bai;
-	padding: 20px 30px;
-	box-shadow: 0px 0px 5px #ddd;
+	padding: 20px 16px;
+	box-shadow: 0px 0px 5px #aaa;
+	margin: 30px 4px;
 	.icon-data{
 		width: 240px;
 		display: block;
@@ -1425,6 +1427,70 @@
 			text-align: center;
 			img{
 				vertical-align: middle;
+			}
+		}
+		.info{
+			line-height: 20px;
+			margin-top: 8px;
+		}
+	}
+	.datalist{
+		position: relative;
+		display: block;
+		overflow: hidden;
+		width: 680px;
+		margin-left: 20px;
+		.swiper-button-prev, .swiper-button-next{
+			width: 28px;
+			height: 60px;
+			background-size: 28px 60px;
+			background-color: transparent;
+		}
+		.swiper-button-next01{
+			right: 0;
+			background-image: url(../../Images/PCSite/datarrownext.png);
+		}
+		.swiper-button-prev01{
+			left: 0;
+			background-image: url(../../Images/PCSite/datarrowprev.png);
+		}
+		.listbox{
+			display: block;
+			overflow: hidden;
+			width: 560px;
+			margin: 0 auto;
+			li{
+				display: block;
+				overflow: hidden;
+				height: 38px;
+				line-height: 38px;
+				border-bottom: 1px dashed #ddd;
+				box-sizing: border-box;
+				i.icon-word{
+					display: inline-block;
+					width: 16px;
+					height: 38px;
+					background: url(../../Images/PCSite/icon-word.png) center center no-repeat;
+					margin-right: 12px;
+				}
+				.tit{
+					display: inline-block;
+					width: 450px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+				.btn{
+					.col-dhui;
+					>a{
+						display: inline-block;
+						line-height: 38px;
+					}
+					>span{
+						margin: 0 4px;
+						display: inline-block;
+					}
+				}
 			}
 		}
 	}
