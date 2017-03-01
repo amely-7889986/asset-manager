@@ -9,6 +9,11 @@
     <!-- <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/> -->
     <link rel="stylesheet" href="../../Css/Pcsite/mian.css">
     <link rel="stylesheet" href="../../Css/Pcsite/layer.css">
+    <link rel="stylesheet" type="text/css" href="../../Css/Pcsite/video-js.min.css">
+    <script src="../../Js/PCSite/video.min.js"></script>
+    <!-- <script>
+        videojs.options.flash.swf = "video-js.swf";
+    </script> -->
     <!--[if lte IE 6]>
     <script src="../js/DD_belatedPNG_0.0.8a-min.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -66,7 +71,15 @@
         <div class="main">
             <div class="vedioinfo">
                 <div class="playbox">
-                    
+                    <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="960px" height="400px"
+                          poster="http://video-js.zencoder.com/oceans-clip.png"
+                          data-setup="{}">
+                        <source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />
+                        <source src="http://vjs.zencdn.net/v/oceans.webm" type='video/webm' />
+                        <source src="http://vjs.zencdn.net/v/oceans.ogv" type='video/ogg' />
+                        <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                        <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                    </video>
                 </div>
                 <div class="vediodetail">
                     <p class="font24 col-dblue tit">民间债权债务托管过程中关于房产过户的若干法律问题</p>
@@ -251,5 +264,6 @@
 
     cityPicker.init();
     </script>
+    
 </body>
 </html>
