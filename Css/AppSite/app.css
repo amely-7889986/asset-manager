@@ -1023,6 +1023,180 @@ a.mui-colinfo-edit{
     vertical-align: top;
 }
 
+/* 资管学堂 */
+.mui-vediobox-lg{
+    display: block;
+    overflow: hidden;
+    padding: .8em .4em;
+}
+.mui-vedio-list{
+    display: block;
+    overflow: hidden;
+    padding: .4em;
+}
+.mui-vedio-libox{
+    display: block;
+    overflow: hidden;
+    background-color: #fff;
+    padding: .4em;
+    margin-bottom: .4em;
+}
+.mui-vedio-libox .pic{
+    display: block;
+    overflow: hidden;
+    width: 6em;
+    height: 3.4em;
+    margin-top: .4em;
+}
+.mui-vedio-libox .pic img{
+    width: 100%;
+    vertical-align: top;
+}
+.mui-vedio-libox .info{
+    display: block;
+    overflow: hidden;
+    width: 11em;
+    margin-left: .2em;
+}
+.mui-vedio-libox .info p.title{
+    font-size: .8em;
+    line-height: 1.2em;
+    color: #000;
+}
+.mui-vedio-libox .info a.mui-btn-play{
+    display: block;
+    overflow: hidden;
+    width: 6em;
+    color: #fff;
+    height: 2em;
+    line-height: 2em;
+    border-radius: .2em;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f7ab00;
+    font-size: .8em;
+}
+.mui-vedio-titinfo{
+    display: block;
+    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: .2em;
+    margin-top: .4em;
+    padding: .4em;
+}
+.mui-vedio-titinfo p.title{
+    font-size: 1em;
+    color: #000;
+    line-height: 1.6em;
+}
+
+/* 信用查询 */
+.mui-credit{
+    display: block;
+    overflow: hidden;
+    background-color: #fff;
+    padding: .4em;
+    margin: 0 .4em;
+}
+.mui-creditbox{
+    display: block;
+    overflow: hidden;
+}
+.mui-creditbox .searchbox{
+    display: block;
+    overflow: hidden;
+    width: 74%;
+    border: 1px solid #0d2c54;
+    background-color: #fff;
+    height: 2em;
+    line-height: 2em;
+    border-radius: .4em;
+}
+.mui-credit .resultcount{
+    padding-top: .8em;
+}
+.mui-creditbox .searchbox >i{
+    display: inline-block;
+    float: left;
+    line-height: 1.6em;
+    padding-left: .2em;
+}
+.mui-creditbox .searchbox >input{
+    display: inline-block;
+    float: left;
+    width: 84%;
+    height: 100%;
+    border: none;
+}
+.mui-creditbox a.mui-creditbtn{
+    display: inline-block;
+    height: 2.5em;
+    background-color: #1291f1;
+    color: #fff;
+    line-height: 2.5em;
+    margin-left: .4em;
+    border-radius: .4em;
+    width: 5em;
+    text-align: center;
+    font-size: .8em;
+}
+.mui-credit-select {
+  display: block;
+  overflow: hidden;
+  margin: .4em auto;
+  width: 100%;
+}
+.mui-credit-select li {
+  float: left;
+  display: block;
+  overflow: hidden;
+  width: 48%;
+  margin: 12px 0;
+  height: 1.4em;
+  line-height: 1.4em;
+  font-size: .8em;
+}
+.mui-credit-select .mui-radio input[type='radio'], .mui-credit-select .mui-checkbox input[type='checkbox']{
+    top: 0;
+    left: 0;
+}
+.mui-credit-select .mui-radio input[type='radio']:before, .mui-credit-select .mui-checkbox input[type='checkbox']:before{
+    font-size: 1.2em;
+}
+.mui-credit-select .mui-radio label, .mui-credit-select .mui-checkbox label{
+    padding-left: 1.8em;
+    padding-right: 0;
+    margin-top: .2em;
+}
+.mui-credit-list{
+    display: block;
+    overflow: hidden;
+    padding: .4em;
+}
+.mui-credit-list .mui-credit-result{
+    display: block;
+    overflow: hidden;
+    background-color: #fff;
+    margin-bottom: .8em;
+}
+.mui-credit-list .mui-credit-result li{
+    padding: 0 .4em;
+    line-height: 2em;
+}
+.mui-credit-list .mui-credit-result li .tit{
+    display: inline-block;
+    width: 34%;
+    color: #aaa;
+}
+.mui-credit-list .mui-credit-result li .text{
+    color: #0d2c54;
+}
+.mui-credit-list .mui-credit-result .mui-creditype{
+    padding: .4em;
+    border-top: 1px dashed #ddd;
+    line-height: 1.8em;
+}
 
 /*个人中心*/
 .mui-user-sec{

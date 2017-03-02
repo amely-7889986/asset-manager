@@ -37,101 +37,34 @@
             <div class="mui-column-infobox">
                 <ul class="mui-colinfo-form">
                     <li>
-                        <label for="title" class="title text-alignr">地      区：</label>
+                        <label for="title" class="title text-alignr">标       题：</label><span class="mui-colform-input w60"><input type="text" placeholder="请输入任务标题"></span>
+                    </li>
+                    <li>
+                        <label for="title" class="title text-alignr">任务类型：</label>
+                        <span class="mui-colform-input w60">
+                            <button id='showInfoPicker1' class=" mui-text-left" type='button'>请选择任务类型</button>
+                        </span>
+                        <div id='userResult' class="ui-alert"></div>
+                    </li>
+                    <li>
+                        <label for="title" class="title text-alignr">项目金额：</label><span class="mui-colform-input w60"><input type="text" placeholder="请输入项目金额"></span>
+                    </li>
+                    <li>
+                        <label for="title" class="title text-alignr">截止时间：</label>
+                        <span class="mui-colform-input w60">
+                            <button id='showdatePicker' data-options='{"type":"date"}' class=" mui-text-left" type='button'>请输入截止时间</button>
+                        </span>
+                        <div id='result' class="ui-alert"></div>
+                    </li>
+                    <li>
+                        <label for="title" class="title text-alignr">项目地区：</label>
                         <span class="mui-colform-input w60">
                             <button id='showCityPicker3' class=" mui-text-left" type='button'>请选择所在地区</button>
                         </span>
                         <div id='cityResult3' class="ui-alert"></div>
                     </li>
                     <li>
-                        <label for="title" class="title text-alignr">债权金额：</label><span class="mui-colform-input w60"><input type="text" placeholder="请输入债务金额"></span>
-                    </li>
-                    <li>
-                        <label for="title" class="title text-alignr">逾期时间：</label>
-                        <span class="mui-colform-input w60">
-                            <button id='showdatePicker' data-options='{"type":"date"}' class=" mui-text-left" type='button'>请输入逾期时间</button>
-                        </span>
-                        <div id='result' class="ui-alert"></div>
-                    </li>
-                    <li>
-                        <label for="title" class="title text-alignr">担保方式：</label>
-                        <span class="mui-colform-input w60">
-                            <button id='showInfoPicker1' class=" mui-text-left" type='button'>请选择担保方式</button>
-                        </span>
-                        <div id='userResult' class="ui-alert"></div>
-                    </li>
-                    <li>
-                        <label for="title" class="title text-alignr">诉讼情况：</label>
-                        <span class="mui-colform-input w60">
-                            <button id='showInfoPicker2' class=" mui-text-left" type='button'>请输入诉讼情况</button>
-                        </span>
-                        <div id='userResult' class="ui-alert"></div>
-                    </li>
-                    <li>
-                        <label for="title" class="title text-alignr">期望处置方式：</label>
-                        <span class="mui-colform-input w60">
-                            <button id='showInfoPicker3' class=" mui-text-left" type='button'>请选择期望处置方式</button>
-                        </span>
-                        <div id='userResult' class="ui-alert"></div>
-                    </li>
-                    <li>
-                        <label for="title" class="title text-alignr">佣金比例：</label>
-                        <span class="mui-colform-input w38">
-                            <button id='showInfoPicker4' class=" mui-text-left" type='button'>1%</button>
-                        </span>
-                        <div id='userResult' class="ui-alert"></div>
-                    </li>
-                    <li>
-                        <label for="title" class="title text-alignr">处置周期：</label>
-                        <span class="w60 l-left">
-                            <div class="cycle1 mui-checkbox">
-                                <input name="checkbox" value="Item 2" type="checkbox" checked>
-                                <label class="col-dblue checkcycle">3个月</label>
-                            </div>
-                            <div class="cycle1 mui-checkbox">
-                                <input name="checkbox" value="Item 2" type="checkbox" >
-                                <label class="col-dblue checkcycle">6个月</label>
-                            </div>
-                            <div class="cycle1 mui-checkbox">
-                                <input name="checkbox" value="Item 2" type="checkbox" >
-                                <label class="col-dblue checkcycle">1年</label>
-                            </div>
-                        </span>
-                    </li>
-                </ul>
-            </div>
-            <div class="mui-column-tit"><span class="mui-coltit-text">债务方信息</span></div>
-            <div class="mui-column-infobox">
-                <ul class="mui-colinfo-form">
-                    <li>
-                        <label for="title" class="title text-alignl">债务方名称：</label>
-                        <span class="mui-colform-input w60"><input type="text" placeholder="请输入债务方名称"></span>
-                    </li>
-                    <li>
-                        <label for="title" class="titleblock text-alignl">债务方证件号码：</label><span class="mui-colform-inputblock w100"><input type="text" placeholder="请输入债务方证件号码"></span>
-                    </li>
-                    <li>
-                        <label for="title" class="titleblock text-alignl">债务方地址：</label>
-                        <span class="mui-colform-input w100">
-                            <button id='showCityPicker4' class=" mui-text-left" type='button'>请选择所在地区</button>
-                        </span>
-                        <div id='cityResult3' class="ui-alert"></div>
-                        <span class="mui-colform-inputblock w100"><input type="text" placeholder="请输入债务方地址"></span>
-                    </li>
-                    <li>
-                        <label for="title" class="titleblock text-alignl">债务方联系方式：</label><span class="mui-colform-inputblock w100"><input type="text" placeholder="请输入债务方联系方式"></span>
-                    </li>
-                    <li style="height: 2.2em;">
-                        <label for="title" class="titleblock w40 text-alignl l-left">债务方能否联系：</label>
-                        <span class="w60 mui-radio l-left">
-                            <input name="radio1" type="radio" value="Item 2" class="checkbox1" checked="">
-                            <span class="col-cheng checkyes">能</span>
-                            <input name="radio1" type="radio" value="Item 2"  class="checkbox2">
-                            <span class="col-cheng checkno">否</span>
-                        </span>
-                    </li>
-                    <li>
-                        <label for="title" class="titleblock text-alignl">债权发生简述：</label>
+                        <label for="title" class="titleblock text-alignl">任务简述：</label>
                         <span class="mui-colform-textarea w100">
                             <textarea name="" id="" placeholder="请输入简单描述，限定200字以内…"></textarea>
                         </span>
@@ -193,7 +126,7 @@
             (function($, doc) {
                 $.init();
                 $.ready(function() {
-                    // 担保方式选择
+                    // 任务类型选择
                     var userPicker = new $.PopPicker();
                     userPicker.setData([{
                         value: '无担保',
@@ -218,71 +151,6 @@
                         });
                     }, false);
 
-                    // 诉讼情况选择
-                    var userPicker2 = new $.PopPicker();
-                    userPicker2.setData([{
-                        value: '未诉讼',
-                        text: '未诉讼'
-                    }, {
-                        value: '已判决',
-                        text: '已判决'
-                    }, {
-                        value: '执行中',
-                        text: '执行中'
-                    }]);
-                    var showUserPickerButton = doc.getElementById('showInfoPicker2');
-                    var userResult2 = doc.getElementById('showInfoPicker2');
-                    showUserPickerButton.addEventListener('tap', function(event) {
-                        userPicker2.show(function(items) {
-                            userResult2.innerText = JSON.stringify(items[0].text);
-                            //返回 false 可以阻止选择框的关闭
-                            //return false;
-                        });
-                    }, false);
-
-                    // 处置方式选择
-                    var userPicker3 = new $.PopPicker();
-                    userPicker3.setData([{
-                        value: '非诉催收',
-                        text: '非诉催收'
-                    }, {
-                        value: '律师诉讼',
-                        text: '律师诉讼'
-                    }, {
-                        value: '债权转让',
-                        text: '债权转让'
-                    }]);
-                    var showUserPickerButton = doc.getElementById('showInfoPicker3');
-                    var userResult3 = doc.getElementById('showInfoPicker3');
-                    showUserPickerButton.addEventListener('tap', function(event) {
-                        userPicker3.show(function(items) {
-                            userResult3.innerText = JSON.stringify(items[0].text);
-                            //返回 false 可以阻止选择框的关闭
-                            //return false;
-                        });
-                    }, false);
-
-                    // 佣金比例选择
-                    var userPicker4 = new $.PopPicker();
-                    userPicker4.setData([{
-                        value: '10%',
-                        text: '10%'
-                    }, {
-                        value: '30%',
-                        text: '30%'
-                    }, {
-                        value: '50%',
-                        text: '50%'
-                    }]);
-                    var showUserPickerButton = doc.getElementById('showInfoPicker4');
-                    var userResult4 = doc.getElementById('showInfoPicker4');
-                    showUserPickerButton.addEventListener('tap', function(event) {
-                        userPicker4.show(function(items) {
-                            userResult4.innerText = JSON.stringify(items[0].text);
-                            //返回 false 可以阻止选择框的关闭
-                            //return false;
-                        });
-                    }, false);
 
                     // 地区选择
                     var cityPicker3 = new $.PopPicker({
@@ -294,21 +162,6 @@
                     showCityPickerButton.addEventListener('tap', function(event) {
                         cityPicker3.show(function(items) {
                             cityResult3.innerText = (items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
-                            //返回 false 可以阻止选择框的关闭
-                            //return false;
-                        });
-                    }, false);
-
-                    // 债务人地址地区选择
-                    var cityPicker4 = new $.PopPicker({
-                        layer: 3
-                    });
-                    cityPicker4.setData(cityData3);
-                    var showCityPickerButton = doc.getElementById('showCityPicker4');
-                    var cityResult4 = doc.getElementById('showCityPicker4');
-                    showCityPickerButton.addEventListener('tap', function(event) {
-                        cityPicker4.show(function(items) {
-                            cityResult4.innerText = (items[0] || {}).text + " " + (items[1] || {}).text + " " + (items[2] || {}).text;
                             //返回 false 可以阻止选择框的关闭
                             //return false;
                         });

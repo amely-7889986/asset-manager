@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>鹰联资产管家</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="stylesheet" href="../../Css/Appsite/mui.css">
+        <link rel="stylesheet" type="text/css" href="../../Css/Appsite/app.css"/>
+        <link rel="stylesheet" type="text/css" href="../../Css/Appsite/feedback.css" />
+        <link href="../../Vedio/video-js.css" rel="stylesheet" type="text/css">
+        <script src="../../Vedio/video.js"></script>
+        <script>
+          videojs.options.flash.swf = "../../Vedio/video-js.swf";
+        </script>
+    </head>
+        <style>
+            .mui-table-view {
+                margin-top: 10px;
+            }
+            .sideslip-page .mui-row, .sideslip-page .mui-scroll {
+                height: 100%;
+            }
+
+            .sideslip-page .mui-col-xs-4,
+            .sideslip-page .mui-col-xs-8 {
+                overflow-y: auto;
+                height: 100%;
+            }
+
+            .sideslip-page  .mui-segmented-control .mui-control-item {
+                line-height: 50px;
+                width: 100%;
+            }
+
+            .sideslip-page .mui-control-content {
+                display: block;
+            }
+
+            .sideslip-page .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+                background-color: #fff;
+            }
+        </style>
+    <body class="mui-fullscreen">
+        <nav class="mui-bar mui-bar-tab" id="mui-menu-box" style="z-index: 999;">
+            <a class="mui-menu-item" href="../index.html">
+                <i class="mui-icon iconfont">&#xe629;</i>
+                <span class="mui-tab-label">首页</span>
+            </a>
+            <a class="mui-menu-item" href="../message/index.html">
+                <i class="mui-icon iconfont">&#xe63a;<span class="mui-badge">9</span></i>
+                <span class="mui-tab-label">消息</span>
+            </a>
+            <a class="mui-menu-item" href="../user/index.html">
+                <i class="mui-icon iconfont">&#xe617;</i>
+                <span class="mui-tab-label">个人中心</span>
+            </a>
+        </nav>
+        <div class="mui-content">
+            <div class="mui-navbar" style="position: relative;">
+                <div class="mui-navbar-inner mui-bar mui-bar-nav bg-lan" >
+                    <a href="../index.html" class="col-dblue pagelocate"><i class="mui-icon iconfont font12e col-jblue padding-right8">&#xe638;</i>首页</a>><a href="list.html" class="col-dblue pagelocate">资管学堂</a>
+                </div>
+            </div>
+            <div class="mui-vediobox-lg">
+                <div id="video-box" class="">
+                    <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="100%" height="215" poster="../../UploadFile/AppSite/vedio05.png" data-setup="{}">
+                          <source src="../../Vedio/test.mp4" type='video/mp4' />
+                          <track kind="captions" src="../../Vedio/demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                          <track kind="subtitles" src="../../Vedio/demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                      </video>
+                </div>
+            </div>
+            <div class="mui-vedio-list">
+                <div class="mui-vedio-libox">
+                    <div class="pic l-left">
+                        <img src="../../UploadFile/AppSite/vedio03.png" alt="">
+                    </div>
+                    <div class="info l-left">
+                        <p class="title">【第一课】认识鹰联资产，带你认识创新催收管理系统</p>
+                        <a href="info.html" class="mui-btn-play">立即播放</a>
+                    </div>
+                </div>
+                <div class="mui-vedio-libox">
+                    <div class="pic l-left">
+                        <img src="../../UploadFile/AppSite/vedio02.png" alt="">
+                    </div>
+                    <div class="info l-left">
+                        <p class="title">【第二课】如何使用鹰联资产平台资产发布功能</p>
+                        <a href="info.html" class="mui-btn-play">立即播放</a>
+                    </div>
+                </div>
+                <div class="mui-vedio-libox">
+                    <div class="pic l-left">
+                        <img src="../../UploadFile/AppSite/vedio01.png" alt="">
+                    </div>
+                    <div class="info l-left">
+                        <p class="title">【第三课】赏金猎人，互惠互利交易模式，提高工作效率</p>
+                        <a href="info.html" class="mui-btn-play">立即播放</a>
+                    </div>
+                </div>
+                <div class="mui-vedio-libox">
+                    <div class="pic l-left">
+                        <img src="../../UploadFile/AppSite/vedio04.png" alt="">
+                    </div>
+                    <div class="info l-left">
+                        <p class="title">【第四课】赏金猎人，互惠互利交易模式，提高工作效率</p>
+                        <a href="info.html" class="mui-btn-play">立即播放</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../../Js/Appsite/mui.min.js "></script>
+    <script src="../../Js/Appsite/mui.view.js "></script>
+    <script src='../../Js/Appsite/feedback.js'></script>
+</html>
