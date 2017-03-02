@@ -27,7 +27,7 @@ SuCaiJiaYuan.prototype = {
 		$(window).bind("scroll",function() {
             var d = $(document).scrollTop(),
             e = $(window).height();
-            0 < d ? $backTop.css("bottom", "10px") : $backTop.css("bottom", "-90px");
+            0 < d ? $backTop.css("bottom", "10px") : $backTop.css("bottom", "-110px");
 			clearTimeout(timmer);
 			timmer = setTimeout(function() {
                 clearTimeout(timmer)

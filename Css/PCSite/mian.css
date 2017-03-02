@@ -1280,8 +1280,9 @@
   display: block;
   overflow: hidden;
   background-color: #fff;
-  padding: 10px 24px 10px 10px;
-  margin-top: 20px;
+  padding: 10px 22px 10px 8px;
+  margin: 20px 2px 2px 2px;
+  box-shadow: 0px 0px 3px #aaa;
 }
 .vediogroom .groombox .groomlg {
   display: block;
@@ -1407,9 +1408,10 @@
 .vediohot .hotbox {
   display: block;
   overflow: hidden;
-  padding: 18px 8px 0 8px;
+  padding: 18px 6px 0 6px;
   background-color: #fff;
-  margin-top: 20px;
+  margin: 20px 2px 2px 2px;
+  box-shadow: 0px 0px 3px #aaa;
 }
 .vediohot .hotbox li {
   display: block;
@@ -1666,6 +1668,10 @@
   height: 60px;
   background-size: 28px 60px;
   background-color: transparent;
+}
+.databox .datalist .swiper-button-prev.swiper-button-disabled,
+.databox .datalist .swiper-button-next.swiper-button-disabled {
+  opacity: 0.65;
 }
 .databox .datalist .swiper-button-next01 {
   right: 0;
@@ -2196,7 +2202,7 @@ input:-ms-input-placeholder {
   position: fixed;
   right: 10px;
   transition: bottom ease .3s;
-  bottom: -85px;
+  bottom: -115px;
   z-index: 3;
   cursor: pointer;
 }
