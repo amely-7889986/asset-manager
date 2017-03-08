@@ -83,7 +83,7 @@
                     <li>深圳</li>
                     <li>上海</li>
                     <li>天津</li>
-                    <li class="otherarea" id="otherarea">其他地区</li>
+                    <li class="otherarea"><input type="text" id="cityChoice1" value="其他地区"></li>
                 </ul>
             </div>
         </div>
@@ -618,20 +618,36 @@
     });
 
     cityPicker.init();
+
+    var cityPicker = new HzwCityPicker({
+        data: data,
+        target: 'cityChoice1',
+        valType: 'k-v',
+        hideCityInput: {
+            name: 'city',
+            id: 'city'
+        },
+        hideProvinceInput: {
+            name: 'province',
+            id: 'province'
+        },
+    });
+
+    cityPicker.init();
     </script>
     <script type="text/javascript" src="../../Js/PCSite/layer.js"></script>
     <script>
-        $('#otherarea').on('click', function(){
-            layer.open({
-              type: 1,
-              title: '其他地区选择',
-              skin: 'layui-layer-demo', //样式类名
-              closeBtn: 0, //不显示关闭按钮
-              anim: 2,
-              shadeClose: true, //开启遮罩关闭
-              content: '<div class="assetselect" style="width: 320px;padding: 8px;"><div class="selectbox"><ul><li class="active">汕头</li><li>汕尾</li><li>广州</li><li>深圳</li><li>上海</li><li>天津</li></ul></div></div>'
-            });
-        });
+        // $('#otherarea').on('click', function(){
+        //     layer.open({
+        //       type: 1,
+        //       title: '其他地区选择',
+        //       skin: 'layui-layer-demo', //样式类名
+        //       closeBtn: 0, //不显示关闭按钮
+        //       anim: 2,
+        //       shadeClose: true, //开启遮罩关闭
+        //       content: '<div class="assetselect" style="width: 320px;padding: 8px;"><div class="selectbox"><ul><li class="active">汕头</li><li>汕尾</li><li>广州</li><li>深圳</li><li>上海</li><li>天津</li></ul></div></div>'
+        //     });
+        // });
     </script>
 </body>
 </html>

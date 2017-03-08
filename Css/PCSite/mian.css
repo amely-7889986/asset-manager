@@ -100,10 +100,10 @@
   position: absolute;
   top: 20px;
   overflow: hidden;
-  width: 640px;
+  width: 700px;
   height: 36px;
   line-height: 36px;
-  margin-left: 180px;
+  margin-left: 240px;
   background-color: #fff;
   border-radius: 18px;
   z-index: 99;
@@ -134,7 +134,7 @@
   width: 304px;
   height: 332px;
   background: rgba(255, 255, 255, 0.9);
-  margin-left: 680px;
+  margin-left: 820px;
   border-radius: 6px;
   padding: 0 14px;
 }
@@ -354,20 +354,20 @@
   display: block;
   overflow: hidden;
   float: left;
-  width: 320px;
-  height: 248px;
+  width: 374px;
+  height: 320px;
   background-color: #fff;
   border: 1px solid #ddd;
-  margin: 8px 6px;
+  margin: 8px 10px;
 }
 .col-hotasset-box li > a.tit {
   display: block;
   overflow: hidden;
   white-space: normal;
   text-overflow: ellipsis;
-  width: 240px;
+  width: 300px;
   margin: 24px 20px 24px 60px;
-  font-size: 18px;
+  font-size: 24px;
 }
 .col-hotasset-box li .hotasset-sec {
   display: block;
@@ -377,6 +377,8 @@
   width: 50%;
   text-align: center;
   float: left;
+  font-size: 18px;
+  margin: 18px 0;
 }
 .col-hotasset-box li .hotasset-sec > div i {
   display: inline-block;
@@ -399,7 +401,8 @@
 .col-hotasset-box li .hotasset-data {
   display: block;
   overflow: hidden;
-  margin-top: 12px;
+  margin-top: 18px;
+  padding-bottom: 14px;
 }
 .col-hotasset-box li .hotasset-data > div {
   display: block;
@@ -412,15 +415,16 @@
   margin: 8px auto;
 }
 .col-hotasset-box li .hotasset-data .w182 {
-  width: 182px;
+  width: 188px;
   border-right: 1px solid #ddd;
+  box-sizing: border-box;
 }
 .col-hotasset-box li .hotasset-data .w136 {
-  width: 136px;
+  width: 186px;
 }
 .col-hotasset-box li > a.btn {
   display: block;
-  margin: 18px auto;
+  margin: 24px auto;
   border-radius: 28px;
   padding: 8px 0;
   font-size: 18px;
@@ -545,7 +549,7 @@
   width: 100%;
   height: 220px;
   top: 128px;
-  left: 24px;
+  left: 74px;
 }
 .baile .bg img {
   width: auto;
@@ -603,7 +607,7 @@
   width: 100%;
   height: 220px;
   top: 128px;
-  left: 24px;
+  left: 64px;
 }
 .disposal .bg img {
   width: auto;
@@ -624,6 +628,7 @@
   display: block;
   width: 100%;
   overflow: hidden;
+  height: 180px;
 }
 .company a.company-box .pic img {
   width: 100%;
@@ -633,7 +638,7 @@
   display: block;
   overflow: hidden;
   background: #f1f5f8;
-  padding: 8px 18px 14px 18px;
+  padding: 12px 18px 20px 18px;
 }
 .company a.company-box .info .tit {
   background: url(../../Images/PCSite/arrow-logo.png) left center no-repeat;
@@ -691,7 +696,7 @@
 }
 .assetselect {
   display: block;
-  width: 972px;
+  width: 1152px;
   overflow: hidden;
   background-color: #fff;
   margin: 14px auto;
@@ -726,9 +731,26 @@
   border-radius: 4px;
   color: #fff;
 }
+.assetselect .selectbox li:hover input,
+.assetselect .selectbox li:active input,
+.assetselect .selectbox li.active input {
+  color: #fff;
+}
 .assetselect .selectbox .otherarea {
   padding-right: 24px;
   background: url(../../Images/PCSite/locate-arrow.png) 72px center no-repeat;
+  margin-top: 4px;
+}
+.assetselect .selectbox .otherarea input {
+  width: 54px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  vertical-align: top;
+  background: none;
 }
 .list-tit {
   line-height: 34px;
@@ -865,6 +887,22 @@
 .column-num span:active {
   background-color: #0d2c54;
   color: #fff;
+}
+.column-num span,
+.column-num label {
+  margin: 2px;
+}
+.column-num span.disabled:hover,
+.column-num span.disabled,
+.column-num span.disabled:active {
+  color: gray;
+  cursor: default;
+  background-color: white;
+}
+.column-num span.active:hover,
+.column-num span.active,
+.column-num span.active:active {
+  cursor: default;
 }
 .assetinfo {
   display: block;
@@ -1322,7 +1360,7 @@
   display: block;
   font-size: 24px;
   color: #0d2c54;
-  padding: 12px 8px 0 8px;
+  padding: 12px 8px 4px 8px;
   white-space: nowrap;
   width: 500px;
   overflow: hidden;
@@ -1983,6 +2021,7 @@ body {
   color: #2c3444;
   font-size: 14px;
   background: #f5f2f2;
+  min-width: 1180px;
 }
 a {
   color: inherit;
@@ -2145,13 +2184,14 @@ input:-ms-input-placeholder {
   padding: 12px 0;
 }
 .footer-box .foot-logo {
-  width: 230px;
+  width: 260px;
   display: block;
   overflow: hidden;
   text-align: center;
+  margin-bottom: 14px;
 }
 .footer-box .foot-logo .pic {
-  width: 230px;
+  width: 260px;
 }
 .footer-box .foot-logo .pic img {
   width: 100%;
@@ -2162,20 +2202,20 @@ input:-ms-input-placeholder {
 .footer-box .foot-nav {
   display: block;
   overflow: hidden;
-  margin-left: 12px;
+  margin-left: 34px;
 }
 .footer-box .foot-nav li {
   float: left;
   font-size: 20px;
-  margin: 48px 18px;
+  margin: 48px 34px;
 }
 .footer-box .foot-cantact {
   line-height: 34px;
-  margin: 8px 24px;
+  margin: 8px 34px;
 }
 .footer-box .font-code {
   display: block;
-  width: 106px;
+  width: 180px;
   text-align: center;
 }
 .footer-box .font-code > p {
@@ -2262,7 +2302,7 @@ input:-ms-input-placeholder {
   width: 100%;
 }
 .main {
-  width: 1000px;
+  width: 1180px;
   margin: 0 auto;
 }
 .header {
@@ -2287,13 +2327,13 @@ input:-ms-input-placeholder {
 .l-head-nav .logobox {
   display: block;
   overflow: hidden;
-  width: 240px;
-  height: 60px;
+  width: 260px;
+  height: 80px;
   margin-left: 10px;
   float: left;
 }
 .l-head-nav .logobox img {
-  height: 100%;
+  width: 100%;
 }
 .l-head-nav .locate-box {
   display: block;
@@ -2327,11 +2367,11 @@ input:-ms-input-placeholder {
   display: block;
   float: left;
   color: #0d2c54;
-  width: 104px;
+  width: 132px;
   text-align: center;
   font-size: 18px;
-  height: 70px;
-  line-height: 70px;
+  height: 80px;
+  line-height: 80px;
   box-sizing: border-box;
 }
 .nav-box li.active,
