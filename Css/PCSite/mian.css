@@ -1,51 +1,425 @@
-.animation-sx {
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+/*! normalize-opentype v0.1.2 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
+/**
+     * 1. Turn on kerning, standard ligatures, and proportional, oldstyle numerals
+     *    Turn off all other ligatures, tabular, lining numerals, and alternates
+     */
+html,
+body {
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+  /* 1. */
 }
-.animation-sx:hover .animation-sx-item {
-  -webkit-transform: scale(0.98);
-  -moz-transform: scale(0.98);
-  -ms-transform: scale(0.98);
-  transform: scale(0.98);
+/* Headings
+    ========================================================================== */
+/**
+     * 1. Turn on discretionary ligatures for larger headings
+     */
+h1,
+h2,
+h3 {
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
+  /* 1. */
 }
-.animation-ydz {
-  -moz-transition: transform 0.2s linear 0s;
-  -o-transition: transform 0.2s linear 0s;
-  -webkit-transition: transform 0.2s linear 0s;
-  transition: transform 0.2s linear 0s;
+/* Text-level semantics
+    ========================================================================== */
+/**
+     * 1. Change all letters to uppercase
+     * 2. Turn on small caps for upper and lowercase letters
+     */
+abbr {
+  text-transform: uppercase;
+  /* 1 */
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
+  /* 2 */
 }
-.animation-ydz:hover {
-  -webkit-transform: translateX(4px);
-  -moz-transform: translateX(4px);
-  -ms-transform: translateX(4px);
-  transform: translateX(4px);
+/*
+     * TODO: Turn on diagonal fractions where appropriate
+     */
+time {
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0;
 }
-.animation-ydy {
-  -moz-transition: transform 0.2s linear 0s;
-  -o-transition: transform 0.2s linear 0s;
-  -webkit-transition: transform 0.2s linear 0s;
-  transition: transform 0.2s linear 0s;
+/*
+     * 1. Turn off kerning and ligatures,
+     *    Turn on lining, tabular numerals, slashed zero
+     */
+pre,
+kbd,
+samp,
+code {
+  font-feature-settings: "kern" 0, "liga" 0, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  /* 1. */
 }
-.animation-ydy:hover {
-  -webkit-transform: translateY(-4px);
-  -moz-transform: translateY(-4px);
-  -ms-transform: translateY(-4px);
-  transform: translateY(-4px);
+/**
+     * 1. Turn on proper supercript numerals
+     */
+sup {
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "sups" 1;
+  /* 1. */
 }
-.animation-soux img {
-  transition: all .6s;
-  -moz-transition: all .6s;
-  -ms-transition: all .6s;
-  -webkit-transition: all .6s;
+/**
+     * 1. Turn on proper subscript numerals
+     */
+sub {
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "subs" 1;
+  /* 1. */
 }
-.animation-soux:hover img {
-  transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  -moz-transform: scale(0.95);
-  -webkit-transform: scale(0.95);
-  -o-transform: scale(0.95);
+/* Tables
+    ========================================================================== */
+/**
+     * 1. Turns on tabular, lining numerals and slashed zero
+     *    Turns off kerning, as it could impact tabular numerals
+     */
+table {
+  font-feature-settings: "kern" 0, "liga" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
+  /* 1. */
+}
+/**
+     * 1. Revert to defaults for table headings
+     */
+table thead,
+table tfoot {
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
+  /* 2. */
+}
+/* Forms
+    ========================================================================== */
+/**
+     * 1. Turns on lining, proportional numerals without clarified zeroes
+     * TODO: Additional input modes https://developer.mozilla.org/en/docs/Web/HTML/Element/Input#attr-inputmode
+     */
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="number"],
+input[type="range"],
+input[type="tel"],
+input[type="week"] {
+  font-feature-settings: "kern" 0, "liga" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1, "zero" 0;
+  /* 1. */
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+.main {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]),
+[hidden] {
+  display: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+.main {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]),
+[hidden] {
+  display: none;
+}
+body {
+  font-family: "Microsoft YaHei";
+  color: #2c3444;
+  font-size: 14px;
+  background: #f5f2f2;
+  min-width: 1180px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.hover a:hover {
+  color: #ed6d00;
+  text-decoration: underline !important;
+}
+select,
+input {
+  font-family: inherit;
+}
+.l-left {
+  float: left;
+}
+.l-right {
+  float: right;
+}
+.l-float {
+  *zoom: 1;
+}
+.l-float:before,
+.l-float:after {
+  display: table;
+  content: "";
+}
+.l-float:after {
+  clear: both;
+}
+.dis-b {
+  display: block !important;
+}
+.dis-i {
+  display: inline-block !important;
+}
+.pos-r {
+  position: relative;
+}
+.container {
+  width: 100%;
+}
+.main {
+  width: 1180px;
+  margin: 0 auto;
+}
+.font12 {
+  font-size: 12px;
+}
+.font14 {
+  font-size: 14px;
+}
+.font16 {
+  font-size: 16px;
+}
+.font18 {
+  font-size: 18px;
+}
+.font20 {
+  font-size: 20px;
+}
+.font24 {
+  font-size: 24px;
+}
+.font30 {
+  font-size: 30px;
+}
+.font36 {
+  font-size: 36px;
+}
+.font60 {
+  font-size: 60px;
+}
+.fontw6 {
+  font-weight: 600;
+}
+.fontw5 {
+  font-weight: 500;
+}
+.fontw1 {
+  font-weight: 100;
+}
+.ov-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-hide {
+  text-indent: -9999px;
+  overflow: hidden;
+  text-align: left;
+}
+.col-hei {
+  color: #25272a;
+}
+.col-hui {
+  color: #b4b5b7;
+}
+.col-dhui {
+  color: #7c7c7d;
+}
+.col-huang {
+  color: #f7ab00;
+}
+.col-cheng {
+  color: #ed6d00;
+}
+.col-red {
+  color: #ff0023;
+}
+.col-lv {
+  color: #33c500;
+}
+.col-bai {
+  color: #fff;
+}
+.col-blue {
+  color: #2d87d9;
+}
+.col-dblue {
+  color: #0d2c54;
+}
+.col-lblue {
+  color: #1291f1;
+}
+.text-al {
+  text-align: left;
+}
+.text-ac {
+  text-align: center;
+}
+.text-ar {
+  text-align: right;
+}
+.text-i24 {
+  text-indent: 24px;
+}
+.lh24 {
+  line-height: 24px;
+}
+.lh32 {
+  line-height: 32px;
+}
+.text-udl {
+  text-decoration: underline;
+}
+input::-webkit-input-placeholder {
+  color: #b4b5b7 !important;
+}
+input:-moz-placeholder {
+  color: #b4b5b7 !important;
+}
+input::-moz-placeholder {
+  color: #b4b5b7 !important;
+}
+input:-ms-input-placeholder {
+  color: #b4b5b7 !important;
 }
 .bg-hui {
   background-color: #f5f2f2 !important;
@@ -77,94 +451,149 @@
 .bg-bluehui {
   background-color: #f1f5f8;
 }
-.banner-box {
-  display: block;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  z-index: 9;
-  background-color: #f1f5f8;
+.w220 {
+  width: 220px;
 }
-.banner-box .swiper-slide {
-  text-align: center;
+.w380 {
+  width: 380px;
 }
-.banner-box img {
-  width: auto;
-  height: 100%;
+.w276 {
+  width: 276px;
 }
-.banner-box .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 24px;
+.w158 {
+  width: 158px;
 }
-.search-box {
-  display: block;
-  position: absolute;
-  top: 20px;
-  overflow: hidden;
-  width: 700px;
-  height: 36px;
-  line-height: 36px;
-  margin-left: 240px;
-  background-color: #fff;
-  border-radius: 18px;
-  z-index: 99;
-  text-align: center;
+.w1020 {
+  width: 1020px;
 }
-.search-box input[type="text"] {
-  display: block;
-  overflow: hidden;
-  width: 580px;
-  float: left;
-  height: 36px;
-  border: 0;
-  font-size: 14px;
-  outline: none;
+.h580 {
+  height: 580px;
 }
-.search-box a.search-btn {
-  display: inline-block;
-  float: left;
-  width: 22px;
-  height: 22px;
-  padding: 7px 18px;
-  background: url(../../Images/PCSite/ic-search.png) center center no-repeat;
+.h378 {
+  height: 378px;
 }
-.sign-box {
-  position: absolute;
-  top: 100px;
-  z-index: 999;
-  width: 304px;
-  height: 332px;
-  background: rgba(255, 255, 255, 0.9);
-  margin-left: 820px;
-  border-radius: 6px;
-  padding: 0 14px;
+.h338 {
+  height: 338px;
 }
-.sign-box .sign-tab {
-  display: block;
-  overflow: hidden;
-  line-height: 34px;
-  border-bottom: 1px solid #0d2c54;
-  width: 100%;
-  box-sizing: border-box;
+.pd4 {
+  padding: 4px 0;
+}
+.pd10 {
   padding: 10px 0;
 }
-.sign-box .sign-tab li {
-  display: block;
-  overflow: hidden;
-  float: left;
-  font-size: 18px;
-  color: #0d2c54;
-  cursor: pointer;
-  width: 49%;
-  line-height: 37px;
-  text-align: center;
+.pd15 {
+  padding: 15px 0;
 }
-.sign-box .sign-tab li:active,
-.sign-box .sign-tab li:hover,
-.sign-box .sign-tab li.activetab {
-  color: #f7ab00;
+.pd20 {
+  padding: 20px 0;
 }
-.sign-box #sign-contain > ul {
-  display: none;
+.pdt36 {
+  padding-top: 36px;
+}
+.pdl10 {
+  padding-left: 10px;
+}
+.pdl20 {
+  padding-left: 20px;
+}
+.pdl30 {
+  padding-left: 30px;
+}
+.pdl52 {
+  padding-left: 52px;
+}
+.pdl60 {
+  padding-left: 60px;
+}
+.pdl120 {
+  padding-left: 120px;
+}
+.pdr10 {
+  padding-right: 10px;
+}
+.pdr20 {
+  padding-right: 20px;
+}
+.pdb4 {
+  padding-bottom: 4px;
+}
+.pdl4 {
+  padding-left: 4px;
+}
+.pdr4 {
+  padding-right: 4px;
+}
+.pdb30 {
+  padding-bottom: 30px;
+}
+.pdt10 {
+  padding-top: 10px;
+}
+.margin0 {
+  margin: 0 auto;
+}
+.margin210 {
+  margin: auto 210px;
+}
+.margin8-12 {
+  margin: 8px 12px !important;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt20 {
+  margin-top: 20px !important;
+}
+.mt30 {
+  margin-top: 30px !important;
+}
+.mb0 {
+  margin: 0 !important;
+}
+.mb4 {
+  margin-bottom: 4px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mb12 {
+  margin-bottom: 12px;
+}
+.mb20 {
+  margin-bottom: 20px !important;
+}
+.mb16 {
+  margin-bottom: 16px;
+}
+.mb26 {
+  margin-bottom: 26px !important;
+}
+.mb40 {
+  margin-bottom: 40px !important;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.ml180 {
+  margin-left: 180px;
+}
+.ml190 {
+  margin-left: 190px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.mr24 {
+  margin-right: 24px !important;
+}
+.mr54 {
+  margin-right: 54px;
 }
 .border {
   border: #ddd solid 1px;
@@ -237,11 +666,585 @@
   background-color: #f7ab00;
   border-color: #1291f1;
 }
-.column-tit {
+.formbox {
+  display: block;
+  overflow: hidden;
+}
+.formbox .formgroup {
+  display: block;
+  overflow: hidden;
+  height: auto;
+  margin: 18px 0;
+  line-height: 34px;
+}
+.formbox .formgroup .examinebox {
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 40px;
+  line-height: 40px;
+}
+.formbox .formgroup .examinebox > i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  float: left;
+}
+.formbox .formgroup .examinebox > i img {
+  width: 100%;
+}
+.formbox .formgroup .examinebox > span {
+  display: inline-block;
+  font-size: 20px;
+  float: left;
+  margin-left: 12px;
+}
+.formbox .formgroup .formgroup-tit {
   display: block;
   position: relative;
   border-bottom: 1px solid #0d2c54;
   width: 440px;
+  height: 24px;
+  font-size: 18px;
+  z-index: 9;
+  text-align: center;
+  margin: 12px auto;
+}
+.formbox .formgroup .formgroup-tit .tit-text {
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  padding: 0 54px;
+  z-index: 99;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.formbox .formgroup label.formtit {
+  display: inline-block;
+  overflow: hidden;
+  height: 34px;
+  line-height: 34px;
+  float: left;
+  font-size: 16px;
+  color: #0d2c54;
+  text-align: right;
+  padding-right: 10px;
+}
+.formbox .formgroup label.formtit-block {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  float: left;
+  font-size: 18px;
+  color: #0d2c54;
+  padding-left: 10px;
+}
+.formbox .formgroup .forminput {
+  display: inline-block;
+  float: left;
+  border: 1px solid #2d87d9;
+  height: 34px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.formbox .formgroup .forminput input[type="text"],
+.formbox .formgroup .forminput input[type="text"]:disabled,
+.formbox .formgroup .forminput input[type="password"],
+.formbox .formgroup .forminput input[type="password"]:disabled {
+  border: 0;
+  background-color: #fff;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #0d2c54;
+  padding-left: 14px;
+  width: 100%;
+  outline: none;
+}
+.formbox .formgroup .forminput select {
+  height: 32px;
+  font-size: 14px;
+  color: #0d2c54;
+  border: 0;
+  background-color: #fff;
+  outline: none;
+  width: 100%;
+  padding-left: 12px;
+}
+.formbox .formgroup .forminput select option {
+  padding: 8px 12px;
+}
+.formbox .formgroup a.formedit {
+  float: left;
+  line-height: 34px;
+  padding-left: 12px;
+  color: #ed6d00;
+}
+.formbox .formgroup .w100 {
+  width: 100%;
+}
+.formbox .formgroup .w80 {
+  width: 80px;
+}
+.formbox .formgroup .w120 {
+  width: 120px;
+}
+.formbox .formgroup .w140 {
+  width: 140px;
+}
+.formbox .formgroup .w180 {
+  width: 180px;
+}
+.formbox .formgroup .w240 {
+  width: 240px;
+}
+.formbox .formgroup .w340 {
+  width: 340px;
+}
+.formbox .formgroup a.picfile {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background-color: #1291f1;
+  color: #fff;
+  padding: 0 12px;
+  border-radius: 4px;
+}
+.formbox .formgroup a.picfile input {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 100px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.formbox .formpicbox {
+  display: block;
+  overflow: hidden;
+  margin-left: 190px;
+}
+.formbox .formpicbox .pic {
+  display: block;
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+  border: 2px dashed #aaa;
+}
+.formbox .formpicbox .pic img {
+  width: 100%;
+  vertical-align: top;
+}
+.formbox a.submit {
+  display: inline-block;
+  text-align: center;
+  margin: 12px 190px;
+  padding: 8px 18px;
+  background-color: #0d2c54;
+  color: #fff;
+}
+.formbox .formsec {
+  display: block;
+  overflow: hidden;
+  height: auto;
+  line-height: 34px;
+  margin-bottom: 20px;
+}
+.formbox .formsec input[type="radio"].formradio {
+  display: none;
+}
+.formbox .formsec label#radiotext,
+.formbox .formsec label#radiodate,
+.formbox .formsec label#radiocontact {
+  display: inline-block;
+  height: 20px;
+  background-image: url(../../Images/PCSite/formradio.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding-left: 24px;
+  float: left;
+  padding-right: 8px;
+  margin-top: 7px;
+  line-height: 20px;
+}
+.formbox .formsec label#radiotext.checked,
+.formbox .formsec label#radiodate.checked,
+.formbox .formsec label#radiocontact.checked {
+  background-position: left bottom;
+}
+.formbox .formsec label.moneytit {
+  margin-left: 20px;
+  margin-right: 12px;
+}
+.formbox .formtextarea {
+  display: inline-block;
+  float: left;
+  border: 1px solid #2d87d9;
+  height: 180px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.formbox .formtextarea textarea {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 8px;
+  outline: none;
+}
+.form-horizontal .checkbox,
+.form-horizontal .radio {
+  min-height: 32px;
+  line-height: 32px;
+}
+.checkbox label,
+.radio label {
+  min-height: 20px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: 400;
+  cursor: pointer;
+}
+.checkbox input[type=checkbox],
+.checkbox-inline input[type=checkbox],
+.radio input[type=radio],
+.radio-inline input[type=radio] {
+  position: absolute;
+  margin-top: 4px\9;
+  margin-left: -20px;
+  margin-top: 10px;
+}
+.checkbox-inline,
+.radio-inline {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: 400;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.textbox {
+  padding: 0 4px;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  border: #ddd solid 1px;
+}
+.header {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+}
+.top-nav {
+  display: block;
+  overflow: hidden;
+  height: 28px;
+  line-height: 28px;
+}
+.top-nav .top-link a {
+  margin: 0 8px;
+}
+.l-head-nav {
+  display: block;
+  overflow: hidden;
+  padding: 12px 0 0 0;
+}
+.l-head-nav .logobox {
+  display: block;
+  overflow: hidden;
+  width: 260px;
+  height: 80px;
+  margin-left: 10px;
+  float: left;
+}
+.l-head-nav .logobox img {
+  width: 100%;
+}
+.l-head-nav .locate-box {
+  display: block;
+  overflow: hidden;
+  float: left;
+  width: 68px;
+  margin: 0 24px;
+}
+.l-head-nav .locate-box input {
+  width: 54px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  background: url(../../Images/PCSite/locate-arrow.png) right 2px center no-repeat;
+  margin: 8px 0;
+  padding-right: 14px;
+}
+.l-head-nav .locate-box img {
+  width: 100%;
+  vertical-align: top;
+}
+.nav-box {
+  display: block;
+  overflow: hidden;
+  float: left;
+}
+.nav-box li {
+  display: block;
+  float: left;
+  color: #0d2c54;
+  width: 132px;
+  text-align: center;
+  font-size: 18px;
+  height: 34px;
+  line-height: 34px;
+  margin-top: 23px;
+  box-sizing: border-box;
+}
+.nav-box li > a {
+  display: inline-block;
+  width: 120px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.nav-box li.active > a,
+.nav-box li:active > a,
+.nav-box li:hover > a {
+  background-color: #f7ab00;
+  color: #fff;
+}
+/* 城市选择 */
+.hzw-city-picker {
+  position: absolute;
+  border: 1px solid #c9cbce;
+  width: 362px;
+  background: #ffffff;
+  z-index: 999999;
+  font-size: 0;
+  box-sizing: border-box;
+}
+.hzw-city-picker:before,
+.hzw-city-picker:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  position: absolute;
+  left: 20px;
+  z-index: 999999;
+}
+.hzw-city-picker:before {
+  border-color: transparent transparent #ffffff;
+  top: -20px;
+  z-index: 9999999;
+}
+.hzw-city-picker:after {
+  border-color: transparent transparent #c9cbce;
+  top: -20px;
+}
+.hzw-city-picker * {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  color: #666666;
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+}
+.hzw-city-picker ul {
+  list-style: none;
+}
+.hzw-city-picker ul li {
+  display: inline-block;
+  position: relative;
+  margin: 4px;
+  cursor: pointer;
+}
+.hzw-city-picker p {
+  font-weight: bold;
+  padding: 0 4px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+.hzw-city-picker .line {
+  width: 342px;
+  margin: 0 auto;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-bottom: 1px solid #d8d8d8;
+}
+/*热门城市*/
+.hzw-city-picker .hzw-hot-wrap {
+  width: 100%;
+  background: #ffffff;
+  padding: 9px;
+}
+.hzw-city-picker .hzw-hot-wrap ul li {
+  width: 58px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  color: #666666;
+  background-color: #f5f5f5;
+}
+.hzw-city-picker .hzw-hot-wrap ul li:hover {
+  color: #ed6d00;
+}
+/*选择省份*/
+.hzw-city-picker .hzw-wrap {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  padding: 9px;
+}
+.hzw-city-picker .hzw-province-name {
+  display: inline-block;
+  width: 58px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  position: relative;
+  background-color: #f5f5f5;
+}
+.hzw-city-picker .hzw-province-name:hover {
+  color: #ed6d00;
+}
+.hzw-city-picker .hzw-province.active {
+  z-index: 999999999;
+}
+.hzw-city-picker .hzw-province-name.active {
+  border: 1px solid #D8D8D8;
+  border-bottom-color: #ffffff;
+  color: #ed6d00;
+  background-color: #ffffff;
+}
+.hzw-city-picker .hzw-city-wrap {
+  display: none;
+  border: 1px solid #D8D8D8;
+  background: #ffffff;
+  position: absolute;
+  top: 27px;
+  width: 328px;
+  padding: 10px;
+}
+.hzw-city-picker .hzw-city {
+  width: 58px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  color: #999999;
+  background-color: #f5f5f5;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.hzw-city-picker .hzw-city:hover {
+  color: #ed6d00;
+}
+.banner-box {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 9;
+  background-color: #f1f5f8;
+}
+.banner-box .swiper-slide {
+  text-align: center;
+}
+.banner-box img {
+  width: auto;
+  height: 100%;
+}
+.banner-box .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 24px;
+}
+.search-box {
+  display: block;
+  position: absolute;
+  top: 20px;
+  overflow: hidden;
+  width: 700px;
+  height: 36px;
+  line-height: 36px;
+  margin-left: 240px;
+  background-color: #fff;
+  border-radius: 18px;
+  z-index: 99;
+  text-align: center;
+}
+.search-box input[type="text"] {
+  display: block;
+  overflow: hidden;
+  width: 560px;
+  float: left;
+  height: 36px;
+  border: 0;
+  font-size: 14px;
+  outline: none;
+  padding-left: 20px;
+}
+.search-box a.search-btn {
+  display: inline-block;
+  float: right;
+  width: 22px;
+  height: 22px;
+  padding: 7px 18px;
+  background: url(../../Images/PCSite/ic-search.png) center center no-repeat;
+}
+.sign-box {
+  position: absolute;
+  top: 100px;
+  z-index: 999;
+  width: 304px;
+  height: 332px;
+  background: rgba(255, 255, 255, 0.9);
+  margin-left: 820px;
+  border-radius: 6px;
+  padding: 0 14px;
+}
+.sign-box .sign-tab {
+  display: block;
+  overflow: hidden;
+  line-height: 34px;
+  border-bottom: 1px solid #0d2c54;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.sign-box .sign-tab li {
+  display: block;
+  overflow: hidden;
+  float: left;
+  font-size: 18px;
+  color: #0d2c54;
+  cursor: pointer;
+  width: 49%;
+  line-height: 37px;
+  text-align: center;
+}
+.sign-box .sign-tab li:active,
+.sign-box .sign-tab li:hover,
+.sign-box .sign-tab li.activetab {
+  color: #f7ab00;
+}
+.sign-box #sign-contain > ul {
+  display: none;
+}
+.column-tit {
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #0d2c54;
+  width: 540px;
   height: 24px;
   font-size: 24px;
   z-index: 9;
@@ -977,7 +1980,7 @@
 .rewardinfo .reward-detail {
   display: block;
   overflow: hidden;
-  width: 780px;
+  width: 880px;
   margin-right: 14px;
 }
 .rewardinfo .reward-detail .infobox {
@@ -1006,7 +2009,7 @@
   padding: 12px;
 }
 .rewardinfo .rewardhead .pc-slide {
-  width: 385px;
+  width: 415px;
 }
 .rewardinfo .rewardhead .view .swiper-container1 {
   width: 385px;
@@ -1095,7 +2098,7 @@
   overflow: hidden;
   float: left;
   margin-left: 20px;
-  width: 350px;
+  width: 420px;
 }
 .rewardinfo .rewardsec h2.tit {
   font-size: 18px;
@@ -1152,20 +2155,21 @@
 .rewardinfo .reward-flow {
   display: block;
   overflow: hidden;
-  width: 206px;
+  width: 285px;
   margin-bottom: 20px;
 }
 .rewardinfo .reward-flow .column-tit {
-  width: 206px;
+  width: 285px;
 }
 .rewardinfo .reward-flow .column-tit .tit-text {
-  padding: 0 12px;
-  top: 8px;
+  padding: 0 18px;
+  top: 10px;
+  font-size: 18px !important;
 }
 .rewardinfo .reward-flow .infobox {
   display: block;
   overflow: hidden;
-  padding: 20px 0 0 44px;
+  padding: 20px 0 0 74px;
 }
 .rewardinfo .reward-flow .infobox li {
   display: block;
@@ -1189,12 +2193,12 @@
 }
 .rewardinfo .reward-flow .infobox li .text {
   float: left;
-  padding-left: 18px;
+  padding-left: 28px;
   font-size: 18px;
 }
 .rewardinfo .reward-flow a.form-btn {
   display: block;
-  width: 140px;
+  width: 180px;
   margin: 0 auto;
   overflow: hidden;
   height: 34px;
@@ -1216,20 +2220,20 @@
   display: block;
   overflow: hidden;
   height: 42px;
-  width: 540px;
+  width: 600px;
   border: 1px solid #0d2c54;
   line-height: 42px;
   margin: 0 auto;
   border-radius: 21px;
   box-sizing: border-box;
   background-color: #fff;
-  margin-top: 20px;
+  margin-top: 38px;
   text-align: center;
 }
 .credit .creditsearch input {
   display: inline-block;
   height: 100%;
-  width: 500px;
+  width: 540px;
   float: left;
   border: 0;
   text-align: center;
@@ -1276,13 +2280,13 @@
   display: block;
   overflow: hidden;
   background-color: #fff;
-  width: 740px;
+  width: 840px;
   margin: 24px auto;
 }
 .creditresult .resultlist {
   display: block;
   overflow: hidden;
-  margin-top: 34吧px;
+  margin-top: 34px;
 }
 .creditresult .resultlist .resultbox {
   border-top: 1px dashed #ddd;
@@ -1324,20 +2328,20 @@
 }
 .vediogroom .groombox .groomlg {
   display: block;
-  width: 500px;
+  width: 600px;
   overflow: hidden;
 }
 .vediogroom .groombox .groomlg .picbox {
   display: block;
   overflow: hidden;
-  width: 500px;
-  height: 280px;
+  width: 600px;
+  height: 336px;
   position: relative;
 }
 .vediogroom .groombox .groomlg .picbox .pic {
   display: block;
-  width: 500px;
-  height: 280px;
+  width: 600px;
+  height: 336px;
 }
 .vediogroom .groombox .groomlg .picbox .pic img {
   width: 100%;
@@ -1350,8 +2354,8 @@
   height: 85px;
   background: url(../../Images/PCSite/vedioplay.png) center center no-repeat;
   position: absolute;
-  top: 100px;
-  left: 200px;
+  top: 125px;
+  left: 265px;
 }
 .vediogroom .groombox .groomlg .picbox a:hover.vedioplay {
   opacity: .8;
@@ -1362,7 +2366,7 @@
   color: #0d2c54;
   padding: 12px 8px 4px 8px;
   white-space: nowrap;
-  width: 500px;
+  width: 580px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -1373,14 +2377,14 @@
   margin-left: 14px;
   display: block;
   overflow: hidden;
-  width: 452px;
+  width: 532px;
 }
 .vediogroom .groombox .groomli li {
   display: block;
   overflow: hidden;
   float: left;
-  width: 210px;
-  margin: 0 8px 18px 8px;
+  width: 250px;
+  margin: 0 8px 24px 8px;
 }
 .vediogroom .groombox .groomli li a.vediobox {
   display: block;
@@ -1389,8 +2393,8 @@
 }
 .vediogroom .groombox .groomli li a.vediobox .picbox {
   display: block;
-  width: 210px;
-  height: 118px;
+  width: 250px;
+  height: 140px;
   overflow: hidden;
 }
 .vediogroom .groombox .groomli li a.vediobox .picbox img {
@@ -1401,6 +2405,7 @@
   position: absolute;
   bottom: 0;
   display: block;
+  width: 236px;
   height: 28px;
   padding: 17px 7px 8px 7px;
   background: url(../../Images/PCSite/vedioboxbg.png) left bottom repeat-x;
@@ -1425,7 +2430,7 @@
   line-height: 18px;
   white-space: nowrap;
   text-overflow: ellipsis;
-  margin-top: 8px;
+  margin-top: 14px;
 }
 .vediogroom .groombox .groomli li .playcount i.icon-playcount {
   display: inline-block;
@@ -1448,15 +2453,15 @@
   overflow: hidden;
   padding: 18px 6px 0 6px;
   background-color: #fff;
-  margin: 20px 2px 2px 2px;
+  margin: 20px 2px 2px 6px;
   box-shadow: 0px 0px 3px #aaa;
 }
 .vediohot .hotbox li {
   display: block;
   overflow: hidden;
   float: left;
-  width: 210px;
-  margin: 0 18px 18px 18px;
+  width: 250px;
+  margin: 0 20px 24px 20px;
 }
 .vediohot .hotbox li a.vediobox {
   display: block;
@@ -1465,8 +2470,8 @@
 }
 .vediohot .hotbox li a.vediobox .picbox {
   display: block;
-  width: 210px;
-  height: 118px;
+  width: 250px;
+  height: 140px;
   overflow: hidden;
 }
 .vediohot .hotbox li a.vediobox .picbox img {
@@ -1477,6 +2482,7 @@
   position: absolute;
   bottom: 0;
   display: block;
+  width: 236px;
   height: 28px;
   padding: 17px 7px 8px 7px;
   background: url(../../Images/PCSite/vedioboxbg.png) left bottom repeat-x;
@@ -1501,7 +2507,7 @@
   line-height: 18px;
   white-space: nowrap;
   text-overflow: ellipsis;
-  margin-top: 8px;
+  margin-top: 14px;
 }
 .vediohot .hotbox li .playcount i.icon-playcount {
   display: inline-block;
@@ -1523,8 +2529,12 @@
   margin-bottom: 18px;
 }
 .vedioinfo .playbox .video-js .vjs-big-play-button {
-  left: 440px;
-  top: 170px;
+  left: 520px;
+  top: 240px;
+}
+.vedioinfo .playbox video {
+  width: 1140px;
+  height: 540px;
 }
 .vedioinfo .vediodetail {
   display: block;
@@ -1758,422 +2768,6 @@
   margin: 0 4px;
   display: inline-block;
 }
-/*! normalize-opentype v0.1.2 | MIT License | kennethormandy.com/journal/normalize-opentype-css */
-/**
-     * 1. Turn on kerning, standard ligatures, and proportional, oldstyle numerals
-     *    Turn off all other ligatures, tabular, lining numerals, and alternates
-     */
-html,
-body {
-  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
-  /* 1. */
-}
-/* Headings
-    ========================================================================== */
-/**
-     * 1. Turn on discretionary ligatures for larger headings
-     */
-h1,
-h2,
-h3 {
-  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 1;
-  /* 1. */
-}
-/* Text-level semantics
-    ========================================================================== */
-/**
-     * 1. Change all letters to uppercase
-     * 2. Turn on small caps for upper and lowercase letters
-     */
-abbr {
-  text-transform: uppercase;
-  /* 1 */
-  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "smcp" 1, "c2sc" 1;
-  /* 2 */
-}
-/*
-     * TODO: Turn on diagonal fractions where appropriate
-     */
-time {
-  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0;
-}
-/*
-     * 1. Turn off kerning and ligatures,
-     *    Turn on lining, tabular numerals, slashed zero
-     */
-pre,
-kbd,
-samp,
-code {
-  font-feature-settings: "kern" 0, "liga" 0, "dlig" 0, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
-  /* 1. */
-}
-/**
-     * 1. Turn on proper supercript numerals
-     */
-sup {
-  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "sups" 1;
-  /* 1. */
-}
-/**
-     * 1. Turn on proper subscript numerals
-     */
-sub {
-  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0, "subs" 1;
-  /* 1. */
-}
-/* Tables
-    ========================================================================== */
-/**
-     * 1. Turns on tabular, lining numerals and slashed zero
-     *    Turns off kerning, as it could impact tabular numerals
-     */
-table {
-  font-feature-settings: "kern" 0, "liga" 1, "pnum" 0, "tnum" 1, "onum" 0, "lnum" 1, "zero" 1;
-  /* 1. */
-}
-/**
-     * 1. Revert to defaults for table headings
-     */
-table thead,
-table tfoot {
-  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1, "tnum" 0, "onum" 1, "lnum" 0, "dlig" 0;
-  /* 2. */
-}
-/* Forms
-    ========================================================================== */
-/**
-     * 1. Turns on lining, proportional numerals without clarified zeroes
-     * TODO: Additional input modes https://developer.mozilla.org/en/docs/Web/HTML/Element/Input#attr-inputmode
-     */
-input[type="color"],
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="number"],
-input[type="range"],
-input[type="tel"],
-input[type="week"] {
-  font-feature-settings: "kern" 0, "liga" 1, "pnum" 1, "tnum" 0, "onum" 0, "lnum" 1, "zero" 0;
-  /* 1. */
-}
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-family: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-  vertical-align: middle;
-}
-caption,
-th,
-td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-a img {
-  border: none;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-main {
-  display: block;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-family: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-audio,
-canvas,
-video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-audio:not([controls]),
-[hidden] {
-  display: none;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-main {
-  display: block;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-family: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-audio,
-canvas,
-video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-audio:not([controls]),
-[hidden] {
-  display: none;
-}
-body {
-  font-family: "Microsoft YaHei";
-  color: #2c3444;
-  font-size: 14px;
-  background: #f5f2f2;
-  min-width: 1180px;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-.hover a:hover {
-  color: #ed6d00;
-  text-decoration: underline !important;
-}
-select,
-input {
-  font-family: inherit;
-}
-.l-left {
-  float: left;
-}
-.l-right {
-  float: right;
-}
-.l-float {
-  *zoom: 1;
-}
-.l-float:before,
-.l-float:after {
-  display: table;
-  content: "";
-}
-.l-float:after {
-  clear: both;
-}
-.dis-b {
-  display: block !important;
-}
-.dis-i {
-  display: inline-block !important;
-}
-.pos-r {
-  position: relative;
-}
-.font12 {
-  font-size: 12px;
-}
-.font14 {
-  font-size: 14px;
-}
-.font16 {
-  font-size: 16px;
-}
-.font18 {
-  font-size: 18px;
-}
-.font20 {
-  font-size: 20px;
-}
-.font24 {
-  font-size: 24px;
-}
-.font30 {
-  font-size: 30px;
-}
-.font36 {
-  font-size: 36px;
-}
-.font60 {
-  font-size: 60px;
-}
-.fontw6 {
-  font-weight: 600;
-}
-.fontw5 {
-  font-weight: 500;
-}
-.fontw1 {
-  font-weight: 100;
-}
-.ov-text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.text-hide {
-  text-indent: -9999px;
-  overflow: hidden;
-  text-align: left;
-}
-.col-hei {
-  color: #25272a;
-}
-.col-hui {
-  color: #b4b5b7;
-}
-.col-dhui {
-  color: #7c7c7d;
-}
-.col-huang {
-  color: #f7ab00;
-}
-.col-cheng {
-  color: #ed6d00;
-}
-.col-red {
-  color: #ff0023;
-}
-.col-lv {
-  color: #33c500;
-}
-.col-bai {
-  color: #fff;
-}
-.col-blue {
-  color: #2d87d9;
-}
-.col-dblue {
-  color: #0d2c54;
-}
-.col-lblue {
-  color: #1291f1;
-}
-.text-al {
-  text-align: left;
-}
-.text-ac {
-  text-align: center;
-}
-.text-ar {
-  text-align: right;
-}
-.text-i24 {
-  text-indent: 24px;
-}
-.lh24 {
-  line-height: 24px;
-}
-.lh32 {
-  line-height: 32px;
-}
-.text-udl {
-  text-decoration: underline;
-}
-input::-webkit-input-placeholder {
-  color: #b4b5b7 !important;
-}
-input:-moz-placeholder {
-  color: #b4b5b7 !important;
-}
-input::-moz-placeholder {
-  color: #b4b5b7 !important;
-}
-input:-ms-input-placeholder {
-  color: #b4b5b7 !important;
-}
 .footer {
   display: block;
   overflow: hidden;
@@ -2298,609 +2892,6 @@ input:-ms-input-placeholder {
   height: 50px;
   background: url(../../Images/PCSite/gowechat.png);
 }
-.container {
-  width: 100%;
-}
-.main {
-  width: 1180px;
-  margin: 0 auto;
-}
-.header {
-  display: block;
-  overflow: hidden;
-  background: #fff;
-}
-.top-nav {
-  display: block;
-  overflow: hidden;
-  height: 28px;
-  line-height: 28px;
-}
-.top-nav .top-link a {
-  margin: 0 8px;
-}
-.l-head-nav {
-  display: block;
-  overflow: hidden;
-  padding: 12px 0 0 0;
-}
-.l-head-nav .logobox {
-  display: block;
-  overflow: hidden;
-  width: 260px;
-  height: 80px;
-  margin-left: 10px;
-  float: left;
-}
-.l-head-nav .logobox img {
-  width: 100%;
-}
-.l-head-nav .locate-box {
-  display: block;
-  overflow: hidden;
-  float: left;
-  width: 68px;
-  margin: 0 24px;
-}
-.l-head-nav .locate-box input {
-  width: 54px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  outline: none;
-  cursor: pointer;
-  border: 0;
-  background: url(../../Images/PCSite/locate-arrow.png) right 2px center no-repeat;
-  margin: 8px 0;
-  padding-right: 14px;
-}
-.l-head-nav .locate-box img {
-  width: 100%;
-  vertical-align: top;
-}
-.nav-box {
-  display: block;
-  overflow: hidden;
-  float: left;
-}
-.nav-box li {
-  display: block;
-  float: left;
-  color: #0d2c54;
-  width: 132px;
-  text-align: center;
-  font-size: 18px;
-  height: 80px;
-  line-height: 80px;
-  box-sizing: border-box;
-}
-.nav-box li.active,
-.nav-box li:active,
-.nav-box li:hover {
-  border-bottom: 2px solid #21394b;
-}
-/* 城市选择 */
-.hzw-city-picker {
-  position: absolute;
-  border: 1px solid #c9cbce;
-  width: 362px;
-  background: #ffffff;
-  z-index: 999999;
-  font-size: 0;
-  box-sizing: border-box;
-}
-.hzw-city-picker:before,
-.hzw-city-picker:after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  border-width: 10px;
-  border-style: solid;
-  position: absolute;
-  left: 20px;
-  z-index: 999999;
-}
-.hzw-city-picker:before {
-  border-color: transparent transparent #ffffff;
-  top: -20px;
-  z-index: 9999999;
-}
-.hzw-city-picker:after {
-  border-color: transparent transparent #c9cbce;
-  top: -20px;
-}
-.hzw-city-picker * {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0;
-  color: #666666;
-  font-family: "Microsoft YaHei";
-  font-size: 12px;
-}
-.hzw-city-picker ul {
-  list-style: none;
-}
-.hzw-city-picker ul li {
-  display: inline-block;
-  position: relative;
-  margin: 4px;
-  cursor: pointer;
-}
-.hzw-city-picker p {
-  font-weight: bold;
-  padding: 0 4px;
-  margin-top: 4px;
-  margin-bottom: 10px;
-}
-.hzw-city-picker .line {
-  width: 342px;
-  margin: 0 auto;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  border-bottom: 1px solid #d8d8d8;
-}
-/*热门城市*/
-.hzw-city-picker .hzw-hot-wrap {
-  width: 100%;
-  background: #ffffff;
-  padding: 9px;
-}
-.hzw-city-picker .hzw-hot-wrap ul li {
-  width: 58px;
-  height: 28px;
-  text-align: center;
-  line-height: 28px;
-  color: #666666;
-  background-color: #f5f5f5;
-}
-.hzw-city-picker .hzw-hot-wrap ul li:hover {
-  color: #ed6d00;
-}
-/*选择省份*/
-.hzw-city-picker .hzw-wrap {
-  position: relative;
-  width: 100%;
-  background: #ffffff;
-  padding: 9px;
-}
-.hzw-city-picker .hzw-province-name {
-  display: inline-block;
-  width: 58px;
-  height: 28px;
-  text-align: center;
-  line-height: 28px;
-  position: relative;
-  background-color: #f5f5f5;
-}
-.hzw-city-picker .hzw-province-name:hover {
-  color: #ed6d00;
-}
-.hzw-city-picker .hzw-province.active {
-  z-index: 999999999;
-}
-.hzw-city-picker .hzw-province-name.active {
-  border: 1px solid #D8D8D8;
-  border-bottom-color: #ffffff;
-  color: #ed6d00;
-  background-color: #ffffff;
-}
-.hzw-city-picker .hzw-city-wrap {
-  display: none;
-  border: 1px solid #D8D8D8;
-  background: #ffffff;
-  position: absolute;
-  top: 27px;
-  width: 328px;
-  padding: 10px;
-}
-.hzw-city-picker .hzw-city {
-  width: 58px;
-  height: 28px;
-  text-align: center;
-  line-height: 28px;
-  color: #999999;
-  background-color: #f5f5f5;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.hzw-city-picker .hzw-city:hover {
-  color: #ed6d00;
-}
-.formbox {
-  display: block;
-  overflow: hidden;
-}
-.formbox .formgroup {
-  display: block;
-  overflow: hidden;
-  height: auto;
-  margin: 18px 0;
-  line-height: 34px;
-}
-.formbox .formgroup .examinebox {
-  display: block;
-  width: 200px;
-  text-align: center;
-  margin: 0 auto;
-  overflow: hidden;
-  height: 40px;
-  line-height: 40px;
-}
-.formbox .formgroup .examinebox > i {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  float: left;
-}
-.formbox .formgroup .examinebox > i img {
-  width: 100%;
-}
-.formbox .formgroup .examinebox > span {
-  display: inline-block;
-  font-size: 20px;
-  float: left;
-  margin-left: 12px;
-}
-.formbox .formgroup .formgroup-tit {
-  display: block;
-  position: relative;
-  border-bottom: 1px solid #0d2c54;
-  width: 440px;
-  height: 24px;
-  font-size: 18px;
-  z-index: 9;
-  text-align: center;
-  margin: 12px auto;
-}
-.formbox .formgroup .formgroup-tit .tit-text {
-  display: inline-block;
-  position: relative;
-  top: 6px;
-  padding: 0 54px;
-  z-index: 99;
-  margin: 0 auto;
-  background-color: #fff;
-}
-.formbox .formgroup label.formtit {
-  display: inline-block;
-  overflow: hidden;
-  height: 34px;
-  line-height: 34px;
-  float: left;
-  font-size: 16px;
-  color: #0d2c54;
-  text-align: right;
-  padding-right: 10px;
-}
-.formbox .formgroup label.formtit-block {
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  height: 34px;
-  line-height: 34px;
-  float: left;
-  font-size: 18px;
-  color: #0d2c54;
-  padding-left: 10px;
-}
-.formbox .formgroup .forminput {
-  display: inline-block;
-  float: left;
-  border: 1px solid #2d87d9;
-  height: 34px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  background-color: #fff;
-  overflow: hidden;
-}
-.formbox .formgroup .forminput input[type="text"],
-.formbox .formgroup .forminput input[type="text"]:disabled,
-.formbox .formgroup .forminput input[type="password"],
-.formbox .formgroup .forminput input[type="password"]:disabled {
-  border: 0;
-  background-color: #fff;
-  height: 30px;
-  line-height: 30px;
-  font-size: 14px;
-  color: #0d2c54;
-  padding-left: 14px;
-  width: 100%;
-  outline: none;
-}
-.formbox .formgroup .forminput select {
-  height: 32px;
-  font-size: 14px;
-  color: #0d2c54;
-  border: 0;
-  background-color: #fff;
-  outline: none;
-  width: 100%;
-  padding-left: 12px;
-}
-.formbox .formgroup .forminput select option {
-  padding: 8px 12px;
-}
-.formbox .formgroup a.formedit {
-  float: left;
-  line-height: 34px;
-  padding-left: 12px;
-  color: #ed6d00;
-}
-.formbox .formgroup .w100 {
-  width: 100%;
-}
-.formbox .formgroup .w80 {
-  width: 80px;
-}
-.formbox .formgroup .w120 {
-  width: 120px;
-}
-.formbox .formgroup .w140 {
-  width: 140px;
-}
-.formbox .formgroup .w180 {
-  width: 180px;
-}
-.formbox .formgroup .w240 {
-  width: 240px;
-}
-.formbox .formgroup .w340 {
-  width: 340px;
-}
-.formbox .formgroup a.picfile {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  background-color: #1291f1;
-  color: #fff;
-  padding: 0 12px;
-  border-radius: 4px;
-}
-.formbox .formgroup a.picfile input {
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-size: 100px;
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-.formbox .formpicbox {
-  display: block;
-  overflow: hidden;
-  margin-left: 190px;
-}
-.formbox .formpicbox .pic {
-  display: block;
-  overflow: hidden;
-  width: 120px;
-  height: 120px;
-  border: 2px dashed #aaa;
-}
-.formbox .formpicbox .pic img {
-  width: 100%;
-  vertical-align: top;
-}
-.formbox a.submit {
-  display: inline-block;
-  text-align: center;
-  margin: 12px 190px;
-  padding: 8px 18px;
-  background-color: #0d2c54;
-  color: #fff;
-}
-.formbox .formsec {
-  display: block;
-  overflow: hidden;
-  height: auto;
-  line-height: 34px;
-  margin-bottom: 20px;
-}
-.formbox .formsec input[type="radio"].formradio {
-  display: none;
-}
-.formbox .formsec label#radiotext,
-.formbox .formsec label#radiodate,
-.formbox .formsec label#radiocontact {
-  display: inline-block;
-  height: 20px;
-  background-image: url(../../Images/PCSite/formradio.png);
-  background-repeat: no-repeat;
-  background-position: left top;
-  padding-left: 24px;
-  float: left;
-  padding-right: 8px;
-  margin-top: 7px;
-  line-height: 20px;
-}
-.formbox .formsec label#radiotext.checked,
-.formbox .formsec label#radiodate.checked,
-.formbox .formsec label#radiocontact.checked {
-  background-position: left bottom;
-}
-.formbox .formsec label.moneytit {
-  margin-left: 20px;
-  margin-right: 12px;
-}
-.formbox .formtextarea {
-  display: inline-block;
-  float: left;
-  border: 1px solid #2d87d9;
-  height: 180px;
-  box-sizing: border-box;
-  border-radius: 4px;
-  background-color: #fff;
-  overflow: hidden;
-}
-.formbox .formtextarea textarea {
-  display: block;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  border: 0;
-  padding: 8px;
-  outline: none;
-}
-.form-horizontal .checkbox,
-.form-horizontal .radio {
-  min-height: 32px;
-  line-height: 32px;
-}
-.checkbox label,
-.radio label {
-  min-height: 20px;
-  padding-left: 20px;
-  margin-bottom: 0;
-  font-weight: 400;
-  cursor: pointer;
-}
-.checkbox input[type=checkbox],
-.checkbox-inline input[type=checkbox],
-.radio input[type=radio],
-.radio-inline input[type=radio] {
-  position: absolute;
-  margin-top: 4px\9;
-  margin-left: -20px;
-  margin-top: 10px;
-}
-.checkbox-inline,
-.radio-inline {
-  position: relative;
-  display: inline-block;
-  padding-left: 20px;
-  margin-bottom: 0;
-  font-weight: 400;
-  vertical-align: middle;
-  cursor: pointer;
-}
-.textbox {
-  padding: 0 4px;
-  width: 200px;
-  height: 30px;
-  line-height: 30px;
-  border: #ddd solid 1px;
-}
-.pd4 {
-  padding: 4px 0;
-}
-.pd10 {
-  padding: 10px 0;
-}
-.pd15 {
-  padding: 15px 0;
-}
-.pd20 {
-  padding: 20px 0;
-}
-.pdt36 {
-  padding-top: 36px;
-}
-.pdl10 {
-  padding-left: 10px;
-}
-.pdl20 {
-  padding-left: 20px;
-}
-.pdl30 {
-  padding-left: 30px;
-}
-.pdl52 {
-  padding-left: 52px;
-}
-.pdl60 {
-  padding-left: 60px;
-}
-.pdl120 {
-  padding-left: 120px;
-}
-.pdr10 {
-  padding-right: 10px;
-}
-.pdr20 {
-  padding-right: 20px;
-}
-.pdb4 {
-  padding-bottom: 4px;
-}
-.pdl4 {
-  padding-left: 4px;
-}
-.pdr4 {
-  padding-right: 4px;
-}
-.pdb30 {
-  padding-bottom: 30px;
-}
-.pdt10 {
-  padding-top: 10px;
-}
-.margin0 {
-  margin: 0 auto;
-}
-.margin210 {
-  margin: auto 210px;
-}
-.margin8-12 {
-  margin: 8px 12px !important;
-}
-.mt10 {
-  margin-top: 10px;
-}
-.mt15 {
-  margin-top: 15px;
-}
-.mt20 {
-  margin-top: 20px !important;
-}
-.mt30 {
-  margin-top: 30px !important;
-}
-.mb0 {
-  margin: 0 !important;
-}
-.mb4 {
-  margin-bottom: 4px;
-}
-.mb10 {
-  margin-bottom: 10px;
-}
-.mb12 {
-  margin-bottom: 12px;
-}
-.mb20 {
-  margin-bottom: 20px !important;
-}
-.mb16 {
-  margin-bottom: 16px;
-}
-.mb26 {
-  margin-bottom: 26px !important;
-}
-.mb40 {
-  margin-bottom: 40px !important;
-}
-.ml10 {
-  margin-left: 10px;
-}
-.ml180 {
-  margin-left: 180px;
-}
-.ml190 {
-  margin-left: 190px;
-}
-.mr10 {
-  margin-right: 10px;
-}
-.mr20 {
-  margin-right: 20px;
-}
-.mr24 {
-  margin-right: 24px !important;
-}
-.mr54 {
-  margin-right: 54px;
-}
 .register {
   display: block;
   overflow: hidden;
@@ -2908,7 +2899,7 @@ input:-ms-input-placeholder {
 .signbox {
   display: block;
   overflow: hidden;
-  width: 800px;
+  width: 900px;
 }
 .signform {
   display: block;
@@ -2936,7 +2927,7 @@ input:-ms-input-placeholder {
 .signform .confirmbox {
   display: block;
   overflow: hidden;
-  width: 380px;
+  width: 480px;
   margin: 0 auto 12px auto;
 }
 .signform .confirmbox > a.btn-code {
@@ -3062,7 +3053,7 @@ input:-ms-input-placeholder {
 }
 .user-left {
   display: block;
-  width: 240px;
+  width: 280px;
   overflow: hidden;
   padding: 0 20px;
   background-color: #fff;
@@ -3108,7 +3099,7 @@ input:-ms-input-placeholder {
 .user-right {
   display: block;
   overflow: hidden;
-  width: 700px;
+  width: 834px;
   min-height: 477px;
   background-color: #fff;
 }
@@ -3294,7 +3285,7 @@ input:-ms-input-placeholder {
 .userinfobox .userinfo-detail {
   display: block;
   overflow: hidden;
-  padding: 20px;
+  padding: 20px 34px;
 }
 .userinfobox .userinfo-detail .detail-group {
   display: block;
@@ -3455,7 +3446,7 @@ input:-ms-input-placeholder {
 }
 .timelinebox .timelineinfo .info {
   display: inline-block;
-  width: 500px;
+  width: 600px;
   overflow: hidden;
   border-bottom: 1px dashed #ddd;
   font-size: 18px;
@@ -3520,27 +3511,52 @@ input:-ms-input-placeholder {
   border-radius: 4px;
   margin-right: 8px;
 }
-.w220 {
-  width: 220px;
+.animation-sx {
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-.w380 {
-  width: 380px;
+.animation-sx:hover .animation-sx-item {
+  -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
 }
-.w276 {
-  width: 276px;
+.animation-ydz {
+  -moz-transition: transform 0.2s linear 0s;
+  -o-transition: transform 0.2s linear 0s;
+  -webkit-transition: transform 0.2s linear 0s;
+  transition: transform 0.2s linear 0s;
 }
-.w158 {
-  width: 158px;
+.animation-ydz:hover {
+  -webkit-transform: translateX(4px);
+  -moz-transform: translateX(4px);
+  -ms-transform: translateX(4px);
+  transform: translateX(4px);
 }
-.w1020 {
-  width: 1020px;
+.animation-ydy {
+  -moz-transition: transform 0.2s linear 0s;
+  -o-transition: transform 0.2s linear 0s;
+  -webkit-transition: transform 0.2s linear 0s;
+  transition: transform 0.2s linear 0s;
 }
-.h580 {
-  height: 580px;
+.animation-ydy:hover {
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  transform: translateY(-4px);
 }
-.h378 {
-  height: 378px;
+.animation-soux img {
+  transition: all .6s;
+  -moz-transition: all .6s;
+  -ms-transition: all .6s;
+  -webkit-transition: all .6s;
 }
-.h338 {
-  height: 338px;
+.animation-soux:hover img {
+  transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -o-transform: scale(0.95);
 }
